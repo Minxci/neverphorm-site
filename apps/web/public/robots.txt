@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://projectneverphorm.com/sitemap.xml
