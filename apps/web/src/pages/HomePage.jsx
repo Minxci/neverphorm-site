@@ -34,7 +34,7 @@ const HomePage = () => {
     role: "Gameplay Programmer"
   }, {
     name: "Wynn Brownfield",
-    role: "Technical Artist"
+    role: "3D & Technical Artist"
   }, {
     name: "Could Be You",
     role: "Open Position",
