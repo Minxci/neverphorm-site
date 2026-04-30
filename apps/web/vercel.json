@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "neverphorm-site-web.vercel.app"
+        }
+      ],
+      "destination": "https://projectneverphorm.com/$1",
+      "permanent": true
+    }
+  ]
+}
