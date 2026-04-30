@@ -127,7 +127,7 @@ const ContactUsPage = () => {
             variants={fadeInUp}
           >
             {/* Updated on 4/29/2026 */}
-            <h2 className="text-2xl md:text-3xl font-semibold mb-4">Join Our Team</h2>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4">Join Our <span className="text-primary">Team</span></h2>
             <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
               Project Neverphorm is not actively looking for collaborators right now. This page will be updated over time to list future collaboration opportunites, open roles, and ways to get involved with the studio.
             </p>
