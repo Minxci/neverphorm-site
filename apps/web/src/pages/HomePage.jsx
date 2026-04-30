@@ -74,7 +74,7 @@ const HomePage = () => {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6" style={{
               letterSpacing: '-0.02em'
             }}>
-                Project <span className="text-primary">Neverphorm</span>
+                Project <span className="animated-gradient-text">Neverphorm</span>
               </h1>
               
               <p className="text-xl md:text-2xl text-muted-foreground mb-4 font-medium">
