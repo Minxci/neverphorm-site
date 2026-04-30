@@ -42,7 +42,7 @@ const HomePage = () => {
   }];
   return <>
       <Helmet>
-        <title>Project Neverphorm - We don't conform. We build experiences.</title>
+        <title>Project Neverphorm</title>
         <meta name="description" content="An indie game studio focused on creating unique and chaotic gameplay experiences. Discover No 2 Weeks, our chaotic escape simulator." />
       </Helmet>
 
