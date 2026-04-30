@@ -52,7 +52,7 @@ const Header = () => {
             className="text-xl font-bold tracking-tight transition-colors duration-300 hover:text-primary z-50 relative"
           >
             <img
-              src="/public/neverphorm-logo.jpg"
+              src="/pictures/neverphorm-logo.jpg"
               alt="Project Neverphorm"
               className="h-8 md:h-10 w-auto"
             />
