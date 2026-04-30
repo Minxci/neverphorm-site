@@ -127,7 +127,8 @@ const ContactUsPage = () => {
           </motion.section>
 
           {/* 3. ACTIVELY LOOKING FOR */}
-          <motion.section 
+           {/*
+           <motion.section 
             className="text-center"
             initial="initial"
             whileInView="animate"
@@ -139,6 +140,7 @@ const ContactUsPage = () => {
               No active openings at this time.
             </div>
           </motion.section>
+          */}
 
           {/* 4. FUTURE ROLES */}
           <motion.section
