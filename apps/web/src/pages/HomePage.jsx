@@ -145,10 +145,9 @@ const HomePage = () => {
               </h2>
               <div className="space-y-6 text-base md:text-lg leading-relaxed text-muted-foreground max-w-prose mx-auto">
                 <p>
-                  Based in Aledo, IL, Project Neverphorm is an independent game studio built on creativity, freedom, and the drive to build things our own way. We're not here to follow the industry, we're here to carve out our own path.
-                  <br />
-                  Right now, we're focused on building our first project, No 2 Weeks. It's the start of everything for u, where we learn, experiment, and push ideas into something real.
-                  <br />
+                  Based in Aledo, IL, Project Neverphorm is an independent game studio built on creativity, freedom, and the drive to build things our own way. 
+                  What started as a solo development then turned into a group of friends working on a game together, collabing together.
+                  Right now, we're focused on building our first project, Working Title.
                   We're not trying to overpromise anything. We're just focused on putting something solid out, building from it, and growing over time.
                 </p>
                 <p className="text-foreground font-medium">
