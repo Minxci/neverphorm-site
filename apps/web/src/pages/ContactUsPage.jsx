@@ -43,9 +43,15 @@ const ContactUsPage = () => {
   };
 
   const roles = [
-    { title: "3D Artist & Animator" },
-    { title: "Systems & Tools Developer" },
-    { title: "Audio Designer" }
+    { title: "3D Artist & Animator",
+      description: "Planned role for future art, modeling, and animation support.",
+    },
+    { title: "Systems & Tools Developer",
+      description: "Key role for internal tools, systems, and workflow support.",
+     },
+    { title: "Audio Designer",
+      description: "Future role focused on sound effects, polish, and gameplay feel.",
+     }
   ];
 
   const handleInputChange = (e) => {
@@ -120,9 +126,10 @@ const ContactUsPage = () => {
             viewport={{ once: true, margin: "-50px" }}
             variants={fadeInUp}
           >
+            {/* Updated on 4/29/2026 */}
             <h2 className="text-2xl md:text-3xl font-semibold mb-4">Join Our Team</h2>
             <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
-              Project Neverphorm is not actively hiring right now, but this page will eventually list future collaboration opportunities, open roles, and ways to get involved with the studio.
+              Project Neverphorm is not actively looking for collaborators right now. This page will be updated over time to list future collaboration opportunites, open roles, and ways to get involved with the studio.
             </p>
           </motion.section>
 
@@ -165,7 +172,7 @@ const ContactUsPage = () => {
                         {role.title}
                       </CardTitle>
                       <CardDescription className="text-sm mt-2">
-                        Details coming soon.
+                        {role.description}
                       </CardDescription>
                     </CardHeader>
                   </Card>
