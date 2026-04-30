@@ -50,7 +50,7 @@ const ContactUsPage = () => {
       description: "Key role for internal tools, systems, and workflow support.",
      },
     { title: "Audio Designer",
-      description: "Future role focused on sound effects, polish, and gameplay feel.",
+      description: "Future role focused on the vfx, sfx, and music.",
      }
   ];
 
@@ -129,7 +129,8 @@ const ContactUsPage = () => {
             {/* Updated on 4/29/2026 */}
             <h2 className="text-2xl md:text-3xl font-semibold mb-4">Join Our <span className="text-primary">Team</span></h2>
             <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
-              Project Neverphorm is not actively looking for collaborators right now. This page will be updated over time to list future collaboration opportunites, open roles, and ways to get involved with the studio.
+              Project Neverphorm is not actively looking for collaborators right now. 
+              This page will be updated over time to list future collaboration opportunites, open roles, and ways to get involved with the studio.
             </p>
           </motion.section>
 
