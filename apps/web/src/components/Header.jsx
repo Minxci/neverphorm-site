@@ -54,7 +54,7 @@ const Header = () => {
             <img
               src="/pictures/neverphorm-logo.jpg"
               alt="Project Neverphorm"
-              className="h-8 md:h-10 w-auto"
+              className="h-20 md:h-10 w-auto"
             />
           </Link>
           
