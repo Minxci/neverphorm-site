@@ -77,10 +77,6 @@ const HomePage = () => {
                 Project <span className="animated-gradient-text">Neverphorm</span>
               </h1>
               
-              <p className="text-xl md:text-2xl text-muted-foreground mb-4 font-medium">
-                We don't conform. We build experiences.
-              </p>
-              
               <p className="text-base md:text-lg text-muted-foreground/80 mb-12 max-w-2xl mx-auto leading-relaxed">
                 An indie game studio focused on creating unique, catharsis, and chaotic gameplay experiences.
               </p>
@@ -124,14 +120,11 @@ const HomePage = () => {
                 <div className="space-y-4 text-base md:text-lg leading-relaxed text-muted-foreground">
                   <p>
                     A chaotic escape experience about walking away from the job… Your way. Navigate unpredictable environments, avoid getting caught, and find your own path out.
-                  </p>
-                  <p>
+                    <br />
                     Every run plays out differently.
                   </p>
                   <p>
-                    <strong>Anticipated release date:</strong> Late this year.
-                  </p>
-                  <p>
+                    <strong>Anticipated release date:</strong> Late this year. <br />
                     <strong>Platforms:</strong> Steam, PS5, Xbox Series X, Switch 2.
                   </p>
                 </div>
@@ -148,16 +141,14 @@ const HomePage = () => {
             margin: "-100px"
           }} variants={fadeInUp}>
               <h2 className="text-3xl md:text-4xl font-semibold mb-8 leading-snug">
-                About Project Neverphorm
+                About the Studio
               </h2>
               <div className="space-y-6 text-base md:text-lg leading-relaxed text-muted-foreground max-w-prose mx-auto">
                 <p>
                   Based in Aledo, IL, Project Neverphorm is an independent game studio built on creativity, freedom, and the drive to build things our own way. We're not here to follow the industry, we're here to carve out our own path.
-                </p>
-                <p>
+                  <br />
                   Right now, we're focused on building our first project, No 2 Weeks. It's the start of everything for u, where we learn, experiment, and push ideas into something real.
-                </p>
-                <p>
+                  <br />
                   We're not trying to overpromise anything. We're just focused on putting something solid out, building from it, and growing over time.
                 </p>
                 <p className="text-foreground font-medium">
