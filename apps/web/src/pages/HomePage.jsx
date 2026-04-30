@@ -122,7 +122,7 @@ const HomePage = () => {
                     A chaotic escape experience about walking away from the job… Your way. Navigate unpredictable environments, avoid getting caught, and find your own path out.
                     <br />
                     Every run plays out differently.
-                  </p>
+                  </p> <br /><br /><br />
                   <p>
                     <strong>Anticipated release date:</strong> Late this year. <br />
                     <strong>Platforms:</strong> Steam, PS5, Xbox Series X, Switch 2.
