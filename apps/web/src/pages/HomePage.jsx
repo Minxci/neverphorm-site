@@ -25,7 +25,7 @@ const HomePage = () => {
     role: "Studio Head & Creative Lead"
   }, {
     name: "Katie Fogarty",
-    role: "Marketing & Community Manager"
+    role: "Marketing Manager"
   }, {
     name: "Matt Brown",
     role: "Business Operations Lead"
