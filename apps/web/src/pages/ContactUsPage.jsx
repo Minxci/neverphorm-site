@@ -158,7 +158,7 @@ const ContactUsPage = () => {
             variants={fadeInUp}
           >
             <div className="text-center mb-10">
-              <h2 className="text-2xl md:text-3xl font-semibold">Future Roles</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold">Future Collaboration Roles</h2>
             </div>
             
             <motion.div 
