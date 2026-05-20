@@ -34,7 +34,7 @@ const HomePage = () => {
   const devStack = {
     "Game Development": ["Unity", "Unreal Engine", "C++", "C#", "Maya", "Blender", "Autodesk Sketchbook", "Substance Painter", "Figma", "GitHub"],
     "Web & Systems": ["React", "React Native", "TailwindCSS", "Vercel", "Vite", "JavaScript", "Expo", "Supabase", "Node.js", "GitHub"],
-    "Planning & Workflow": ["Trello", "Notion", "Google Drive", "Discord", "DocuSign", "Excel"],
+    "Planning & Workflow": [ "IET", "Trello", "Notion", "Google Drive", "Discord", "DocuSign", "Excel"],
   };
 
   return <>
@@ -178,7 +178,7 @@ const HomePage = () => {
               className="rounded-2xl border border-cyan-500/30 bg-black/30 p-6 shadow-lg shadow-cyan-500/10"
             >
               <h2 className="text-2xl md:text-3xl font-semibold mb-2">
-                Development Stack
+                Studio Ecosystem
               </h2>
 
               <p className="text-muted-foreground mb-6">
