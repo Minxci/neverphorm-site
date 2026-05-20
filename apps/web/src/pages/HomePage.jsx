@@ -58,7 +58,7 @@ const HomePage = () => {
           </div>
 
           {/* Content */}
-          <div className="relative z-10 max-w-7xl mx-auto px-8 sm:px-12 lg:px-20 py-32 text-left">
+          <div className="relative z-10 max-w-2xl mx-auto px-8 sm:px-12 lg:px-20 py-32 text-left">
             <motion.div initial={{
             opacity: 0,
             y: 30
