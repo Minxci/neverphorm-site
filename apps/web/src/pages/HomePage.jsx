@@ -135,10 +135,24 @@ const HomePage = () => {
               </h2>
               <div className="space-y-6 text-base md:text-lg leading-relaxed text-muted-foreground max-w-prose mx-auto">
                 <p>
-                  Based in Aledo, IL, Project Neverphorm is an independent game studio built on creativity, freedom, and the drive to build things our own way. 
-                  What started as a solo development then turned into a group of friends working on a game together, collabing together.
-                  Right now, we're focused on building our first project, Working Title.
-                  We're not trying to overpromise anything. We're just focused on putting something solid out, building from it, and growing over time.
+                  Project Neverphorm is a solo, indie game development run by myself (Cody McCullough) and is based in Aledo, IL. 
+                  Being 32 now and have always wanted to create video games since 2010 back in high school. It’s taking me nearly 
+                  15 years to decide to take the risk and start working on games and bringing my creative imagination and worlds 
+                  alive through this journey. Currently in development for my first game that is to be released around the end of 
+                  the year as of right now. That is not promised as the amount of time I have already spent working on past projects 
+                  (that never came to fruition) there’s been some hiccups along the way and am focusing on making sure that the first 
+                  version of this game is well executed for what it is. 
+                
+                <p>
+                  I have a lot planned, so this first game is definitely not the first and only. This first project is not a 
+                  “one and done game”, it’s most certainly not a “wait around and see what the outcome is”. There is a strong 
+                  core vision and long-term commitment surrounding this. No matter how or what the outcome of this first game 
+                  turns out to be, there’s already more planned in a back catalog. As much as I’ve been planning not only the 
+                  game development side of this studio, but there’s also a lot I have been enjoying building such as the backend 
+                  systems and workflow pipeline. There may be even a side passion project that may even be brewing up as well, 
+                  and that’s more centered around the systems and tools infrastructure that’s focused on the creative field for 
+                  other creative teams and studios (small to medium sizes). 
+                </p>
                 </p>
                 <p className="text-foreground font-medium">
                   This is just the beginning.
