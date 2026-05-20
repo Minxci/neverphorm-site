@@ -145,7 +145,7 @@ const HomePage = () => {
               </h2>
               <div className="space-y-6 text-base md:text-lg leading-relaxed text-muted-foreground">
                 <p>
-                  Project Neverphorm is a solo, indie game development run by myself (Cody McCullough) and is based in Aledo, IL. 
+                  Project Neverphorm is a solo, indie game development run by myself (Cody McCullough) and is based in Greater Quad Cities area of IA/IL. 
                   Being 32 now and have always wanted to create video games since 2010 back in high school. It’s taking me nearly 
                   15 years to decide to take the risk and start working on games and bringing my creative imagination and worlds 
                   alive through this journey. Currently in development for my first game that is to be released around the end of 
