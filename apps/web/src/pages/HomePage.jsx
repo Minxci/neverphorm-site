@@ -33,7 +33,7 @@ const HomePage = () => {
 
   const devStack = {
     "Game Development": ["Unity", "C#", "Blender", "Substance Painter", "Figma", "GitHub"],
-    "Web & Systems": ["React", "React Native", "TailwindCSS", "Vercel", "Vite", "JS", "Expo", "Supabase", "Node.js", "GitHub"],
+    "Web & Systems": ["React", "React Native", "TailwindCSS", "Vercel", "Vite", "JavaScripts", "Expo", "Supabase", "Node.js", "GitHub"],
     "Planning & Workflow": ["Trello", "Notion", "Google Drive", "Discord"],
   };
 
