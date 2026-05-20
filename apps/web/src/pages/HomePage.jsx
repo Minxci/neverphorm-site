@@ -29,16 +29,6 @@ const HomePage = () => {
   }, {
     name: "Matt Brown",
     role: "Business Operations Lead"
-  }, {
-    name: "Dakota Schroeder",
-    role: "Gameplay Programmer"
-  }, {
-    name: "Wynn Brownfield",
-    role: "Technical Artist"
-  }, {
-    name: "Could Be You",
-    role: "Open Position",
-    isOpenPosition: true
   }];
   return <>
       <Helmet>
