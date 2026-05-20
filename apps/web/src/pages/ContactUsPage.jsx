@@ -42,7 +42,7 @@ const ContactUsPage = () => {
     }
   };
 
-  const roles = [
+  {/* const roles = [
     { title: "3D / Techicanl Artist",
       description: "3D modeling assets and making sure the material, textures, and exports are ported smoothly.",
     },
@@ -58,7 +58,7 @@ const ContactUsPage = () => {
     { title: "Audio Designer",
       description: "Future role focused on the vfx, sfx, and music.",
      }
-  ];
+  ]; */}
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -120,7 +120,7 @@ const ContactUsPage = () => {
               Contact <span className="text-primary">Us</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Want to reach out, collaborate, submit an idea, or connect with Project Neverphorm? Send us a message below.
+              Want to reach out, collaborate, submit an idea, or connect with Project Neverphorm? Send me a message below.
             </p>
           </motion.section>
 
@@ -133,10 +133,10 @@ const ContactUsPage = () => {
             variants={fadeInUp}
           >
             {/* Updated on 4/29/2026 */}
-            <h2 className="text-2xl md:text-3xl font-semibold mb-4">Join Our <span className="text-primary">Team</span></h2>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4">Join The <span className="text-primary">Team</span></h2>
             <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
               Project Neverphorm is not actively looking for collaborators right now. 
-              This page will be updated over time to list future collaboration opportunites, open roles, and ways to get involved with the studio.
+              Future opportunities may open once active projects, revenue, and studio needs become more established.
             </p>
           </motion.section>
 
