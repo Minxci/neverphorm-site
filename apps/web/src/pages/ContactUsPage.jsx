@@ -43,6 +43,12 @@ const ContactUsPage = () => {
   };
 
   const roles = [
+    { title: "3D / Techicanl Artist",
+      description: "3D modeling assets and making sure the material, textures, and exports are ported smoothly.",
+    },
+    { title: "Gameplay Programmer",
+      description: "Focused on gameplay mechanics, systems logic, player interaction, and implementing core gameplay features within the engine.",
+    },
     { title: "3D Artist & Animator",
       description: "Planned role for future art, modeling, and animation support.",
     },
@@ -151,7 +157,7 @@ const ContactUsPage = () => {
           */}
 
           {/* 4. FUTURE ROLES */}
-          <motion.section
+          {/* <motion.section
             initial="initial"
             whileInView="animate"
             viewport={{ once: true, margin: "-50px" }}
@@ -180,7 +186,7 @@ const ContactUsPage = () => {
                 </motion.div>
               ))}
             </motion.div>
-          </motion.section>
+          </motion.section> */}
 
           {/* 5. CONTACT FORM */}
           <motion.section
