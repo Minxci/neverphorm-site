@@ -35,9 +35,8 @@ const HomePage = () => {
     "Game Development": ["Unity", "C#", "Blender", "GitHub"],
     "Web & Systems": ["React", "Vercel", "Node.js", "GitHub"],
     "Planning & Workflow": ["Trello", "Notion", "Google Drive", "Discord"],
-    "Hardware": ["Windows PC", "MacBook Air M2", "Galaxy Tab S9 FE+", "ROG Ally X"],
   };
-  
+
   return <>
       <Helmet>
         <title>Project Neverphorm</title>
@@ -133,15 +132,16 @@ const HomePage = () => {
 
         {/* About Section */}
         <section className="py-24 bg-muted/30">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <motion.div initial="initial" whileInView="animate" viewport={{
             once: true,
             margin: "-100px"
           }} variants={fadeInUp}>
+            className="text-center lg:text-left"
               <h2 className="text-3xl md:text-4xl font-semibold mb-8 leading-snug">
                 About the Studio
               </h2>
-              <div className="space-y-6 text-base md:text-lg leading-relaxed text-muted-foreground max-w-prose mx-auto">
+              <div className="space-y-6 text-base md:text-lg leading-relaxed text-muted-foreground">
                 <p>
                   Project Neverphorm is a solo, indie game development run by myself (Cody McCullough) and is based in Aledo, IL. 
                   Being 32 now and have always wanted to create video games since 2010 back in high school. It’s taking me nearly 
@@ -150,7 +150,7 @@ const HomePage = () => {
                   the year (late 2026) as of right now. That is not promised as the amount of time I have already spent working on past projects 
                   (that never came to fruition) there’s been some hiccups along the way and am focusing on making sure that the first 
                   version of this game is well executed for what it is. 
-                </p><br /><br />
+                </p><br />
                 
                 <p>
                   I have a lot planned, so this first game is definitely not the first and only. This first project is not a 
