@@ -139,7 +139,7 @@ const HomePage = () => {
                   Being 32 now and have always wanted to create video games since 2010 back in high school. It’s taking me nearly 
                   15 years to decide to take the risk and start working on games and bringing my creative imagination and worlds 
                   alive through this journey. Currently in development for my first game that is to be released around the end of 
-                  the year as of right now. That is not promised as the amount of time I have already spent working on past projects 
+                  the year (late 2026) as of right now. That is not promised as the amount of time I have already spent working on past projects 
                   (that never came to fruition) there’s been some hiccups along the way and am focusing on making sure that the first 
                   version of this game is well executed for what it is. 
                 </p><br /><br />
