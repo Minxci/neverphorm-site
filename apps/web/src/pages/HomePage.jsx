@@ -183,7 +183,7 @@ const HomePage = () => {
               className="rounded-2xl border border-cyan-500/30 bg-black/30 p-6 shadow-lg shadow-cyan-500/10"
             >
               <h2 className="text-2xl md:text-3xl font-semibold mb-2">
-                Infrastructure
+                Studio Infrastructure
               </h2>
 
               <p className="text-muted-foreground mb-6">
