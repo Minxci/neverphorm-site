@@ -58,26 +58,28 @@ const HomePage = () => {
           </div>
 
           {/* Content */}
-          <div className="relative z-10 max-w-2xl mx-auto px-8 sm:px-12 lg:px-20 py-32 text-left">
+          <div className="relative z-10 w-full px-8 sm:px-12 lg:px-20 py-32 text-left">
             <motion.div initial={{
-            opacity: 0,
-            y: 30
-          }} animate={{
-            opacity: 1,
-            y: 0
-          }} transition={{
-            duration: 0.8
-          }}>
+                opacity: 0,
+                y: 30
+              }} className="max-w-2xl"
+                animate={{
+                opacity: 1,
+                y: 0
+              }} transition={{
+                duration: 0.8
+              }}>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6" style={{
               letterSpacing: '-0.02em'
             }}>
                 Project <span className="animated-gradient-text">Neverphorm</span>
               </h1>
               
-              <p className="text-base md:text-lg text-muted-foreground/80 mb-12 max-w-2xl mx-auto leading-relaxed">
-                An indie game studio focused on creating unique, catharsis, and chaotic gameplay experiences.
+              <p className="text-base md:text-lg text-muted-foreground/80 mb-12 max-w-2xl leading-relaxed">
+                Jusy a guy that wants to develop games! And then some!
               </p>
               
+              <div className="flex justify-start">
               <motion.a href="#game" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 active:scale-[0.98] shadow-lg shadow-primary/20" whileHover={{
               y: -2
             }} whileTap={{
@@ -86,6 +88,7 @@ const HomePage = () => {
                 View the Game
                 <ArrowRight className="w-5 h-5" />
               </motion.a>
+              </div>
             </motion.div>
           </div>
 
