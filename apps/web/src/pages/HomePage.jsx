@@ -20,16 +20,16 @@ const HomePage = () => {
       duration: 0.6
     }
   };
-  const teamMembers = [{
-    name: "Cody McCullough",
-    role: "Studio Head & Creative Lead"
-  }, {
-    name: "Katie Fogarty",
-    role: "Marketing Manager"
-  }, {
-    name: "Matt Brown",
-    role: "Business Operations Lead"
-  }];
+  // const teamMembers = [{
+  //  name: "Cody McCullough",
+  //  role: "Studio Head & Creative Lead"
+  //}, {
+  //  name: "Katie Fogarty",
+  // role: "Marketing Manager"
+  //}, {
+  //  name: "Matt Brown",
+  //  role: "Business Operations Lead"
+  //}];
   return <>
       <Helmet>
         <title>Project Neverphorm</title>
