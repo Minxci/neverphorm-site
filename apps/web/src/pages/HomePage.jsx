@@ -105,7 +105,34 @@ const HomePage = () => {
           </motion.div>
         </section>
 
-        
+        {/* Game Section - No 2 Weeks */}
+        <section id="game" className="py-24 bg-card/30">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div className="max-w-3xl mx-auto" initial="initial" whileInView="animate" viewport={{
+            once: true,
+            margin: "-100px"
+          }} variants={fadeInUp}>
+              {/* Text Content */}
+              <div>
+                <h2 className="text-3xl md:text-4xl font-semibold mb-6 leading-snug text-center">
+                  Working Title
+                </h2>
+                <div className="space-y-4 text-base md:text-lg leading-relaxed text-muted-foreground">
+                  <p>
+                    A catharsis, chaotic escape experience about walking away from the job… Your way. Navigate unpredictable environments, avoid getting caught, 
+                    and find your own path out.
+                    <br />
+                    Every run plays out differently. Especially per mode.
+                  </p> <br /><br /><br />
+                  <p>
+                    <strong>Anticipated release date:</strong> Late this year. <br />
+                    <strong>Platforms:</strong> Steam, PS5, Xbox Series X, Switch 2.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </section>
 
         {/* About Section */}
         <section className="py-24 bg-muted/30">
@@ -146,35 +173,45 @@ const HomePage = () => {
               </div>
             </motion.div>
 
-            {/* Game Section - No 2 Weeks */}
-        
-        <section id="game" className="py-24 bg-card/30">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div className="max-w-3xl mx-auto" initial="initial" whileInView="animate" viewport={{
-            once: true,
-            margin: "-100px"
-          }} variants={fadeInUp}>
-              {/* Text Content */}
-              <div>
-                <h2 className="text-3xl md:text-4xl font-semibold mb-6 leading-snug text-center">
-                  Working Title
-                </h2>
-                <div className="space-y-4 text-base md:text-lg leading-relaxed text-muted-foreground">
-                  <p>
-                    A catharsis, chaotic escape experience about walking away from the job… Your way. Navigate unpredictable environments, avoid getting caught, 
-                    and find your own path out.
-                    <br />
-                    Every run plays out differently. Especially per mode.
-                  </p> <br /><br /><br />
-                  <p>
-                    <strong>Anticipated release date:</strong> Late this year. <br />
-                    <strong>Platforms:</strong> Steam, PS5, Xbox Series X, Switch 2.
-                  </p>
-                </div>
+            {/* Studio Ecosystem Section */}
+
+            <motion.aside
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={fadeInUp}
+              className="rounded-2xl border border-cyan-500/30 bg-black/30 p-6 shadow-lg shadow-cyan-500/10"
+            >
+              <h2 className="text-2xl md:text-3xl font-semibold mb-2">
+                Studio Ecosystem
+              </h2>
+
+              <p className="text-muted-foreground mb-6">
+                Tools, software, and systems currently used across game development,
+                web development, planning, and studio workflow.
+              </p>
+
+              <div className="space-y-6">
+                {Object.entries(devStack).map(([category, tools]) => (
+                  <div key={category}>
+                    <h3 className="text-cyan-400 font-semibold mb-3">
+                      {category}
+                    </h3>
+
+                  <div className="flex flex-wrap gap-2">
+                    {tools.map((tool) => (
+                      <span
+                        key={tool}
+                        className="rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3 py-1 text-sm text-cyan-100"
+                      >
+                          {tool}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
-            </motion.div>
-          </div>
-        </section>
+            </motion.aside>
           </div>
         </section>
 
@@ -216,46 +253,6 @@ const HomePage = () => {
         <div id="contactus">
           <ContactSection />
         </div> 
-
-        {/* Studio Ecosystem Section */}
-
-        <motion.aside
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={fadeInUp}
-              className="rounded-2xl border border-cyan-500/30 bg-black/30 p-6 shadow-lg shadow-cyan-500/10"
-            >
-              <h2 className="text-2xl md:text-3xl font-semibold mb-2">
-                Studio Ecosystem
-              </h2>
-
-              <p className="text-muted-foreground mb-6">
-                Tools, software, and systems currently used across game development,
-                web development, planning, and studio workflow.
-              </p>
-
-              <div className="space-y-6">
-                {Object.entries(devStack).map(([category, tools]) => (
-                  <div key={category}>
-                    <h3 className="text-cyan-400 font-semibold mb-3">
-                      {category}
-                    </h3>
-
-                  <div className="flex flex-wrap gap-2">
-                    {tools.map((tool) => (
-                      <span
-                        key={tool}
-                        className="rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3 py-1 text-sm text-cyan-100"
-                      >
-                          {tool}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </motion.aside>
       </main>
 
       <Footer />
