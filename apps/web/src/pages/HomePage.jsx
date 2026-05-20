@@ -136,8 +136,9 @@ const HomePage = () => {
             <motion.div initial="initial" whileInView="animate" viewport={{
             once: true,
             margin: "-100px"
-          }} variants={fadeInUp}>
+          }} variants={fadeInUp}
             className="text-center lg:text-left"
+            >
               <h2 className="text-3xl md:text-4xl font-semibold mb-8 leading-snug">
                 About the Studio
               </h2>
