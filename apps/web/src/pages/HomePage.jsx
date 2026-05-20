@@ -142,6 +142,7 @@ const HomePage = () => {
                   the year as of right now. That is not promised as the amount of time I have already spent working on past projects 
                   (that never came to fruition) there’s been some hiccups along the way and am focusing on making sure that the first 
                   version of this game is well executed for what it is. 
+                </p><br /><br />
                 
                 <p>
                   I have a lot planned, so this first game is definitely not the first and only. This first project is not a 
@@ -153,10 +154,7 @@ const HomePage = () => {
                   and that’s more centered around the systems and tools infrastructure that’s focused on the creative field for 
                   other creative teams and studios (small to medium sizes). 
                 </p>
-                </p>
-                <p className="text-foreground font-medium">
-                  This is just the beginning.
-                </p>
+
               </div>
             </motion.div>
           </div>
