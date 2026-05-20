@@ -83,7 +83,7 @@ const HomePage = () => {
             }} whileTap={{
               scale: 0.98
             }}>
-                View Our Game
+                View the Game
                 <ArrowRight className="w-5 h-5" />
               </motion.a>
             </motion.div>
@@ -116,9 +116,10 @@ const HomePage = () => {
                 </h2>
                 <div className="space-y-4 text-base md:text-lg leading-relaxed text-muted-foreground">
                   <p>
-                    A chaotic escape experience about walking away from the job… Your way. Navigate unpredictable environments, avoid getting caught, and find your own path out.
+                    A catharsis, chaotic escape experience about walking away from the job… Your way. Navigate unpredictable environments, avoid getting caught, 
+                    and find your own path out.
                     <br />
-                    Every run plays out differently.
+                    Every run plays out differently. Especially per mode.
                   </p> <br /><br /><br />
                   <p>
                     <strong>Anticipated release date:</strong> Late this year. <br />
