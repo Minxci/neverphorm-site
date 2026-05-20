@@ -30,6 +30,14 @@ const HomePage = () => {
   //  name: "Matt Brown",
   //  role: "Business Operations Lead"
   //}];
+
+  const devStack = {
+    "Game Development": ["Unity", "C#", "Blender", "GitHub"],
+    "Web & Systems": ["React", "Vercel", "Node.js", "GitHub"],
+    "Planning & Workflow": ["Trello", "Notion", "Google Drive", "Discord"],
+    "Hardware": ["Windows PC", "MacBook Air M2", "Galaxy Tab S9 FE+", "ROG Ally X"],
+  };
+  
   return <>
       <Helmet>
         <title>Project Neverphorm</title>
@@ -157,6 +165,44 @@ const HomePage = () => {
 
               </div>
             </motion.div>
+
+            <motion.aside
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={fadeInUp}
+              className="rounded-2xl border border-cyan-500/30 bg-black/30 p-6 shadow-lg shadow-cyan-500/10"
+            >
+              <h2 className="text-2xl md:text-3xl font-semibold mb-2">
+                Development Stack
+              </h2>
+
+              <p className="text-muted-foreground mb-6">
+                Tools, software, and systems currently used across game development,
+                web development, planning, and studio workflow.
+              </p>
+
+              <div className="space-y-6">
+                {Object.entries(devStack).map(([category, tools]) => (
+                  <div key={category}>
+                    <h3 className="text-cyan-400 font-semibold mb-3">
+                      {category}
+                    </h3>
+
+                  <div className="flex flex-wrap gap-2">
+                    {tools.map((tool) => (
+                      <span
+                        key={tool}
+                        className="rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3 py-1 text-sm text-cyan-100"
+                      >
+                          {tool}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.aside>
           </div>
         </section>
 
