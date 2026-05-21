@@ -1,5 +1,13 @@
+import Header from "@/components/Header.jsx";
+import Footer from "@/components/Footer.jsx";
+
+
 function Philosophy() {
   return (
+
+    <>  
+    <Header />
+
     <div className="max-w-7xl mx-auto px-6 pt-36 pb-24 text-white">
       <h1 className="text-5xl font-bold text-center mb-8">
         Studio Philosophy
@@ -91,6 +99,9 @@ function Philosophy() {
         </p>
       </div>
     </div>
+
+    <Footer />
+    </>
   );
 }
 
