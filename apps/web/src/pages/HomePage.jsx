@@ -165,8 +165,8 @@ const HomePage = () => {
                   game development side of this studio, but there’s also a lot I have been enjoying building such as the backend 
                   systems and workflow pipeline. There may be even a side passion project that is brewing up in my head. 
                   This will be more centered around a systems and tools infrastructure, focused and meant for the creative field for 
-                  other creative teams and studios (small to medium sizes). This project idea and concept will not be publicly available 
-                  as a transactional product until the IET (Internal Ecosystem Tool) currently being developed for the studio reaches a more 
+                  other creative teams and studios (small to medium sizes). This project idea and concept is planned to become an SaaS Platform,
+                  and to the public as a transactional-tiered product once the IET (Internal Ecosystem Tool) currently being developed for the studio reaches a more 
                   complete and established state.
                 </p>
 
