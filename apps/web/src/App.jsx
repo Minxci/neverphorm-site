@@ -18,6 +18,7 @@ function App() {
         <Route path="/contact" element={<ContactUsPage />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsOfService />} />
+        <route path="/philosophy" element={<Philosophy />}></route>
       </Routes>
     </Router>
   );
