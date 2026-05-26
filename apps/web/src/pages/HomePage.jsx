@@ -176,13 +176,13 @@ const HomePage = () => {
               whileInView="animate"
               viewport={{ once: true, margin: "-100px" }}
               variants={fadeInUp}
-              className="rounded-2xl border border-cyan-500/30 bg-white border border-neutral-200/30 p-6 shadow-lg shadow-cyan-500/10"
+              className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm"
             >
               <h2 className="text-2xl md:text-3xl font-semibold mb-2">
                 Studio Infrastructure
               </h2>
 
-              <p className="text-muted-foreground mb-6">
+              <p className="text-neutral-600 mb-6">
                 Tools, software, and systems currently used across game development,
                 web development, planning, and studio workflow.
               </p>
@@ -198,7 +198,7 @@ const HomePage = () => {
                     {tools.map((tool) => (
                       <span
                         key={tool}
-                        className="rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3 py-1 text-sm text-cyan-100"
+                        className="rounded-full border border-neutral-200 bg-neutral-100 px-3 py-1 text-sm text-neutral-700"
                       >
                           {tool}
                         </span>
