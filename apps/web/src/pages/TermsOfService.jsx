@@ -9,7 +9,7 @@ const TermsOfService = () => {
       <main className="min-h-screen bg-background text-foreground px-4 py-24">
         <section className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Terms of <span className="text-cyan-400">Service</span>
+            Terms of <span className="text-black">Service</span>
           </h1>
 
           <p className="text-muted-foreground mb-8">

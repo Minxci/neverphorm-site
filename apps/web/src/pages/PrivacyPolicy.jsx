@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
       <main className="min-h-screen bg-background text-foreground px-4 py-24">
         <section className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Privacy <span className="text-cyan-400">Policy</span>
+            Privacy <span className="text-black">Policy</span>
           </h1>
 
           <p className="text-muted-foreground mb-8">

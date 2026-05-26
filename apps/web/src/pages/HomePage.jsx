@@ -190,7 +190,7 @@ const HomePage = () => {
               <div className="space-y-6">
                 {Object.entries(devStack).map(([category, tools]) => (
                   <div key={category}>
-                    <h3 className="text-cyan-400 font-semibold mb-3">
+                    <h3 className="text-black font-semibold mb-3">
                       {category}
                     </h3>
 

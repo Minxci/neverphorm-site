@@ -23,7 +23,7 @@ function Culture() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="bg-[#0a0a0a] border border-cyan-500/20 rounded-3xl p-7 hover:border-cyan-500/50 transition-all duration-300">
-          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">
+          <h2 className="text-2xl font-semibold text-black mb-4">
             Creative Freedom
           </h2>
 
@@ -37,7 +37,7 @@ function Culture() {
         </div>
 
         <div className="bg-[#0a0a0a] border border-cyan-500/20 rounded-3xl p-7 hover:border-cyan-500/50 transition-all duration-300">
-          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">
+          <h2 className="text-2xl font-semibold text-black mb-4">
             No-Crunch Development
           </h2>
 
@@ -50,7 +50,7 @@ function Culture() {
         </div>
 
         <div className="bg-[#0a0a0a] border border-cyan-500/20 rounded-3xl p-7 hover:border-cyan-500/50 transition-all duration-300">
-          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">
+          <h2 className="text-2xl font-semibold text-black mb-4">
             Player Respect
           </h2>
 
@@ -63,7 +63,7 @@ function Culture() {
         </div>
 
         <div className="bg-[#0a0a0a] border border-cyan-500/20 rounded-3xl p-7 hover:border-cyan-500/50 transition-all duration-300">
-          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">
+          <h2 className="text-2xl font-semibold text-black mb-4">
             Transparency & Community
           </h2>
 
@@ -76,7 +76,7 @@ function Culture() {
         </div>
 
         <div className="bg-[#0a0a0a] border border-cyan-500/20 rounded-3xl p-7 hover:border-cyan-500/50 transition-all duration-300 md:col-span-2">
-          <h2 className="text-2xl font-semibold text-cyan-400 mb-4">
+          <h2 className="text-2xl font-semibold text-black mb-4">
             Systems & Infrastructure
           </h2>
 
