@@ -23,6 +23,21 @@ export default function Games() {
                 A peaceful atmospheric exploration game set in a rainy nighttime world,
                 focused on walking, reflection, dark aesthetics, and uncovering notes
                 tied to a larger future universe.
+
+                <br />
+                <br />
+
+                <span className="font-semibold text-black">
+                    Anticipated Release:
+                </span>{" "}
+                    Late 2026
+
+                <br />
+
+                <span className="font-semibold text-black">
+                    Platforms:
+                </span>{" "}
+                    Steam, PlayStation 5, Xbox Series X|S
               </p>
             </div>
           </div>
