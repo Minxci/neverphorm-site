@@ -7,13 +7,9 @@ export default function Games() {
       <Header />
       <main className="min-h-screen bg-white text-neutral-950 px-6 py-24">
         <section className="max-w-6xl mx-auto">
-          <p className="text-sm uppercase tracking-[0.25em] text-neutral-500 mb-4">
+          <p className="text-sm uppercase tracking-[0.25em] text-black mb-4">
             Games
           </p>
-  
-          <h1 className="text-5xl md:text-7xl font-semibold tracking-tight mb-8">
-            Worlds we are building.
-          </h1>
   
           <div className="grid md:grid-cols-2 gap-6 mt-16">
             <div className="border border-neutral-200 rounded-2xl p-8 bg-neutral-50">
