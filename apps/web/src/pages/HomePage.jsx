@@ -113,7 +113,7 @@ const HomePage = () => {
               </p>
 
               <h3 className="text-3xl font-semibold text-black mb-4">
-                Foreshadowing Begins Development Sprint
+                Development Sprint Project: Foreshadowing
               </h3>
 
               <p className="text-neutral-600 text-lg leading-8">

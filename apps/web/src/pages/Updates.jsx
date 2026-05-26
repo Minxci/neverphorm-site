@@ -9,10 +9,9 @@ export default function Updates() {
         type: "Devlog",
         text: `
             Our debut project is being built as a focused atmospheric experience
-            centered around nighttime rain, exploration, and environmental storytelling.
+            centered around night time rain, exploration, and environmental storytelling.
 
-            Foreshadowing acts as both a standalone experience and the beginning
-            of a much larger connected universe planned for future Project Neverphorm titles.`,
+            Foreshadowing is a standalone atmospheric experience with subtle ties to future worlds and stories.`,
       },
     ];
   
