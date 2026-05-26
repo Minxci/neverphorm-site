@@ -40,7 +40,7 @@ const HomePage = () => {
   return <>
       <Helmet>
         <title>Project Neverphorm</title>
-        <meta name="description" content="An indie game studio focused on creating unique and chaotic gameplay experiences. Discover No 2 Weeks, our chaotic escape simulator." />
+        <meta name="description" content="Indie Game Studio with a lot of ambitions." />
       </Helmet>
 
       <Header />
