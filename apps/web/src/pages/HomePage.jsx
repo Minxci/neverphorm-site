@@ -76,7 +76,7 @@ const HomePage = () => {
               </h1>
               
               <p className="text-base md:text-lg text-muted-foreground/80 mb-12 max-w-2xl leading-relaxed">
-                Jusy a guy that wants to develop games! And then some!
+                
               </p>
               
               <div className="flex justify-start">
