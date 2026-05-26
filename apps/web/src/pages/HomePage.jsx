@@ -51,10 +51,10 @@ const HomePage = () => {
           {/* Background Image with Overlay */}
           <div className="absolute inset-0 z-0 overflow-hidden">
             <img src="/pictures/no2weeksconcept.png" alt="chase scene from No 2 Weeks" className="w-full h-full object-cover scale-105" style={{
-            filter: 'blur(3px) brightness(0.35) contrast(1.05)'
+            filter: 'blur(2px) brightness(0.85) contrast(1.05)'
           }} />
-            <div className="absolute inset-0 bg-black/65"></div>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background"></div>
+            <div className="absolute inset-0 bg-white/15"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white"></div>
           </div>
 
           {/* Content */}
@@ -69,15 +69,11 @@ const HomePage = () => {
               }} transition={{
                 duration: 0.8
               }}>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6" style={{
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-black" style={{
               letterSpacing: '-0.02em'
             }}>
                 Project Neverphorm
               </h1>
-              
-              <p className="text-base md:text-lg text-muted-foreground/80 mb-12 max-w-2xl leading-relaxed">
-                
-              </p>
               
               <div className="flex justify-start">
               <motion.a href="#game" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 active:scale-[0.98] shadow-lg shadow-primary/20" whileHover={{
