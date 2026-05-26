@@ -2,7 +2,7 @@ import Header from "@/components/Header.jsx";
 import Footer from "@/components/Footer.jsx";
 
 
-function Philosophy() {
+function Culture() {
   return (
 
     <>  
@@ -10,7 +10,7 @@ function Philosophy() {
 
     <div className="max-w-7xl mx-auto px-6 pt-36 pb-24 text-white">
       <h1 className="text-5xl font-bold text-center mb-8">
-        Studio Philosophy
+        Studio Culture
       </h1>
 
       <p className="max-w-4xl mx-auto text-center text-zinc-400 text-xl leading-9 mb-16">
@@ -105,4 +105,4 @@ function Philosophy() {
   );
 }
 
-export default Philosophy;
+export default Culture;
