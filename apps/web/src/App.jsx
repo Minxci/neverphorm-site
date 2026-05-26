@@ -7,7 +7,7 @@ import HomePage from './pages/HomePage.jsx';
 import ContactUsPage from './pages/ContactUsPage.jsx';
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
-import Philosophy from "./pages/Culture.jsx";
+import Culture from "./pages/Culture.jsx";
 
 function App() {
   return (
