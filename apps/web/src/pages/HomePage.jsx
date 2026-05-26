@@ -101,36 +101,61 @@ const HomePage = () => {
           </motion.div>
         </section>
 
-        {/* Game Section - No 2 Weeks */}
-        <section id="game" className="py-24 bg-card/30">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div className="max-w-3xl mx-auto" initial="initial" whileInView="animate" viewport={{
-            once: true,
-            margin: "-100px"
-          }} variants={fadeInUp}>
-              {/* Text Content */}
-              <div>
-                <h2 className="text-3xl md:text-4xl font-semibold mb-6 leading-snug text-center">
-                  Working Title
-                </h2>
-                <div className="space-y-4 text-base md:text-lg leading-relaxed text-muted-foreground">
-                  <p>
-                    A catharsis, chaotic escape experience about walking away from the job… Your way. Navigate unpredictable environments, avoid getting caught, 
-                    and find your own path out.
-                    <br />
-                    Every run plays out differently. Especially per mode.
-                  </p> <br /><br /><br />
-                  <p>
-                    <strong>Anticipated release date:</strong> Late this year. <br />
-                    <strong>Platforms:</strong> Steam, PS5, Xbox Series X, Switch 2.
-                  </p>
-                </div>
-              </div>
-            </motion.div>
+
+        {/* News + Updates section */}
+
+
+        <section className="max-w-6xl mx-auto px-6 py-24">
+          <div className="flex items-end justify-between mb-10">
+            <div>
+              <p className="text-sm tracking-[0.25em] uppercase text-neutral-500 mb-3">
+                Updates
+              </p>
+
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-black">
+                Studio news & devlogs.
+              </h2>
+            </div>
+          </div>
+
+          <div className="space-y-6">
+            <div className="bg-white border border-neutral-200 rounded-3xl p-8 shadow-sm">
+              <p className="text-sm text-neutral-500 mb-4">
+                May 25, 2026 · Devlog
+              </p>
+
+              <h3 className="text-3xl font-semibold text-black mb-4">
+                Foreshadowing Begins Development Sprint
+              </h3>
+
+              <p className="text-neutral-600 text-lg leading-8">
+                Our debut project is being built as a focused atmospheric
+                experience centered around nighttime rain, exploration,
+                and environmental storytelling.
+              </p>
+            </div>
+
+            <div className="bg-white border border-neutral-200 rounded-3xl p-8 shadow-sm">
+              <p className="text-sm text-neutral-500 mb-4">
+                May 25, 2026 · Studio Update
+              </p>
+
+              <h3 className="text-3xl font-semibold text-black mb-4">
+                Founding Tester Program
+              </h3>
+
+              <p className="text-neutral-600 text-lg leading-8">
+                Project Neverphorm is preparing a small volunteer tester
+                group for future projects after our debut release.
+              </p>
+            </div>
           </div>
         </section>
 
+
         {/* About Section */}
+
+
         <section className="py-24 bg-muted/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <motion.div initial="initial" whileInView="animate" viewport={{
@@ -169,7 +194,9 @@ const HomePage = () => {
               </div>
             </motion.div>
 
+
             {/* Studio Ecosystem Section */}
+
 
             <motion.aside
               initial="initial"
@@ -211,7 +238,10 @@ const HomePage = () => {
           </div>
         </section>
 
+
         {/* Team Section */}
+
+
         {/*<section className="py-24 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl font-semibold mb-12 leading-snug text-center">
@@ -244,7 +274,11 @@ const HomePage = () => {
           </div>
         </section>*/}
 
+
+
         {/* Contact Section */}
+
+        
 
         <div id="contactus">
           <ContactSection />
