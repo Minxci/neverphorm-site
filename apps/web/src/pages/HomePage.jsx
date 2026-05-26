@@ -176,7 +176,7 @@ const HomePage = () => {
               whileInView="animate"
               viewport={{ once: true, margin: "-100px" }}
               variants={fadeInUp}
-              className="rounded-2xl border border-cyan-500/30 bg-black/30 p-6 shadow-lg shadow-cyan-500/10"
+              className="rounded-2xl border border-cyan-500/30 bg-white border border-neutral-200/30 p-6 shadow-lg shadow-cyan-500/10"
             >
               <h2 className="text-2xl md:text-3xl font-semibold mb-2">
                 Studio Infrastructure
