@@ -8,6 +8,8 @@ import ContactUsPage from './pages/ContactUsPage.jsx';
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import Culture from "./pages/Culture.jsx";
+import Updates from "./pages/Updates.jsx";
+import Games from "./pages/Games.jsx";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/culture" element={<Culture />} />
+        <Route path="/games" element={<Games />} />
+        <Route path="/updates" element={<Updates />} />
       </Routes>
     </Router>
   );
