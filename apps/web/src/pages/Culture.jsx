@@ -61,15 +61,6 @@ function Culture() {
               </div>
             ))}
           </div>
-
-          <div className="max-w-4xl mx-auto text-center mt-20">
-            <p className="text-neutral-600 text-xl leading-9">
-              At its core, Project Neverphorm is being built from passion, risk,
-              creativity, and long-term commitment. Whether the projects succeed
-              quietly or loudly, the goal remains the same: create things that
-              genuinely matter to people.
-            </p>
-          </div>
         </section>
       </main>
 
