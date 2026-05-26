@@ -122,21 +122,7 @@ const HomePage = () => {
                 and environmental storytelling.
               </p>
             </div>
-
-            <div className="bg-white border border-neutral-200 rounded-3xl p-8 shadow-sm">
-              <p className="text-sm text-neutral-500 mb-4">
-                May 25, 2026 · Studio Update
-              </p>
-
-              <h3 className="text-3xl font-semibold text-black mb-4">
-                Founding Tester Program
-              </h3>
-
-              <p className="text-neutral-600 text-lg leading-8">
-                Project Neverphorm is preparing a small volunteer tester
-                group for future projects after our debut release.
-              </p>
-            </div>
+            
           </div>
         </section>
 
