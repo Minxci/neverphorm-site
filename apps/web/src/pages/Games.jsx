@@ -28,7 +28,7 @@ export default function Games() {
           <div className="overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-50 shadow-sm">
             <div className="relative h-[280px] sm:h-[380px] lg:h-[460px] overflow-hidden">
               <img
-                src="/pictures/foreshadowing-banner.png"
+                src="/pictures/foreshadowingscreenshot.png"
                 alt="Foreshadowing game preview"
                 className="w-full h-full object-cover"
               />
@@ -108,7 +108,7 @@ export default function Games() {
         </div>
       </section>
     </main>
-    
+
     <Footer />
     </>
   );
