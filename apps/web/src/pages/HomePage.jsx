@@ -69,7 +69,7 @@ const HomePage = () => {
               }} transition={{
                 duration: 0.8
               }}>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-black" style={{
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.6)]" style={{
               letterSpacing: '-0.02em'
             }}>
                 Project Neverphorm
