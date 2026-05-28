@@ -52,7 +52,7 @@ const Header = () => {
             to="/" 
             className="text-xl font-bold tracking-tight transition-colors duration-300 hover:text-primary z-50 relative"
           >
-            Project <span className="text-primary">Neverphorm</span>
+            <span className="text-primary">Project Neverphorm</span>
           </Link>
           
           {/* Desktop Navigation */}
@@ -65,8 +65,8 @@ const Header = () => {
                   className={cn(
                     "text-sm font-medium transition-all duration-300 relative py-1",
                     isActive(link.path)
-                      ? scrolled ? "text-primary" : "text-white"
-                      : scrolled ? "text-muted-foreground hover:text-foreground" : "text-white/80 hover:text-white"
+                      ? "text-primary"
+                      : "text-foreground hover:text-primary"
                   )}
                 >
                   {link.name}
