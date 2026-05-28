@@ -50,7 +50,7 @@ const HomePage = () => {
         <section className="relative min-h-screen flex items-center justify-start overflow-hidden">
           {/* Background Image with Overlay */}
           <div className="absolute inset-0 z-0 overflow-hidden">
-            <img src="/pictures/no2weeksconcept.png" alt="chase scene from No 2 Weeks" className="w-full h-full object-cover scale-105" style={{
+            <img src="/pictures/newherosection.png" alt="dev workflow" className="w-full h-full object-cover scale-105" style={{
             filter: 'blur(2px) brightness(0.85) contrast(1.05)'
           }} />
             {/* <div className="absolute inset-0 bg-white/15"></div>
