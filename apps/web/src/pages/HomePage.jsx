@@ -51,7 +51,7 @@ const HomePage = () => {
           {/* Background Image with Overlay */}
           <div className="absolute inset-0 z-0 overflow-hidden">
             <img src="/pictures/newherosection.png" alt="dev workflow" className="w-full h-full object-cover object-right" style={{
-            filter: 'blur(2px) brightness(0.85) contrast(1.05)'
+            filter: 'brightness(0.85) contrast(1.05)'
           }} />
             {/* <div className="absolute inset-0 bg-white/15"></div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white"></div> */}
