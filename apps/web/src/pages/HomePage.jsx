@@ -50,7 +50,7 @@ const HomePage = () => {
         <section className="relative h-[62vh] min-h-[520px] max-h-[720px] flex items-center justify-start overflow-hidden">
           {/* Background Image with Overlay */}
           <div className="absolute inset-0 z-0 overflow-hidden">
-            <img src="/pictures/sitepicturehero.png" alt="chase scene from No 2 Weeks" className="w-full h-full object-cover scale-105" style={{
+            <img src="/pictures/betterheropic.png" alt="chase scene from No 2 Weeks" className="w-full h-full object-cover scale-105" style={{
             filter: 'brightness(0.72) contrast(1.08)'
           }} />
             <div className="absolute inset-0 bg-white/15"></div>
