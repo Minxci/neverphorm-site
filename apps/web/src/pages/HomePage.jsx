@@ -47,7 +47,7 @@ const HomePage = () => {
 
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative min-h-screen flex items-center justify-start overflow-hidden">
+        <section className="relative h-[62vh] min-h-[520px] max-h-[720px] flex items-center justify-start overflow-hidden">
           {/* Background Image with Overlay */}
           <div className="absolute inset-0 z-0 overflow-hidden">
             <img src="/pictures/no2weeksconcept.png" alt="chase scene from No 2 Weeks" className="w-full h-full object-cover scale-105" style={{
