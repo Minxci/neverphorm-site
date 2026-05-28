@@ -39,14 +39,7 @@ const Header = () => {
   };
 
   return (
-    <header 
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 bg-white border-b border-neutral-200 py-3",
-        scrolled 
-          ? "bg-background/80 backdrop-blur-md border-border/50 py-3" 
-          : "bg-transparent border-transparent py-5"
-      )}
-    >
+    <header className="sticky top-0 z-50 bg-white border-b border-neutral-200 py-3">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -54,7 +47,7 @@ const Header = () => {
             to="/" 
             className="text-xl font-bold tracking-tight transition-colors duration-300 hover:text-primary z-50 relative"
           >
-            <span className="text-white">Project Neverphorm</span>
+            <span className="text-black">Project Neverphorm</span>
           </Link>
           
           {/* Desktop Navigation */}
