@@ -40,7 +40,7 @@ const HomePage = () => {
   return <>
       <Helmet>
         <title>Project Neverphorm</title>
-        <meta name="description" content="Indie Game Studio with a lot of ambitions." />
+        <meta name="description" content="Indie Game Studio with a lot of ambition." />
       </Helmet>
 
       <Header />
@@ -50,11 +50,11 @@ const HomePage = () => {
         <section className="relative h-[62vh] min-h-[520px] max-h-[720px] flex items-center justify-start overflow-hidden">
           {/* Background Image with Overlay */}
           <div className="absolute inset-0 z-0 overflow-hidden">
-            <img src="/pictures/betterheropic.png" alt="chase scene from No 2 Weeks" className="w-full h-full object-cover scale-105" style={{
+            <img src="/pictures/betterheropic.png" alt="development workflow" className="w-full h-full object-cover scale-105" style={{
             filter: 'brightness(0.72) contrast(1.08)'
           }} />
-            <div className="absolute inset-0 bg-white/15"></div>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/10 to-white/70"></div>
+            <div className="absolute inset-0 bg-white/5"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-white"></div>
           </div>
 
           {/* Content */}
