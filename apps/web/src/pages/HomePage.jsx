@@ -40,25 +40,25 @@ const HomePage = () => {
   return <>
       <Helmet>
         <title>Project Neverphorm</title>
-        <meta name="description" content="Indie Game Studio with a lot of ambition." />
+        <meta name="description" content="Indie Game Studio with a lot of ambitions." />
       </Helmet>
 
       <Header />
 
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative h-[62vh] min-h-[520px] max-h-[720px] flex items-center justify-start overflow-hidden">
+        <section className="relative min-h-screen flex items-center justify-start overflow-hidden">
           {/* Background Image with Overlay */}
           <div className="absolute inset-0 z-0 overflow-hidden">
-            <img src="/pictures/betterheropic.png" alt="development workflow" className="w-full h-full object-cover scale-105" style={{
-            filter: 'brightness(0.72) contrast(1.08)'
+            <img src="/pictures/no2weeksconcept.png" alt="chase scene from No 2 Weeks" className="w-full h-full object-cover scale-105" style={{
+            filter: 'blur(2px) brightness(0.85) contrast(1.05)'
           }} />
-            <div className="absolute inset-0 bg-white/5"></div>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-white"></div>
+            {/* <div className="absolute inset-0 bg-white/15"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white"></div> */}
           </div>
 
           {/* Content */}
-          <div className="relative z-10 w-full px-8 sm:px-12 lg:px-20 pt-28 pb-16 text-left">
+          <div className="relative z-10 w-full px-8 sm:px-12 lg:px-20 py-32 text-left">
             <motion.div initial={{
                 opacity: 0,
                 y: 30
@@ -69,14 +69,14 @@ const HomePage = () => {
               }} transition={{
                 duration: 0.8
               }}>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.6)]" style={{
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-black" style={{
               letterSpacing: '-0.02em'
             }}>
                 Project Neverphorm
               </h1>
               
               <div className="flex justify-start">
-              <motion.a href="/games" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 active:scale-[0.98] shadow-lg shadow-primary/20" whileHover={{
+              <motion.a href="#game" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 active:scale-[0.98] shadow-lg shadow-primary/20" whileHover={{
               y: -2
             }} whileTap={{
               scale: 0.98

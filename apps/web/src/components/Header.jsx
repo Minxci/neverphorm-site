@@ -41,8 +41,10 @@ const Header = () => {
   return (
     <header 
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50 py-3",
-        scrolled ? "text-foreground" : "text-white"
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b",
+        scrolled 
+          ? "bg-background/80 backdrop-blur-md border-border/50 py-3" 
+          : "bg-transparent border-transparent py-5"
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,7 +54,7 @@ const Header = () => {
             to="/" 
             className="text-xl font-bold tracking-tight transition-colors duration-300 hover:text-primary z-50 relative"
           >
-            <span className="text-primary">Project Neverphorm</span>
+            Project <span className="text-primary">Neverphorm</span>
           </Link>
           
           {/* Desktop Navigation */}
@@ -64,9 +66,9 @@ const Header = () => {
                   to={link.path} 
                   className={cn(
                     "text-sm font-medium transition-all duration-300 relative py-1",
-                    isActive(link.path)
-                      ? "text-primary"
-                      : "text-foreground hover:text-primary"
+                    isActive(link.path) 
+                      ? "text-primary" 
+                      : "text-muted-foreground hover:text-foreground"
                   )}
                 >
                   {link.name}
