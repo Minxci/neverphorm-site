@@ -16,10 +16,6 @@ export default function Games() {
               Games
             </p>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-black mb-4">
-              Current Development
-            </h1>
-
             <p className="max-w-2xl text-lg text-neutral-600 leading-relaxed">
               A focused look at what Project Neverphorm is actively building.
             </p>
@@ -59,16 +55,6 @@ export default function Games() {
                     strong sense of place. More details will be shared as the
                     project develops.
                   </p>
-
-                  <motion.a
-                    href="/games/foreshadowing"
-                    className="mt-8 inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300"
-                    whileHover={{ y: -2 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    Learn More
-                    <ArrowRight className="w-5 h-5" />
-                  </motion.a>
                 </div>
 
                 <div className="rounded-2xl bg-white border border-neutral-200 p-6">
