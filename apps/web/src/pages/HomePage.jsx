@@ -69,14 +69,14 @@ const HomePage = () => {
               }} transition={{
                 duration: 0.8
               }}>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-black" style={{
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-white" style={{
               letterSpacing: '-0.02em'
             }}>
                 Project Neverphorm
               </h1>
               
               <div className="flex justify-start">
-              <motion.a href="#game" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 active:scale-[0.98] shadow-lg shadow-primary/20" whileHover={{
+              <motion.a href="/games" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 active:scale-[0.98] shadow-lg shadow-primary/20" whileHover={{
               y: -2
             }} whileTap={{
               scale: 0.98

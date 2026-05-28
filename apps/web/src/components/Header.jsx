@@ -54,7 +54,7 @@ const Header = () => {
             to="/" 
             className="text-xl font-bold tracking-tight transition-colors duration-300 hover:text-primary z-50 relative"
           >
-            <span className="text-primary">Project Neverphorm</span>
+            <span className="text-white">Project Neverphorm</span>
           </Link>
           
           {/* Desktop Navigation */}
