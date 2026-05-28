@@ -60,27 +60,22 @@ export default function Games() {
                 <div className="rounded-2xl bg-white border border-neutral-200 p-6">
                   <div className="space-y-5">
                     <div>
-                      <p className="text-sm text-neutral-500 mb-1">Status</p>
+                      <p className="text-sm text-neutral-500 mb-1">Status:</p>
                       <p className="font-semibold text-black">In Development</p>
                     </div>
 
                     <div>
-                      <p className="text-sm text-neutral-500 mb-1">Project Type</p>
+                      <p className="text-sm text-neutral-500 mb-1">Project Type:</p>
                       <p className="font-semibold text-black">
                         Atmospheric Exploration
                       </p>
                     </div>
 
                     <div>
-                      <p className="text-sm text-neutral-500 mb-1">Developer</p>
+                      <p className="text-sm text-neutral-500 mb-1">Anticipated Launch Date:</p>
                       <p className="font-semibold text-black">
-                        Project Neverphorm
+                        Q4 2026
                       </p>
-                    </div>
-
-                    <div>
-                      <p className="text-sm text-neutral-500 mb-1">More Info</p>
-                      <p className="font-semibold text-black">Coming Soon</p>
                     </div>
                   </div>
                 </div>
@@ -88,9 +83,7 @@ export default function Games() {
             </div>
           </div>
 
-          <p className="mt-10 text-neutral-500 text-sm">
-            Additional projects will be revealed when they are ready to be shown.
-          </p>
+
         </div>
       </section>
     </main>
