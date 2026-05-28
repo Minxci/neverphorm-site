@@ -52,7 +52,7 @@ const Header = () => {
             to="/" 
             className="text-xl font-bold tracking-tight transition-colors duration-300 hover:text-primary z-50 relative"
           >
-            Project <span className="text-primary">Neverphorm</span>
+            Project <span className={scrolled ? "text-primary" : "text-white"}>Neverphorm</span>
           </Link>
           
           {/* Desktop Navigation */}
