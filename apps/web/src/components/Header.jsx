@@ -41,7 +41,7 @@ const Header = () => {
   return (
     <header 
       className={cn(
-        "text-xl font-bold tracking-tight transition-colors duration-300 hover:text-primary z-50 relative",
+        "fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50 py-3",
         scrolled ? "text-foreground" : "text-white"
       )}
     >
