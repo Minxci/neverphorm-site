@@ -54,11 +54,11 @@ const HomePage = () => {
             filter: 'blur(2px) brightness(0.85) contrast(1.05)'
           }} />
             <div className="absolute inset-0 bg-white/15"></div>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/10 to-white/70"></div>
           </div>
 
           {/* Content */}
-          <div className="relative z-10 w-full px-8 sm:px-12 lg:px-20 py-32 text-left">
+          <div className="relative z-10 w-full px-8 sm:px-12 lg:px-20 pt-28 pb-16 text-left">
             <motion.div initial={{
                 opacity: 0,
                 y: 30
