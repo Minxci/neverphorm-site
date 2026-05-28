@@ -1,45 +1,115 @@
 import Header from "@/components/Header.jsx";
 import Footer from "@/components/Footer.jsx";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 export default function Games() {
-    return (
+  return (
     <>
-      <Header />
-      <main className="min-h-screen bg-white text-neutral-950 px-6 py-24">
-        <section className="max-w-6xl mx-auto">
-          <p className="text-sm uppercase tracking-[0.25em] text-black mb-4">
-            Games
-          </p>
-  
-          <div className="grid md:grid-cols-2 gap-6 mt-16">
-            <div className="border border-neutral-200 rounded-2xl p-8 bg-neutral-50">
-              <p className="text-sm text-neutral-500 mb-3">Debut Project</p>
-              <h2 className="text-3xl font-semibold mb-4">Foreshadowing</h2>
-              <p className="text-neutral-700 leading-relaxed">
-                A peaceful atmospheric exploration game set in a rainy nighttime world,
-                focused on walking, reflection, dark aesthetics, and uncovering notes
-                tied to a larger future universe.
+    <Header />
 
-                <br />
-                <br />
+    <main className="min-h-screen bg-white pt-24">
+      <section className="px-6 sm:px-10 lg:px-20 pb-20">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-12">
+            <p className="text-sm font-semibold tracking-[0.25em] uppercase text-primary mb-4">
+              Games
+            </p>
 
-                <span className="font-semibold text-black">
-                    Anticipated Release:
-                </span>{" "}
-                    Late 2026
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-black mb-4">
+              Current Development
+            </h1>
 
-                <br />
+            <p className="max-w-2xl text-lg text-neutral-600 leading-relaxed">
+              A focused look at what Project Neverphorm is actively building.
+            </p>
+          </div>
 
-                <span className="font-semibold text-black">
-                    Platforms:
-                </span>{" "}
-                    Steam, PlayStation 5, Xbox Series X|S
-              </p>
+          <div className="overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-50 shadow-sm">
+            <div className="relative h-[280px] sm:h-[380px] lg:h-[460px] overflow-hidden">
+              <img
+                src="/pictures/foreshadowing-banner.png"
+                alt="Foreshadowing game preview"
+                className="w-full h-full object-cover"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+
+              <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-10">
+                <p className="text-sm font-semibold tracking-[0.25em] uppercase text-white/70 mb-3">
+                  In Development
+                </p>
+
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight drop-shadow-lg">
+                  Foreshadowing
+                </h2>
+              </div>
+            </div>
+
+            <div className="p-6 sm:p-10 lg:p-12">
+              <div className="grid lg:grid-cols-[1.4fr_0.8fr] gap-10">
+                <div>
+                  <h3 className="text-2xl font-bold text-black mb-4">
+                    An atmospheric experience currently in development.
+                  </h3>
+
+                  <p className="text-neutral-600 leading-relaxed text-lg">
+                    Foreshadowing is a smaller, focused project built around
+                    atmosphere, exploration, environmental storytelling, and a
+                    strong sense of place. More details will be shared as the
+                    project develops.
+                  </p>
+
+                  <motion.a
+                    href="/games/foreshadowing"
+                    className="mt-8 inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300"
+                    whileHover={{ y: -2 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    Learn More
+                    <ArrowRight className="w-5 h-5" />
+                  </motion.a>
+                </div>
+
+                <div className="rounded-2xl bg-white border border-neutral-200 p-6">
+                  <div className="space-y-5">
+                    <div>
+                      <p className="text-sm text-neutral-500 mb-1">Status</p>
+                      <p className="font-semibold text-black">In Development</p>
+                    </div>
+
+                    <div>
+                      <p className="text-sm text-neutral-500 mb-1">Project Type</p>
+                      <p className="font-semibold text-black">
+                        Atmospheric Exploration
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="text-sm text-neutral-500 mb-1">Developer</p>
+                      <p className="font-semibold text-black">
+                        Project Neverphorm
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="text-sm text-neutral-500 mb-1">More Info</p>
+                      <p className="font-semibold text-black">Coming Soon</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-      </main>
-      <Footer />
+
+          <p className="mt-10 text-neutral-500 text-sm">
+            Additional projects will be revealed when they are ready to be shown.
+          </p>
+        </div>
+      </section>
+    </main>
+    
+    <Footer />
     </>
-    );
-  }
+  );
+}
