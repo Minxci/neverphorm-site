@@ -114,26 +114,38 @@ const HomePage = () => {
               </h2>
               <div className="space-y-6 text-base md:text-lg leading-relaxed text-muted-foreground">
                 <p>
-                  Project Neverphorm is a solo, indie game development run by myself (Cody McCullough) and is based in Greater Quad Cities area of IA/IL. 
-                  Being 32 now and have always wanted to create video games since 2010 back in high school. It’s taking me nearly 
-                  15 years to decide to take the risk and start working on games and bringing my creative imagination and worlds 
-                  alive through this journey. Currently in development for my first game that is to be released around the end of 
-                  the year (late 2026) as of right now. That is not promised as the amount of time I have already spent working on past projects 
-                  (that never came to fruition) there’s been some hiccups along the way and am focusing on making sure that the first 
-                  version of this game is well executed for what it is. 
+                  Project Neverphorm is an independent game development studio founded and operated by Cody McCullough and based in 
+                  the Greater Illinois/Iowa Quad Cities region.
                 </p><br />
                 
                 <p>
-                  I have a lot planned, so this first game is definitely not the first and only. This first project is not a 
-                  “one and done game”, it’s most certainly not a “wait around and see what the outcome is”. There is a strong 
-                  core vision and long-term commitment surrounding this. No matter how or what the outcome of this first game 
-                  turns out to be, there’s already more planned in a back catalog. As much as I’ve been planning not only the 
-                  game development side of this studio, but there’s also a lot I have been enjoying building such as the backend 
-                  systems and workflow pipeline. There may be even a side passion project that is brewing up in my head. 
-                  This will be more centered around a systems and tools infrastructure, focused and meant for the creative field for 
-                  other creative teams and studios (small to medium sizes). This project idea and concept is planned to become an SaaS Platform,
-                  and to the public as a transactional-tiered product once the IET (Internal Ecosystem Tool) currently being developed for the studio reaches a more 
-                  complete and established state.
+                  For over 15 years, game development has been a personal goal and creative ambition. What began as a passion for 
+                  video games has evolved into a long-term commitment to building original interactive experiences, creating
+                  memorable worlds, and establishing a sustainable studio dedicated to creativity, craftsmanship, and continual 
+                  growth.
+                </p>
+                <p>
+                  The studio is currently developing its debut title, with a planned release window in late 2026. While development 
+                  timelines can change, as is often the case with independent projects, the primary focus remains on delivering a 
+                  polished and well-executed experience rather than rushing toward a release date. Every project is approached with 
+                  the belief that quality, learning, and long-term sustainability are more important than short-term results.
+                </p>
+                <p>
+                  Project Neverphorm is not being built around a single game release. The studio is founded on a long-term vision 
+                  that extends far beyond its first title. Multiple future projects are already in various stages of planning, with 
+                  a growing catalog of concepts, worlds, and experiences intended to shape the studio's future direction.
+                </p>
+                <p>
+                  Alongside game development, there is also a strong interest in building the tools, systems, and infrastructure 
+                  that support creative teams. This has led to the development of the Internal Ecosystem Tool (IET), an internal 
+                  platform designed to streamline workflows, organization, education, and collaboration. While currently being 
+                  developed for use within the studio, the long-term goal is to evolve IET into a software-as-a-service (SaaS) 
+                  platform that can help other small and mid-sized creative teams improve their own production pipelines and 
+                  operations.
+                </p>
+                <p>
+                  At its core, Project Neverphorm is focused on building meaningful games, practical tools, and a sustainable 
+                  creative future—one project at a time.
                 </p>
 
               </div>
