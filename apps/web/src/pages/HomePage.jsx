@@ -67,13 +67,9 @@ const HomePage = () => {
         <section className="max-w-6xl mx-auto px-6 py-24">
           <div className="flex items-end justify-between mb-10">
             <div>
-              <p className="text-sm tracking-[0.25em] uppercase text-neutral-500 mb-3">
+              <p className="text-sm tracking-[0.25em] uppercase text-black mb-3">
                 Updates
               </p>
-
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-black">
-                Studio news & devlogs.
-              </h2>
             </div>
           </div>
 
