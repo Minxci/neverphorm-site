@@ -4,7 +4,7 @@ import Footer from "@/components/Footer.jsx";
 export default function Updates() {
     const updates = [
       {
-        title: "Development Sprint Project: Foreshadowing",
+        title: "Development Project: Foreshadowing",
         date: "May 25, 2026",
         type: "Devlog",
         text: `
