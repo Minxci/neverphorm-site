@@ -21,7 +21,7 @@ export default function Updates() {
       <main className="min-h-screen bg-white text-neutral-950 px-6 py-24">
         <section className="max-w-5xl mx-auto">
           <p className="text-sm uppercase tracking-[0.25em] text-black mb-4">
-            Updates
+            Devlogs, News, Updates, and more
           </p>
   
           <div className="space-y-6">
