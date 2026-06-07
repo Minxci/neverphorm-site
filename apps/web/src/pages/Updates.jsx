@@ -38,6 +38,14 @@ export default function Updates() {
               </article>
             ))}
           </div>
+
+          <div className="rounded-3xl overflow-hidden h-56 md:h-80 mb-12 border border-neutral-200 shadow-sm">
+            <img
+              src="/pictures/culturebanner2.png"
+              alt="Project Neverphorm studio culture"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </section>
       </main>
       <Footer />

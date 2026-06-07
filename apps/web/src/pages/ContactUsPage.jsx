@@ -341,13 +341,7 @@ const ContactUsPage = () => {
 
         </div>
 
-        <div className="rounded-2xl overflow-hidden h-40 mb-8">
-          <img
-            src="/pictures/contact-banner.jpg"
-            alt="Contact Project Neverphorm"
-            className="w-full h-full object-cover"
-          />
-        </div>
+        
       </div>
     </div>
   </main>
