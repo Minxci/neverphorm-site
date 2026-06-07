@@ -4,6 +4,15 @@ import Footer from "@/components/Footer.jsx";
 export default function Updates() {
     const updates = [
       {
+        title: "Materials and textures",
+        date: "June 6, 2026",
+        type: "Devlog",
+        image: "/pictures/pn_rusticmetal.png",
+        text: `Creating material and textures has always been fun and relaxing. Currently working on the first batch of materials for some of the buildings
+        here as of recently. I used to struggle with this stuff but after getting the hang of it, it becomes easy. The exporting of the models from Blender over to
+        Unity is what's been a pain though. `
+      },
+      {
         title: "Development Project: Foreshadowing",
         date: "May 25, 2026",
         type: "Devlog",
@@ -13,15 +22,6 @@ export default function Updates() {
 
             Foreshadowing is a standalone atmospheric experience with subtle ties to future worlds and stories.`,
       },
-      {
-        title: "Materials and textures",
-        date: "June 6, 2026",
-        type: "Devlog",
-        image: "/pictures/pn_rusticmetal.png",
-        text: `Creating material and textures has always been fun and relaxing. Currently working on the first batch of materials for some of the buildings
-        here as of recently. I used to struggle with this stuff but after getting the hang of it, it becomes easy. The exporting of the models from Blender over to
-        Unity is what's been a pain though. `
-      }
     ];
   
     return (
