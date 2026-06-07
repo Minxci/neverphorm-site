@@ -39,13 +39,13 @@ export default function Updates() {
             ))}
           </div>
 
-          <div className="rounded-3xl overflow-hidden h-56 md:h-80 mb-12 border border-neutral-200 shadow-sm">
+          <section className="mt-16 h-[180px] overflow-hidden rounded-3xl">
             <img
-              src="/pictures/culturebanner2.png"
-              alt="Project Neverphorm studio culture"
+              src="/pictures/devloggif.gif"
+              alt=""
               className="w-full h-full object-cover"
             />
-          </div>
+          </section>
         </section>
       </main>
       <Footer />
