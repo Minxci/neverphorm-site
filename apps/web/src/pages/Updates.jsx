@@ -40,7 +40,7 @@ export default function Updates() {
           </div>
         </section>
 
-        <section className="mt-16 h-[180px] overflow-hidden rounded-3xl">
+        <section className="mt-16 h-[300px] overflow-hidden rounded-3xl">
           <img
             src="/pictures/devloggif.gif"
             alt=""
