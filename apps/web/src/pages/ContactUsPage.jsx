@@ -138,6 +138,17 @@ const ContactUsPage = () => {
               Project Neverphorm is not actively looking for collaborators right now. 
               Future opportunities may open once active projects, revenue, and studio needs become more established.
             </p>
+            <p>
+              That said, if you are genuinely passionate about game development, interested in learning, or believe you may be a strong fit for the 
+              studio's values and vision, we welcome you to reach out and introduce yourself.
+            </p>
+            <p>
+              While opportunities are not guaranteed, networking with us and meaningful connections often begin with a simple conversation. As the studio grows, 
+              future collaboration opportunities may become available.
+            </p>
+            <p>
+              For now, we are focused on developing its first titles and establishing the foundation for the journey ahead.
+            </p>
           </motion.section>
 
           {/* 3. ACTIVELY LOOKING FOR */}
