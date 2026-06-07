@@ -45,7 +45,7 @@ function Culture() {
 
           <div className="rounded-3xl overflow-hidden h-56 md:h-72 mb-12 border border-neutral-200 shadow-sm">
             <img
-              src="/pictures/culturebanner.png"
+              src="/pictures/culturebanner2.png"
               alt="Project Neverphorm studio culture"
               className="w-full h-full object-cover"
             />
