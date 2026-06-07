@@ -267,7 +267,6 @@ const ContactUsPage = () => {
                         <SelectContent>
                           <SelectItem value="General Inquiry">General Inquiry</SelectItem>
                           <SelectItem value="Join the Team / Collaboration">Join the Team / Collaboration</SelectItem>
-                          <SelectItem value="Submit a Game Idea">Submit a Game Idea</SelectItem>
                           <SelectItem value="Contract / Business Inquiry">Contract / Business Inquiry</SelectItem>
                           <SelectItem value="Feedback">Feedback</SelectItem>
                           <SelectItem value="Other">Other</SelectItem>
