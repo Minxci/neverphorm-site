@@ -107,7 +107,7 @@ const ContactUsPage = () => {
       <Header />
 
       <main className="min-h-screen pt-24 pb-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* 1. CONTACT INTRO */}
           <motion.section 
@@ -150,6 +150,7 @@ const ContactUsPage = () => {
               For now, we are focused on developing its first titles and establishing the foundation for the journey ahead.
             </p>
           </motion.section>
+        </div>
 
           {/* 3. ACTIVELY LOOKING FOR */}
            {/*
@@ -200,6 +201,7 @@ const ContactUsPage = () => {
           </motion.section> */}
 
           {/* 5. CONTACT FORM */}
+        <div>
           <motion.section
             id="contact-form"
             className="scroll-mt-24"
