@@ -13,6 +13,13 @@ export default function Updates() {
 
             Foreshadowing is a standalone atmospheric experience with subtle ties to future worlds and stories.`,
       },
+      {
+        title: "Creating Our First Rustic Material",
+        date: "June 6, 2026",
+        type: "Devlog",
+        image: "/pictures/pn_rusticmetal.png",
+        text: `...`
+      }
     ];
   
     return (
@@ -35,6 +42,12 @@ export default function Updates() {
                 </p>
                 <h2 className="text-2xl font-semibold mb-3">{post.title}</h2>
                 <p className="text-neutral-700 leading-relaxed">{post.text}</p>
+                {post.image && (
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full rounded-2xl mt-6"
+                  /> )}
               </article>
             ))}
           </div>
