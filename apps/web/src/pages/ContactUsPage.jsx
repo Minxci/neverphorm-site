@@ -106,12 +106,13 @@ const ContactUsPage = () => {
 
       <Header />
 
-      <main className="min-h-screen pt-24 pb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <main className="min-h-screen pt-28 pb-20">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-start">
           
           {/* 1. CONTACT INTRO */}
           <motion.section 
-            className="text-center pt-12"
+            className="text-left"
             initial="initial"
             animate="animate"
             variants={fadeInUp}
@@ -126,7 +127,7 @@ const ContactUsPage = () => {
 
           {/* 2. JOIN OUR TEAM */}
           <motion.section 
-            className="bg-card/30 border border-border/50 rounded-2xl p-8 md:p-10 text-center"
+            className="bg-card/30 border border-border/50 rounded-2xl p-8 md:p-10 text-left"
             initial="initial"
             whileInView="animate"
             viewport={{ once: true, margin: "-50px" }}
@@ -134,20 +135,20 @@ const ContactUsPage = () => {
           >
             {/* Updated on 4/29/2026 */}
             <h2 className="text-2xl md:text-3xl font-semibold mb-4">Join The <span className="text-primary">Team</span></h2>
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
+            <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl">
               Project Neverphorm is not actively looking for collaborators right now. 
               Future opportunities may open once active projects, revenue, and studio needs become more established.
             </p>
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
+            <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl">
               That said, if you are genuinely passionate about game development, interested in learning, or believe you may be a strong fit for the 
               studio's values and vision, we welcome you to reach out and introduce yourself.
             </p>
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
+            <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl">
               While opportunities are not guaranteed, networking with us and meaningful connections often begin with a simple conversation. As the studio grows, 
               future collaboration opportunities may become available.
             </p>
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
-              For now, we are focused on developing its first titles and establishing the foundation for the journey ahead.
+            <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl">
+              For now, we are focused on developing our first titles and establishing the foundation for the journey ahead.
             </p>
           </motion.section>
         </div>
@@ -336,7 +337,8 @@ const ContactUsPage = () => {
           </motion.section>
 
         </div>
-      </main>
+      </div>
+    </main>
 
       <Footer />
     </>
