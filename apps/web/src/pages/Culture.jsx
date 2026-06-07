@@ -43,7 +43,7 @@ function Culture() {
             experiences that feel personal, memorable, and genuinely cared for.
           </p>
 
-          <div className="rounded-3xl overflow-hidden h-56 md:h-72 mb-12 border border-neutral-200 shadow-sm">
+          <div className="rounded-3xl overflow-hidden h-56 md:h-80 mb-12 border border-neutral-200 shadow-sm">
             <img
               src="/pictures/culturebanner2.png"
               alt="Project Neverphorm studio culture"
