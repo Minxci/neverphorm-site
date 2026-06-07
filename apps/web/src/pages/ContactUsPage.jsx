@@ -111,7 +111,7 @@ const ContactUsPage = () => {
       <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-12 items-start">
           
           {/* 1. CONTACT INTRO */}
-        <div className="space-y-8">
+        <div className="space-y-4 text-muted-foreground text-base leading-relaxed">
           <motion.section 
             className="text-left"
             initial="initial"
@@ -136,19 +136,19 @@ const ContactUsPage = () => {
           >
             {/* Updated on 4/29/2026 */}
             <h2 className="text-2xl md:text-3xl font-semibold mb-4">Join The <span className="text-primary">Team</span></h2>
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl">
+            <p>
               Project Neverphorm is not actively looking for collaborators right now. 
               Future opportunities may open once active projects, revenue, and studio needs become more established.
             </p>
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl">
+            <p>
               That said, if you are genuinely passionate about game development, interested in learning, or believe you may be a strong fit for the 
               studio's values and vision, we welcome you to reach out and introduce yourself.
             </p>
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl">
+            <p>
               While opportunities are not guaranteed, networking with us and meaningful connections often begin with a simple conversation. As the studio grows, 
               future collaboration opportunities may become available.
             </p>
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl">
+            <p>
               For now, we are focused on developing our first titles and establishing the foundation for the journey ahead.
             </p>
           </motion.section>
@@ -204,8 +204,8 @@ const ContactUsPage = () => {
 
 
           {/* 5. CONTACT FORM */}
-          
-        <div>
+
+        <div className="lg:pt-8">
           <motion.section
             id="contact-form"
             className="scroll-mt-24"
