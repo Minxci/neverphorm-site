@@ -111,15 +111,15 @@ const ContactUsPage = () => {
       <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-12 items-start">
           
           {/* 1. CONTACT INTRO */}
-        <div className="space-y-4 text-muted-foreground text-base leading-relaxed">
+        <div className="space-y-4 text-primary text-base leading-relaxed">
           <motion.section 
             className="text-left"
             initial="initial"
             animate="animate"
             variants={fadeInUp}
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
-              Contact <span className="text-primary">Us</span>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-primary">
+              Contact Us
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Want to reach out, collaborate, submit an idea, or connect with Project Neverphorm? Send me a message below.
