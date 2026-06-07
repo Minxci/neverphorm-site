@@ -108,9 +108,10 @@ const ContactUsPage = () => {
 
   <main className="min-h-screen pt-28 pb-20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-12 items-start">
           
           {/* 1. CONTACT INTRO */}
+        <div className="space-y-8">
           <motion.section 
             className="text-left"
             initial="initial"
@@ -201,7 +202,9 @@ const ContactUsPage = () => {
             </motion.div>
           </motion.section> */}
 
+
           {/* 5. CONTACT FORM */}
+          
         <div>
           <motion.section
             id="contact-form"
@@ -338,7 +341,8 @@ const ContactUsPage = () => {
 
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
       <Footer />
     </>
