@@ -12,7 +12,7 @@ export default function Updates() {
     },
     {
       title: "Development Project: Foreshadowing",
-      date: "May 25, 2026",
+      date: "April 25, 2026",
       type: "Devlog",
       text: `Our debut project is being built as a focused atmospheric experience centered around night time rain, exploration, and environmental storytelling. Foreshadowing is a standalone atmospheric experience with subtle ties to future worlds and stories.`,
     },
