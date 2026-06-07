@@ -18,7 +18,7 @@ export default function Updates() {
     return (
     <>
       <Header />
-      <main className="min-h-screen bg-white text-neutral-950 px-6 py-24">
+      <main className="bg-white text-neutral-950 px-6 py-24">
         <section className="max-w-5xl mx-auto">
           <p className="text-sm uppercase tracking-[0.25em] text-black mb-4">
             Devlogs, News, Updates, and more
