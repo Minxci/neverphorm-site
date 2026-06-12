@@ -4,6 +4,13 @@ import Footer from "@/components/Footer.jsx";
 export default function Updates() {
   const updates = [
     {
+      title: "Small break + dabbling with mobile gaming",
+      date: "June 11, 2026",
+      type: "Devlog",
+      video: "https://www.youtube.com/watch?v=eNomek-hIjI",
+      text: "Took a break today from the main project and decided to toy around, dabble with the thought of mobile gaming. The music tracks are coming from the game and played at random upon a new start (if gameobject hits player). I’m not a huge fan of mobile gaming but today something just spark the idea to see what that’s about and mess around with it in Unity.",
+    },
+    {
       title: "Materials and Textures",
       date: "June 6, 2026",
       type: "Devlog",
@@ -69,6 +76,16 @@ export default function Updates() {
                         className="w-full rounded-2xl"
                       />
                     )}
+                    {post.video && (
+                      <div className="aspect-video w-full mt-4">
+                        <iframe
+                          className="w-full h-full rounded-2xl"
+                          src={`https://www.youtube.com/embed/${new URL(post.video).searchParams.get("v")}`}
+                          title={post.title}
+                          allowFullScreen
+                        />
+                      </div>
+                    )}
                   </article>
                 ))}
               </div>
@@ -90,6 +107,16 @@ export default function Updates() {
                         alt={post.title}
                         className="w-full h-32 object-cover rounded-xl mb-4"
                       />
+                    )}
+                    {post.video && (
+                      <div className="aspect-video w-full mt-4">
+                        <iframe
+                          className="w-full h-full rounded-2xl"
+                          src={`https://www.youtube.com/embed/${new URL(post.video).searchParams.get("v")}`}
+                          title={post.title}
+                          allowFullScreen
+                        />
+                      </div>
                     )}
 
                     <p className="text-xs text-neutral-500 mb-2">
