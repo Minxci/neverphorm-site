@@ -48,9 +48,23 @@ export default function Mobile() {
                 high-score chasing.
               </p>
 
-              <button className="mt-8 rounded-lg bg-black px-6 py-3 font-semibold text-white">
-                Coming to Google Play
-              </button>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a href="#">
+                  <img
+                    src="/pictures/google-play-badge.png"
+                    alt="Get it on Google Play"
+                    className="h-14 w-auto"
+                  />
+                </a>
+
+                <div className="opacity-50 cursor-not-allowed">
+                  <img
+                    src="/pictures/app-store-badge.svg"
+                    alt="Download on the App Store"
+                    className="h-14 w-auto"
+                  />
+                </div>
+              </div>
             </div>
 
             <aside className="rounded-2xl border border-gray-200 p-6">
