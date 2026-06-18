@@ -10,6 +10,7 @@ import TermsOfService from "./pages/TermsOfService";
 import Culture from "./pages/Culture.jsx";
 import Updates from "./pages/Updates.jsx";
 import Games from "./pages/Games.jsx";
+import Mobile from "./pages/Mobile.jsx";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/culture" element={<Culture />} />
         <Route path="/games" element={<Games />} />
         <Route path="/updates" element={<Updates />} />
+        <Route path="/mobile" element={<Mobile />} />
       </Routes>
     </Router>
   );
