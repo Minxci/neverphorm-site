@@ -53,7 +53,7 @@ export default function Mobile() {
                   <img
                     src="/pictures/google-play-badge.png"
                     alt="Get it on Google Play"
-                    className="h-14 w-auto"
+                    className="h-18 w-auto"
                   />
                 </a>
 
@@ -61,7 +61,7 @@ export default function Mobile() {
                   <img
                     src="/pictures/app-store-badge.png"
                     alt="Download on the App Store"
-                    className="h-14 w-auto"
+                    className="h-18 w-auto"
                   />
                 </div>
               </div>
