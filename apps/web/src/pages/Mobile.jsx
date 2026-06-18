@@ -49,11 +49,13 @@ export default function Mobile() {
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4 opacity-50 cursor-not-allowed">
+                <div className="opacity-50 cursor-not-allowed">
                   <img
                     src="/pictures/google-play-badge.png"
                     alt="Get it on Google Play"
                     className="h-14 w-auto"
                   />
+                </div>
 
                 <div className="opacity-50 cursor-not-allowed">
                   <img
@@ -69,7 +71,6 @@ export default function Mobile() {
               <Info label="Status" value="Preparing for Release" />
               <Info label="Project Type" value="Mobile Arcade" />
               <Info label="Platform" value="Android, iOS (later release)" />
-              <Info label="Price" value="$0.99" />
               <Info label="Engine" value="Unity" />
             </aside>
           </div>
