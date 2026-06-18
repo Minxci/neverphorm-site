@@ -48,14 +48,12 @@ export default function Mobile() {
                 high-score chasing.
               </p>
 
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a href="#">
+              <div className="mt-8 flex flex-wrap gap-4 opacity-50 cursor-not-allowed">
                   <img
                     src="/pictures/google-play-badge.png"
                     alt="Get it on Google Play"
                     className="h-14 w-auto"
                   />
-                </a>
 
                 <div className="opacity-50 cursor-not-allowed">
                   <img
