@@ -17,7 +17,7 @@ export default function Games() {
             </p>
 
             <p className="max-w-2xl text-lg text-neutral-600 leading-relaxed">
-              A focused look at what Project Neverphorm is actively building.
+              A focused look at what we're actively building.
             </p>
           </div>
 

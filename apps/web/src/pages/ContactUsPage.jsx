@@ -106,18 +106,20 @@ const ContactUsPage = () => {
 
       <Header />
 
-      <main className="min-h-screen pt-24 pb-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+  <main className="min-h-screen pt-28 pb-20">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-12 items-start">
           
           {/* 1. CONTACT INTRO */}
+        <div className="space-y-4 text-primary text-base leading-relaxed">
           <motion.section 
-            className="text-center pt-12"
+            className="text-left"
             initial="initial"
             animate="animate"
             variants={fadeInUp}
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
-              Contact <span className="text-primary">Us</span>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-primary">
+              Contact Us
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Want to reach out, collaborate, submit an idea, or connect with Project Neverphorm? Send me a message below.
@@ -126,19 +128,31 @@ const ContactUsPage = () => {
 
           {/* 2. JOIN OUR TEAM */}
           <motion.section 
-            className="bg-card/30 border border-border/50 rounded-2xl p-8 md:p-10 text-center"
+            className="bg-card/30 border border-border/50 rounded-2xl p-8 md:p-10 text-left"
             initial="initial"
             whileInView="animate"
             viewport={{ once: true, margin: "-50px" }}
             variants={fadeInUp}
           >
             {/* Updated on 4/29/2026 */}
-            <h2 className="text-2xl md:text-3xl font-semibold mb-4">Join The <span className="text-primary">Team</span></h2>
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-primary">Join The Team</h2>
+            <p>
               Project Neverphorm is not actively looking for collaborators right now. 
               Future opportunities may open once active projects, revenue, and studio needs become more established.
             </p>
+            <p>
+              That said, if you are genuinely passionate about game development, interested in learning, or believe you may be a strong fit for the 
+              studio's values and vision, we welcome you to reach out and introduce yourself.
+            </p>
+            <p>
+              While opportunities are not guaranteed, networking with us and meaningful connections often begin with a simple conversation. As the studio grows, 
+              future collaboration opportunities may become available.
+            </p>
+            <p>
+              For now, we are focused on developing our first titles and establishing the foundation for the journey ahead.
+            </p>
           </motion.section>
+        </div>
 
           {/* 3. ACTIVELY LOOKING FOR */}
            {/*
@@ -188,7 +202,10 @@ const ContactUsPage = () => {
             </motion.div>
           </motion.section> */}
 
+
           {/* 5. CONTACT FORM */}
+
+        <div className="lg:pt-8">
           <motion.section
             id="contact-form"
             className="scroll-mt-24"
@@ -267,7 +284,6 @@ const ContactUsPage = () => {
                         <SelectContent>
                           <SelectItem value="General Inquiry">General Inquiry</SelectItem>
                           <SelectItem value="Join the Team / Collaboration">Join the Team / Collaboration</SelectItem>
-                          <SelectItem value="Submit a Game Idea">Submit a Game Idea</SelectItem>
                           <SelectItem value="Contract / Business Inquiry">Contract / Business Inquiry</SelectItem>
                           <SelectItem value="Feedback">Feedback</SelectItem>
                           <SelectItem value="Other">Other</SelectItem>
@@ -324,7 +340,11 @@ const ContactUsPage = () => {
           </motion.section>
 
         </div>
-      </main>
+
+        
+      </div>
+    </div>
+  </main>
 
       <Footer />
     </>

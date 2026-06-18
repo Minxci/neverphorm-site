@@ -80,7 +80,7 @@ const HomePage = () => {
               </p>
 
               <h3 className="text-3xl font-semibold text-black mb-4">
-                Development Sprint Project: Foreshadowing
+                Development Project: Foreshadowing
               </h3>
 
               <p className="text-neutral-600 text-lg leading-8">
