@@ -56,7 +56,7 @@ export default function Mobile() {
             <aside className="rounded-2xl border border-gray-200 p-6">
               <Info label="Status" value="Preparing for Release" />
               <Info label="Project Type" value="Mobile Arcade" />
-              <Info label="Platform" value="Android" />
+              <Info label="Platform" value="Android, iOS (later release)" />
               <Info label="Price" value="$0.99" />
               <Info label="Engine" value="Unity" />
             </aside>
