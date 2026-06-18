@@ -59,7 +59,7 @@ export default function Mobile() {
 
                 <div className="opacity-50 cursor-not-allowed">
                   <img
-                    src="/pictures/app-store-badge.svg"
+                    src="/pictures/app-store-badge.png"
                     alt="Download on the App Store"
                     className="h-14 w-auto"
                   />
