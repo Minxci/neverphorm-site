@@ -25,7 +25,7 @@ export default function Mobile() {
                 <img
                   src="/pictures/ddodge_logo_site.png"
                   alt="DDodge logo"
-                  className="h-16 w-auto"
+                  className="h-12 w-auto"
                 />
                 <h1 className="text-5xl font-bold">DDodge</h1>
               </div>
