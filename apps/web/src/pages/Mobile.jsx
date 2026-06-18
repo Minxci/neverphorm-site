@@ -21,11 +21,11 @@ export default function Mobile() {
 
           <div className="grid gap-10 p-10 md:grid-cols-[1fr_320px]">
             <div>
-              <div className="flex items-center gap-4">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full border border-gray-200 bg-white shadow-sm">
                 <img
                   src="/pictures/ddodge_logo_site.png"
-                  alt="DDodge logo"
-                  className="h-12 w-auto"
+                  alt="DDodge Logo"
+                  className="h-10 w-10 object-contain"
                 />
                 <h1 className="text-5xl font-bold">DDodge</h1>
               </div>
