@@ -71,7 +71,6 @@ export default function Mobile() {
               <Info label="Status" value="Preparing for Release" />
               <Info label="Project Type" value="Mobile Arcade" />
               <Info label="Platform" value="Android, iOS (later release)" />
-              <Info label="Price" value="$0.99" />
               <Info label="Engine" value="Unity" />
             </aside>
           </div>
