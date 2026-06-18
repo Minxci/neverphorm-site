@@ -1,52 +1,73 @@
-// app/mobile/page.jsx
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-export default function MobilePage() {
+export default function Mobile() {
   return (
-    <main className="mobile-page">
-      <section className="mobile-header">
-        <p className="eyebrow">MOBILE</p>
-        <p>A focused look at our mobile releases.</p>
-      </section>
+    <>
+    <Header />
+    <main className="min-h-screen bg-white px-6 py-20">
+      <section className="mx-auto max-w-5xl">
+        <p className="mb-4 text-xs font-bold tracking-[0.35em]">MOBILE</p>
+        <p className="mb-10 text-gray-600">
+          A focused look at our mobile releases.
+        </p>
 
-      <section className="mobile-card">
-        <img
-          src="/pictures/ddodge-banner.png"
-          alt="DDodge banner"
-          className="mobile-banner"
-        />
+        <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+          <img
+            src="/pictures/ddodge-banner.png"
+            alt="DDodge banner"
+            className="h-[360px] w-full object-cover"
+          />
 
-        <div className="mobile-content">
-          <div>
-            <h1>DDodge</h1>
-            <p className="lead">
-              A fast-paced mobile arcade game built around timing, reflexes, and survival.
-            </p>
+          <div className="grid gap-10 p-10 md:grid-cols-[1fr_320px]">
+            <div>
+              <h1 className="text-5xl font-bold">DDodge</h1>
 
-            <hr />
+              <p className="mt-4 max-w-xl text-xl leading-relaxed text-gray-700">
+                A fast-paced mobile arcade game built around timing, reflexes,
+                and survival.
+              </p>
 
-            <p>
-              DDodge is a one-touch arcade experience where you hold to slow down
-              and release to return to normal speed. Avoid incoming shapes and
-              survive as long as you can.
-            </p>
+              <div className="my-8 h-px bg-gray-200" />
 
-            <p>
-              Simple to learn. Hard to master. Built for quick sessions and
-              high-score chasing.
-            </p>
+              <p className="max-w-xl leading-7 text-gray-600">
+                DDodge is a one-touch arcade experience where you hold to slow
+                down and release to return to normal speed. Avoid incoming
+                shapes and survive as long as you can.
+              </p>
 
-            <button className="google-play-btn">Coming to Google Play</button>
+              <p className="mt-4 max-w-xl leading-7 text-gray-600">
+                Simple to learn. Hard to master. Built for quick sessions and
+                high-score chasing.
+              </p>
+
+              <button className="mt-8 rounded-lg bg-black px-6 py-3 font-semibold text-white">
+                Coming to Google Play
+              </button>
+            </div>
+
+            <aside className="rounded-2xl border border-gray-200 p-6">
+              <Info label="Status" value="Preparing for Release" />
+              <Info label="Project Type" value="Mobile Arcade" />
+              <Info label="Platform" value="Android" />
+              <Info label="Price" value="$0.99" />
+              <Info label="Engine" value="Unity" />
+            </aside>
           </div>
-
-          <aside className="mobile-info">
-            <p>Status:<br /><strong>Preparing for Release</strong></p>
-            <p>Project Type:<br /><strong>Mobile Arcade</strong></p>
-            <p>Platform:<br /><strong>Android</strong></p>
-            <p>Price:<br /><strong>$0.99</strong></p>
-            <p>Engine:<br /><strong>Unity</strong></p>
-          </aside>
         </div>
       </section>
     </main>
+
+    <Footer />
+    </>
+  );
+}
+
+function Info({ label, value }) {
+  return (
+    <div className="border-b border-gray-200 py-4 last:border-b-0">
+      <p className="text-sm text-gray-500">{label}</p>
+      <p className="mt-1 font-bold">{value}</p>
+    </div>
   );
 }
