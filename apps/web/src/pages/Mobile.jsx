@@ -14,14 +14,21 @@ export default function Mobile() {
 
         <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
           <img
-            src="/pictures/ddodge-banner.png"
+            src="/pictures/DDodgeBackground.png"
             alt="DDodge banner"
             className="h-[360px] w-full object-cover"
           />
 
           <div className="grid gap-10 p-10 md:grid-cols-[1fr_320px]">
             <div>
-              <h1 className="text-5xl font-bold">DDodge</h1>
+              <div className="flex items-center gap-4">
+                <img
+                  src="/pictures/ddodge_logo_site.png"
+                  alt="DDodge logo"
+                  className="h-16 w-auto"
+                />
+                <h1 className="text-5xl font-bold">DDodge</h1>
+              </div>
 
               <p className="mt-4 max-w-xl text-xl leading-relaxed text-gray-700">
                 A fast-paced mobile arcade game built around timing, reflexes,
