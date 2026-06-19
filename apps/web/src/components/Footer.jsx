@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
           
           <p className="text-sm text-muted-foreground">
-            © 2026 Project Neverphorm. All rights reserved.
+            © 2026 Project Neverphorm LLC. All rights reserved.
           </p>
         </div>
       </div>
