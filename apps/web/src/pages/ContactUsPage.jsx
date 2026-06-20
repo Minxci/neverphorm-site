@@ -72,25 +72,52 @@ const ContactUsPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus({ type: 'submitting', message: '' });
-
+  
     try {
-      await pb.collection('contact_submissions').create({
-        name: formData.name,
-        email: formData.email,
-        subject: formData.subject,
-        message: formData.message
-      }, { $autoCancel: false });
-
-      setStatus({ type: 'success', message: 'Your message has been sent successfully. We will be in touch soon!' });
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      
-      // Reset success message after 5 seconds
+      const response = await fetch(
+        "https://formspree.io/f/xqewjjbn",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+          }),
+        }
+      );
+  
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+  
+      setStatus({
+        type: 'success',
+        message: 'Your message has been sent successfully. We will be in touch soon!',
+      });
+  
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
+  
       setTimeout(() => {
         setStatus({ type: 'idle', message: '' });
       }, 5000);
+  
     } catch (error) {
       console.error("Submission error:", error);
-      setStatus({ type: 'error', message: 'Failed to send message. Please try again later.' });
+  
+      setStatus({
+        type: 'error',
+        message: 'Failed to send message. Please try again later.',
+      });
     }
   };
 

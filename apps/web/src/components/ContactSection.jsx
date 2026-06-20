@@ -5,7 +5,6 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast.js';
-import pb from '@/lib/pocketbaseClient.js';
 
 import {
   Form,
