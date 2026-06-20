@@ -4,6 +4,13 @@ import Footer from "@/components/Footer.jsx";
 export default function Updates() {
   const updates = [
     {
+      title: "DDodge Update v0.1.9",
+      date: "June 19, 2026",
+      type: "Devlog",
+      video: "https://www.youtube.com/shorts/MCWrLiaKtIU",
+      text: "Did some major changes to this mobile game, it's been a fun small project. Only have maybe a couple or so more things to polish, add in the global leaderboard via Google Games Service and Apple Game Center, then will be ready to ship! Android build is ready for launch, then iOS, then soon after this it's back to the main game.",
+    },
+    {
       title: "Website Update Version 1.1.0",
       date: "June 19, 2026",
       type: "Devlog",
