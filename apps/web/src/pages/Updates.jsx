@@ -4,6 +4,12 @@ import Footer from "@/components/Footer.jsx";
 export default function Updates() {
   const updates = [
     {
+      title: "Website Update Version 1.1.0",
+      date: "June 19, 2026",
+      type: "Devlog",
+      text: "I updated the contact form... So that's working again.",
+    },
+    {
       title: "Small break + dabbling with mobile gaming",
       date: "June 11, 2026",
       type: "Devlog",
