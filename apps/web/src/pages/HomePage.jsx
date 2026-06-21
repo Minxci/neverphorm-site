@@ -7,9 +7,12 @@ import Footer from '@/components/Footer.jsx';
 import ContactSection from '@/components/ContactSection.jsx';
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card.jsx";
 import { Link } from "react-router-dom";
+import { getSortedUpdates } from "@/lib/updates.js";
 
 
 const HomePage = () => {
+  const latestUpdate = getSortedUpdates()[0];
+  
   const fadeInUp = {
     initial: {
       opacity: 0,
