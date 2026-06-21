@@ -73,14 +73,14 @@ export default function DDodgeOverview() {
               </Section>
 
               <Section title="Why It Was Made">
-                <p className="text-neutral-400">
+                <p className="text-black">
                   This was a break-from-main-game, experimental, "dip our toes into the water" type of project for the mobile experience. I (cody) have never been
                   a real big fan of mobile game development but I caved in and wanted to experiment with it a little bit.
                 </p>
               </Section>
 
               <Section title="Development & Creative Direction">
-                <p className="text-neutral-400">
+                <p className="text-black">
                   The game and creative direction was pretty plain and simple; wanted to make a continious gameplay loop, implementation of adding in a leaderboard would
                   keep players coming back (the competitve players), something fun and simple to hop on as a time waster whether its maybe a few rounds before bed, while you
                   wait on your oil change at the shop, waiting on the wife to get shopping while the husband sits in the car cause he refused to go into target, and many other
@@ -89,7 +89,7 @@ export default function DDodgeOverview() {
               </Section>
 
               <Section title="Behind the Scenes">
-                <p className="text-neutral-400">
+                <p className="text-black">
                   It was fun creating this game actually! I will admit, even though mobile gaming really is not something that I do or enjoy, I have come to find that developing one
                   was actually pretty fun. The process of this weeks production definitely helped, especially the leaderboard, since there are future titles with global
                   leaderboard planned.
@@ -97,7 +97,7 @@ export default function DDodgeOverview() {
               </Section>
 
               <Section title="The Death Messages">
-                <p className="text-nuetral-400">
+                <p className="text-black">
                     Even though these are just simple texts, adding in encouraging, funny, roast-worthy, jokingly death messages was fun and I plan on adding much more
                     through updates to the game. The messages do range between common, uncommon, rare, legendary, and ultra-rare. With that said, there is only 1 ultra-rare
                     death message and the thought process and innovative process behind this one is that it will contain a "Claim ID" number for the player to screenshot. The 
