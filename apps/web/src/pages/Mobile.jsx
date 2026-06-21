@@ -21,11 +21,11 @@ export default function Mobile() {
             <img
               src="/pictures/DDodgeBackground.png"
               alt="DDodge banner"
-              className="h-[220px] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              className="h-[260px] w-full object-cover transition-transform duration-300 group-hover:scale-105 sm:h-[320px]"
             />
           </div>
 
-          <div className="grid gap-6 p-6 md:grid-cols-[1fr_220px]">
+          <div className="grid gap-6 p-6 md:grid-cols-[1.4fr_220px]">
             <div>
               <div className="flex items-center gap-3">
                 <img
