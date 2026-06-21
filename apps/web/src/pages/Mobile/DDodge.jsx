@@ -81,8 +81,8 @@ export default function DDodgeOverview() {
 
               <Section title="Development & Creative Direction">
                 <p className="text-black">
-                  The game and creative direction was pretty plain and simple; wanted to make a continious gameplay loop, implementation of adding in a leaderboard would
-                  keep players coming back (the competitve players), something fun and simple to hop on as a time waster whether its maybe a few rounds before bed, while you
+                  The game and creative direction was pretty plain and simple; wanted to make a continuous gameplay loop, implementation of adding in a leaderboard would
+                  keep players coming back (the competitive players), something fun and simple to hop on as a time waster whether its maybe a few rounds before bed, while you
                   wait on your oil change at the shop, waiting on the wife to get done shopping while the husband sits in the car because he refused to go into target, and many other
                   time wasting scenarios. 
                 </p>
