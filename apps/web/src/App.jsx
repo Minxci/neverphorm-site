@@ -11,6 +11,7 @@ import Culture from "./pages/Culture.jsx";
 import Updates from "./pages/Updates.jsx";
 import Games from "./pages/Games.jsx";
 import Mobile from "./pages/Mobile.jsx";
+import DDodge from "@/pages/MobileOverviews/DDodge.jsx";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
         <Route path="/games" element={<Games />} />
         <Route path="/updates" element={<Updates />} />
         <Route path="/mobile" element={<Mobile />} />
+
+        <Route path="/mobileoverviews/ddodge" element={<DDodge />} />
       </Routes>
     </Router>
   );
