@@ -6,6 +6,9 @@ import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import ContactSection from '@/components/ContactSection.jsx';
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card.jsx";
+import { Link } from "react-router-dom";
+
+
 const HomePage = () => {
   const fadeInUp = {
     initial: {
