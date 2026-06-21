@@ -1,8 +1,32 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+const ddodgeScreenshots = [
+  "/pictures/ddodge-screenshot-1.jpeg",
+  "/pictures/ddodge-screenshot-2.jpeg",
+  "/pictures/ddodge-screenshot-4.jpeg",
+  "/pictures/ddodge-screenshot-5.jpeg",
+  "/pictures/ddodge-screenshot-7.jpeg",
+  "/pictures/ddodge-screenshot-8.jpeg",
+  "/pictures/ddodge-screenshot-9.jpeg",
+];
+
 export default function DDodgeOverview() {
+  const [lightboxIndex, setLightboxIndex] = useState(null);
+
+  const closeLightbox = () => setLightboxIndex(null);
+  const showPrev = () =>
+    setLightboxIndex((i) =>
+      i === 0 ? ddodgeScreenshots.length - 1 : i - 1
+    );
+  const showNext = () =>
+    setLightboxIndex((i) =>
+      i === ddodgeScreenshots.length - 1 ? 0 : i + 1
+    );
+
   return (
     <>
       <Header />
@@ -37,8 +61,8 @@ export default function DDodgeOverview() {
               <div>
                 <h1 className="text-4xl font-bold tracking-tight">DDodge</h1>
                 <p className="mt-1 text-neutral-600">
-                  A fun mobile arcade game built around timing,
-                  reflexes, and survival.
+                  A fun mobile arcade game built around timing, reflexes, and
+                  survival.
                 </p>
               </div>
             </div>
@@ -74,46 +98,72 @@ export default function DDodgeOverview() {
 
               <Section title="Why It Was Made">
                 <p className="text-black">
-                  This was a break-from-main-game, experimental, "dip our toes into the water" type of project for the mobile experience. I (cody) have never been
-                  a real big fan of mobile game development but I caved in and wanted to experiment with it a little bit.
+                  This was a break-from-main-game, experimental, "dip our
+                  toes into the water" type of project for the mobile
+                  experience. I (cody) have never been a real big fan of
+                  mobile game development but I caved in and wanted to
+                  experiment with it a little bit.
                 </p>
               </Section>
 
               <Section title="Development & Creative Direction">
                 <p className="text-black">
-                  The game and creative direction was pretty plain and simple; wanted to make a continuous gameplay loop, implementation of adding in a leaderboard would
-                  keep players coming back (the competitive players), something fun and simple to hop on as a time waster whether its maybe a few rounds before bed, while you
-                  wait on your oil change at the shop, waiting on the wife to get done shopping while the husband sits in the car because he refused to go into target, and many other
-                  time wasting scenarios. 
+                  The game and creative direction was pretty plain and
+                  simple; wanted to make a continuous gameplay loop,
+                  implementation of adding in a leaderboard would keep
+                  players coming back (the competitive players), something
+                  fun and simple to hop on as a time waster whether its
+                  maybe a few rounds before bed, while you wait on your oil
+                  change at the shop, waiting on the wife to get done
+                  shopping while the husband sits in the car because he
+                  refused to go into target, and many other time wasting
+                  scenarios.
                 </p>
               </Section>
 
               <Section title="Behind the Scenes">
                 <p className="text-black">
-                  It was fun creating this game actually! I will admit, even though mobile gaming really is not something that I do or enjoy, I have come to find that developing one
-                  was actually pretty fun. The process of this weeks production definitely helped, especially the leaderboard, since there are future titles with global
-                  leaderboard planned.
+                  It was fun creating this game actually! I will admit, even
+                  though mobile gaming really is not something that I do or
+                  enjoy, I have come to find that developing one was
+                  actually pretty fun. The process of this weeks production
+                  definitely helped, especially the leaderboard, since there
+                  are future titles with global leaderboard planned.
                 </p>
               </Section>
 
               <Section title="The Death Messages">
                 <p className="text-black">
-                    Even though these are just simple texts, adding in encouraging, funny, roast-worthy, jokingly death messages was fun and I plan on adding much more
-                    through updates to the game. The messages do range between common, uncommon, rare, legendary, and ultra-rare. With that said, there is only 1 ultra-rare
-                    death message and the thought process and innovative process behind this one is that it will contain a "Claim ID" number for the player to screenshot. The 
-                    purpose to this ultra-rare death message means once it is found, the player sends the screenshot of the message to us via email. Once we see internally that 
-                    the player did actually trigger this claim id code, you have the option to use an alias/username and your pick of username will forever be permanently inside 
-                    future title projects credit screen. 
+                  Even though these are just simple texts, adding in
+                  encouraging, funny, roast-worthy, jokingly death messages
+                  was fun and I plan on adding much more through updates to
+                  the game. The messages do range between common, uncommon,
+                  rare, legendary, and ultra-rare. With that said, there is
+                  only 1 ultra-rare death message and the thought process
+                  and innovative process behind this one is that it will
+                  contain a "Claim ID" number for the player to screenshot.
+                  The purpose to this ultra-rare death message means once it
+                  is found, the player sends the screenshot of the message
+                  to us via email. Once we see internally that the player
+                  did actually trigger this claim id code, you have the
+                  option to use an alias/username and your pick of username
+                  will forever be permanently inside future title projects
+                  credit screen.
                 </p>
               </Section>
             </div>
 
             {/* Sidebar */}
-            <aside className="h-fit rounded-2xl border border-neutral-200 p-6">
-              <Info label="Status" value="Preparing for Release" />
-              <Info label="Project Type" value="Mobile Arcade" />
-              <Info label="Platform" value="Android, iOS (later release)" />
-              <Info label="Engine" value="Unity" />
+            <aside className="space-y-6 md:sticky md:top-24 md:self-start">
+              <div className="rounded-2xl border border-neutral-200 p-6">
+                <Info label="Status" value="Preparing for Release" />
+                <Info label="Project Type" value="Mobile Arcade" />
+                <Info
+                  label="Platform"
+                  value="Android, iOS (later release)"
+                />
+                <Info label="Engine" value="Unity" />
+              </div>
 
               {/* Screenshot thumbnail grid */}
               <div>
@@ -194,16 +244,6 @@ export default function DDodgeOverview() {
     </>
   );
 }
-
-const ddodgeScreenshots = [
-  "/pictures/ddodge-screenshot-1.jpeg",
-  "/pictures/ddodge-screenshot-2.jpeg",
-  "/pictures/ddodge-screenshot-4.jpeg",
-  "/pictures/ddodge-screenshot-5.jpeg",
-  "/pictures/ddodge-screenshot-7.jpeg",
-  "/pictures/ddodge-screenshot-8.jpeg",
-  "/pictures/ddodge-screenshot-9.jpeg",
-];
 
 function Section({ title, children }) {
   return (
