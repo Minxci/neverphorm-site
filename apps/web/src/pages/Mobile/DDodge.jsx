@@ -115,21 +115,80 @@ export default function DDodgeOverview() {
               <Info label="Platform" value="Android, iOS (later release)" />
               <Info label="Engine" value="Unity" />
 
-              {/* Screenshot gallery */}
-              <div className="space-y-4">
-                {ddodgeScreenshots.map((src, i) => (
-                  <img
-                    key={src}
-                    src={src}
-                    alt={`DDodge gameplay screenshot ${i + 1}`}
-                    className="w-full rounded-xl border border-neutral-200 object-cover"
-                  />
-                ))}
+              {/* Screenshot thumbnail grid */}
+              <div>
+                <p className="mb-3 text-sm font-semibold text-neutral-500">
+                  Screenshots
+                </p>
+                <div className="grid grid-cols-3 gap-2 md:grid-cols-2">
+                  {ddodgeScreenshots.map((src, i) => (
+                    <button
+                      key={src}
+                      onClick={() => setLightboxIndex(i)}
+                      className="group aspect-[9/16] overflow-hidden rounded-lg border border-neutral-200 transition-colors hover:border-neutral-400"
+                    >
+                      <img
+                        src={src}
+                        alt={`DDodge gameplay screenshot ${i + 1}`}
+                        className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
+                      />
+                    </button>
+                  ))}
+                </div>
               </div>
             </aside>
           </div>
         </div>
       </main>
+
+      {/* Lightbox */}
+      {lightboxIndex !== null && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 px-4"
+          onClick={closeLightbox}
+        >
+          <button
+            onClick={closeLightbox}
+            className="absolute right-6 top-6 text-white/70 transition-colors hover:text-white"
+            aria-label="Close"
+          >
+            <X className="h-8 w-8" />
+          </button>
+
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              showPrev();
+            }}
+            className="absolute left-4 text-white/70 transition-colors hover:text-white sm:left-8"
+            aria-label="Previous screenshot"
+          >
+            <ChevronLeft className="h-10 w-10" />
+          </button>
+
+          <img
+            src={ddodgeScreenshots[lightboxIndex]}
+            alt={`DDodge gameplay screenshot ${lightboxIndex + 1}`}
+            onClick={(e) => e.stopPropagation()}
+            className="max-h-[85vh] max-w-full rounded-xl object-contain"
+          />
+
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              showNext();
+            }}
+            className="absolute right-4 text-white/70 transition-colors hover:text-white sm:right-8"
+            aria-label="Next screenshot"
+          >
+            <ChevronRight className="h-10 w-10" />
+          </button>
+
+          <p className="absolute bottom-6 text-sm text-white/50">
+            {lightboxIndex + 1} / {ddodgeScreenshots.length}
+          </p>
+        </div>
+      )}
 
       <Footer />
     </>
