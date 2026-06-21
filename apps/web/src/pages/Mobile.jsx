@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -14,7 +14,7 @@ export default function Mobile() {
         </p>
 
         <Link
-          href="/mobile/ddodge"
+          to="/mobile/ddodge"
           className="group block overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-300"
         >
           <div className="overflow-hidden">
