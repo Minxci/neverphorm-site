@@ -6,6 +6,7 @@ export default function DDodgeOverview() {
   return (
     <>
       <Header />
+
       <main className="min-h-screen bg-white px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-5xl">
           {/* Back link */}
@@ -113,11 +114,11 @@ export default function DDodgeOverview() {
               <Info label="Project Type" value="Mobile Arcade" />
               <Info label="Platform" value="Android, iOS (later release)" />
               <Info label="Engine" value="Unity" />
-              <Info label="Price" value="$0.99" />
             </aside>
           </div>
         </div>
       </main>
+
       <Footer />
     </>
   );
