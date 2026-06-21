@@ -62,8 +62,6 @@ const HomePage = () => {
 
 
         {/* News + Updates section */}
-
-
         <section className="max-w-6xl mx-auto px-6 py-24">
           <div className="flex items-end justify-between mb-10">
             <div>
@@ -74,22 +72,22 @@ const HomePage = () => {
           </div>
 
           <div className="space-y-6">
-            <div className="bg-white border border-neutral-200 rounded-3xl p-8 shadow-sm">
+            <Link
+              to="/updates"
+              className="block bg-white border border-neutral-200 rounded-3xl p-8 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-neutral-300"
+            >
               <p className="text-sm text-neutral-500 mb-4">
-                May 25, 2026 · Devlog
+                {latestUpdate.date} · {latestUpdate.type}
               </p>
 
               <h3 className="text-3xl font-semibold text-black mb-4">
-                Development Project: Foreshadowing
+                {latestUpdate.title}
               </h3>
 
               <p className="text-neutral-600 text-lg leading-8">
-                Our debut project is being built as a focused atmospheric
-                experience centered around nighttime rain, exploration,
-                and environmental storytelling.
+                {latestUpdate.text}
               </p>
-            </div>
-            
+            </Link>
           </div>
         </section>
 
