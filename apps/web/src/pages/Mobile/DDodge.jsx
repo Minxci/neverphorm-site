@@ -114,6 +114,18 @@ export default function DDodgeOverview() {
               <Info label="Project Type" value="Mobile Arcade" />
               <Info label="Platform" value="Android, iOS (later release)" />
               <Info label="Engine" value="Unity" />
+
+              {/* Screenshot gallery */}
+              <div className="space-y-4">
+                {ddodgeScreenshots.map((src, i) => (
+                  <img
+                    key={src}
+                    src={src}
+                    alt={`DDodge gameplay screenshot ${i + 1}`}
+                    className="w-full rounded-xl border border-neutral-200 object-cover"
+                  />
+                ))}
+              </div>
             </aside>
           </div>
         </div>
@@ -123,6 +135,16 @@ export default function DDodgeOverview() {
     </>
   );
 }
+
+const ddodgeScreenshots = [
+  "/pictures/ddodge-screenshot-1.jpeg",
+  "/pictures/ddodge-screenshot-2.jpeg",
+  "/pictures/ddodge-screenshot-4.jpeg",
+  "/pictures/ddodge-screenshot-5.jpeg",
+  "/pictures/ddodge-screenshot-7.jpeg",
+  "/pictures/ddodge-screenshot-8.jpeg",
+  "/pictures/ddodge-screenshot-9.jpeg",
+];
 
 function Section({ title, children }) {
   return (
