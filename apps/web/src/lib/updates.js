@@ -1,5 +1,11 @@
 export const updates = [
     {
+        title: "DDodge Game Card updated",
+        date: "June 21, 2026",
+        type: "Devlog",
+        text: "Updated the games card to make it clickable and provided development and game information.",
+    },
+    {
       title: "DDodge Update v0.1.9",
       date: "June 19, 2026",
       type: "Devlog",
