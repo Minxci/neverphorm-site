@@ -4,7 +4,7 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const ddodgeScreenshots = [
+const vecpulseScreenshots = [
   "/pictures/ddodge-screenshot-1.jpeg",
   "/pictures/ddodge-screenshot-2.jpeg",
   "/pictures/ddodge-screenshot-4.jpeg",
@@ -14,17 +14,17 @@ const ddodgeScreenshots = [
   "/pictures/ddodge-screenshot-9.jpeg",
 ];
 
-export default function DDodgeOverview() {
+export default function VecPulseOverview() {
   const [lightboxIndex, setLightboxIndex] = useState(null);
 
   const closeLightbox = () => setLightboxIndex(null);
   const showPrev = () =>
     setLightboxIndex((i) =>
-      i === 0 ? ddodgeScreenshots.length - 1 : i - 1
+      i === 0 ? VecPulseScreenshots.length - 1 : i - 1
     );
   const showNext = () =>
     setLightboxIndex((i) =>
-      i === ddodgeScreenshots.length - 1 ? 0 : i + 1
+      i === VecPulseScreenshots.length - 1 ? 0 : i + 1
     );
 
   return (
@@ -55,7 +55,7 @@ export default function DDodgeOverview() {
             <div className="flex items-center gap-4">
               <img
                 src="/pictures/vecpulse-logo.png"
-                alt="DDodge logo"
+                alt="VecPulse logo"
                 className="h-14 w-14 object-contain"
               />
               <div>
@@ -235,7 +235,7 @@ export default function DDodgeOverview() {
           </button>
 
           <p className="absolute bottom-6 text-sm text-white/50">
-            {lightboxIndex + 1} / {ddodgeScreenshots.length}
+            {lightboxIndex + 1} / {vecpulseScreenshots.length}
           </p>
         </div>
       )}
