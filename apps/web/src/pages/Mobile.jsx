@@ -27,7 +27,7 @@ export default function Mobile() {
                 <div className="overflow-hidden">
                   <img
                     src="/pictures/vecpulse-background.png"
-                    alt="DDodge banner"
+                    alt="VecPulse banner"
                     className="h-[260px] w-full object-cover transition-transform duration-300 group-hover:scale-105 sm:h-[320px]"
                   />
                 </div>
@@ -37,7 +37,7 @@ export default function Mobile() {
                     <div className="flex items-center gap-3">
                       <img
                         src="/pictures/vecpulse-logo.png"
-                        alt="DDodge logo"
+                        alt="VecPulse logo"
                         className="h-9 w-9 object-contain"
                       />
                       <h1 className="text-3xl font-bold group-hover:underline">
