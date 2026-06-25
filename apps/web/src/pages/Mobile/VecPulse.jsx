@@ -217,8 +217,8 @@ export default function VecPulseOverview() {
           </button>
 
           <img
-            src={ddodgeScreenshots[lightboxIndex]}
-            alt={`DDodge gameplay screenshot ${lightboxIndex + 1}`}
+            src={VecPulseScreenshots[lightboxIndex]}
+            alt={`VecPulse gameplay screenshot ${lightboxIndex + 1}`}
             onClick={(e) => e.stopPropagation()}
             className="max-h-[85vh] max-w-full rounded-xl object-contain"
           />
