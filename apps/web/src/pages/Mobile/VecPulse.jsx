@@ -21,11 +21,11 @@ export default function VecPulseOverview() {
   const closeLightbox = () => setLightboxIndex(null);
   const showPrev = () =>
     setLightboxIndex((i) =>
-      i === 0 ? VecPulseScreenshots.length - 1 : i - 1
+      i === 0 ? vecpulseScreenshots.length - 1 : i - 1
     );
   const showNext = () =>
     setLightboxIndex((i) =>
-      i === VecPulseScreenshots.length - 1 ? 0 : i + 1
+      i === vecpulseScreenshots.length - 1 ? 0 : i + 1
     );
 
   return (
@@ -34,7 +34,6 @@ export default function VecPulseOverview() {
 
       <main className="min-h-screen bg-white px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-5xl">
-          {/* Back link */}
           <Link
             to="/mobile"
             className="mb-8 inline-flex items-center gap-1 text-sm font-medium text-neutral-600 transition-colors hover:text-black"
@@ -42,7 +41,6 @@ export default function VecPulseOverview() {
             ← Back to Mobile
           </Link>
 
-          {/* Hero banner */}
           <div className="overflow-hidden rounded-2xl border border-neutral-200">
             <img
               src="/pictures/vecpulse-background.png"
@@ -51,7 +49,6 @@ export default function VecPulseOverview() {
             />
           </div>
 
-          {/* Title row */}
           <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
             <div className="flex items-center gap-4">
               <img
@@ -62,8 +59,7 @@ export default function VecPulseOverview() {
               <div>
                 <h1 className="text-4xl font-bold tracking-tight">VecPulse</h1>
                 <p className="mt-1 text-neutral-600">
-                  A fun mobile arcade game built around timing, reflexes, and
-                  survival.
+                  A fun mobile arcade game built around timing, reflexes, and survival.
                 </p>
               </div>
             </div>
@@ -83,7 +79,6 @@ export default function VecPulseOverview() {
           </div>
 
           <div className="mt-12 grid gap-10 md:grid-cols-[1fr_280px]">
-            {/* Main content column */}
             <div className="space-y-12">
               <Section title="Overview">
                 <p>
@@ -91,10 +86,7 @@ export default function VecPulseOverview() {
                   slow down and release to return to normal speed. Avoid
                   incoming shapes and survive as long as you can.
                 </p>
-                <p>
-                  Simple to learn. Hard to master. Built for quick sessions
-                  and high-score chasing.
-                </p>
+                <p>Simple to learn. Hard to master. Built for quick sessions and high-score chasing.</p>
               </Section>
 
               <Section title="Why It Was Made">
@@ -154,25 +146,18 @@ export default function VecPulseOverview() {
               </Section>
             </div>
 
-            {/* Sidebar */}
             <aside className="space-y-6 md:sticky md:top-24 md:self-start">
               <div className="rounded-2xl border border-neutral-200 p-6">
                 <Info label="Status" value="Preparing for Release" />
                 <Info label="Project Type" value="Mobile Arcade" />
-                <Info
-                  label="Platform"
-                  value="Android, iOS (later release)"
-                />
+                <Info label="Platform" value="Android, iOS (later release)" />
                 <Info label="Engine" value="Unity" />
               </div>
 
-              {/* Screenshot thumbnail grid */}
               <div>
-                <p className="mb-3 text-sm font-semibold text-neutral-500">
-                  Screenshots
-                </p>
+                <p className="mb-3 text-sm font-semibold text-neutral-500">Screenshots</p>
                 <div className="grid grid-cols-3 gap-2 md:grid-cols-2">
-                  {ddodgeScreenshots.map((src, i) => (
+                  {vecpulseScreenshots.map((src, i) => (
                     <button
                       key={src}
                       onClick={() => setLightboxIndex(i)}
@@ -180,7 +165,7 @@ export default function VecPulseOverview() {
                     >
                       <img
                         src={src}
-                        alt={`DDodge gameplay screenshot ${i + 1}`}
+                        alt={`VecPulse gameplay screenshot ${i + 1}`}
                         className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
                       />
                     </button>
@@ -192,7 +177,6 @@ export default function VecPulseOverview() {
         </div>
       </main>
 
-      {/* Lightbox */}
       {lightboxIndex !== null && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 px-4"
@@ -207,10 +191,7 @@ export default function VecPulseOverview() {
           </button>
 
           <button
-            onClick={(e) => {
-              e.stopPropagation();
-              showPrev();
-            }}
+            onClick={(e) => { e.stopPropagation(); showPrev(); }}
             className="absolute left-4 text-white/70 transition-colors hover:text-white sm:left-8"
             aria-label="Previous screenshot"
           >
@@ -218,17 +199,14 @@ export default function VecPulseOverview() {
           </button>
 
           <img
-            src={VecPulseScreenshots[lightboxIndex]}
+            src={vecpulseScreenshots[lightboxIndex]}
             alt={`VecPulse gameplay screenshot ${lightboxIndex + 1}`}
             onClick={(e) => e.stopPropagation()}
             className="max-h-[85vh] max-w-full rounded-xl object-contain"
           />
 
           <button
-            onClick={(e) => {
-              e.stopPropagation();
-              showNext();
-            }}
+            onClick={(e) => { e.stopPropagation(); showNext(); }}
             className="absolute right-4 text-white/70 transition-colors hover:text-white sm:right-8"
             aria-label="Next screenshot"
           >
@@ -250,9 +228,7 @@ function Section({ title, children }) {
   return (
     <section>
       <h2 className="mb-4 text-2xl font-bold tracking-tight">{title}</h2>
-      <div className="max-w-2xl space-y-4 leading-7 text-neutral-700">
-        {children}
-      </div>
+      <div className="max-w-2xl space-y-4 leading-7 text-neutral-700">{children}</div>
     </section>
   );
 }
