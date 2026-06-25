@@ -5,13 +5,14 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const vecpulseScreenshots = [
-  "/pictures/ddodge-screenshot-1.jpeg",
-  "/pictures/ddodge-screenshot-2.jpeg",
-  "/pictures/ddodge-screenshot-4.jpeg",
-  "/pictures/ddodge-screenshot-5.jpeg",
-  "/pictures/ddodge-screenshot-7.jpeg",
-  "/pictures/ddodge-screenshot-8.jpeg",
-  "/pictures/ddodge-screenshot-9.jpeg",
+  "/pictures/vecpic1.jpeg",
+  "/pictures/vecpic2.jpeg",
+  "/pictures/vecpic3.jpeg",
+  "/pictures/vecpic4.jpeg",
+  "/pictures/vecpic5.jpeg",
+  "/pictures/vecpic6.jpeg",
+  "/pictures/vecpic7.jpeg",
+  "/pictures/vecpic8.jpeg",
 ];
 
 export default function VecPulseOverview() {
