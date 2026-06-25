@@ -38,7 +38,7 @@ const HomePage = () => {
   //}];
 
   const devStack = {
-    "Game Development": ["Unity", "Unreal Engine", "C++", "C#", "Maya", "Blender", "Autodesk Sketchbook", "Substance Painter", "Figma", "GitHub"],
+    "Game Development": ["Unity", "Unreal Engine", "C++", "C#", "Maya", "Blender", "Autodesk Sketchbook", "Substance Painter", "Figma", "GitHub", "DaVinci"],
     "Web & Systems": ["React", "React Native", "TailwindCSS", "Vercel", "Vite", "VIM", "Rebase", "JavaScript", "Expo", "Supabase", "Node.js", "GitHub"],
     "Planning & Workflow": [ "IET", "Trello", "Notion", "Google Drive", "Discord", "DocuSign", "Microsoft 365"],
   };
