@@ -21,7 +21,7 @@ export default function Mobile() {
 
             <div className="space-y-8">
               <Link
-                to="/mobile/ddodge"
+                to="/mobile/vecpulse"
                 className="group block overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-xl hover:border-gray-300"
               >
                 <div className="overflow-hidden">
