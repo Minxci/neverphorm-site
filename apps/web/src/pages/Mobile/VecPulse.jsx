@@ -44,8 +44,8 @@ export default function DDodgeOverview() {
           {/* Hero banner */}
           <div className="overflow-hidden rounded-2xl border border-neutral-200">
             <img
-              src="/pictures/DDodgeBackground.png"
-              alt="DDodge banner"
+              src="/pictures/vecpulse-background.png"
+              alt="VecPulse banner"
               className="h-[280px] w-full object-cover sm:h-[360px]"
             />
           </div>
@@ -54,12 +54,12 @@ export default function DDodgeOverview() {
           <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
             <div className="flex items-center gap-4">
               <img
-                src="/pictures/ddodge_logo_site.png"
+                src="/pictures/vecpulse-logo.png"
                 alt="DDodge logo"
                 className="h-14 w-14 object-contain"
               />
               <div>
-                <h1 className="text-4xl font-bold tracking-tight">DDodge</h1>
+                <h1 className="text-4xl font-bold tracking-tight">VecPulse</h1>
                 <p className="mt-1 text-neutral-600">
                   A fun mobile arcade game built around timing, reflexes, and
                   survival.
@@ -86,7 +86,7 @@ export default function DDodgeOverview() {
             <div className="space-y-12">
               <Section title="Overview">
                 <p>
-                  DDodge is a one-touch arcade experience where you hold to
+                  VecPulse is a one-touch arcade experience where you hold to
                   slow down and release to return to normal speed. Avoid
                   incoming shapes and survive as long as you can.
                 </p>

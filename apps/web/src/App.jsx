@@ -11,7 +11,7 @@ import Culture from "./pages/Culture.jsx";
 import Updates from "./pages/Updates.jsx";
 import Games from "./pages/Games.jsx";
 import Mobile from "./pages/Mobile.jsx";
-import DDodge from "@/pages/Mobile/DDodge.jsx";
+import DDodge from "@/pages/Mobile/VecPulse.jsx";
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
         <Route path="/updates" element={<Updates />} />
         <Route path="/mobile" element={<Mobile />} />
 
-        <Route path="/mobile/ddodge" element={<DDodge />} />
+        <Route path="/mobile/vecpulse" element={<VecPulse />} />
       </Routes>
     </Router>
   );
