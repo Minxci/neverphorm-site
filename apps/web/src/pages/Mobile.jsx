@@ -26,7 +26,7 @@ export default function Mobile() {
               >
                 <div className="overflow-hidden">
                   <img
-                    src="/pictures/DDodgeBackground.png"
+                    src="/pictures/vecpulse-background.png"
                     alt="DDodge banner"
                     className="h-[260px] w-full object-cover transition-transform duration-300 group-hover:scale-105 sm:h-[320px]"
                   />
@@ -36,12 +36,12 @@ export default function Mobile() {
                   <div>
                     <div className="flex items-center gap-3">
                       <img
-                        src="/pictures/ddodge_logo_site.png"
+                        src="/pictures/vecpulse-logo.png"
                         alt="DDodge logo"
                         className="h-9 w-9 object-contain"
                       />
                       <h1 className="text-3xl font-bold group-hover:underline">
-                        DDodge
+                        VecPulse
                       </h1>
                     </div>
 
@@ -53,7 +53,7 @@ export default function Mobile() {
                     <div className="my-5 h-px bg-gray-200" />
 
                     <p className="max-w-xl text-sm leading-6 text-gray-600">
-                      DDodge is a one-touch arcade experience where you hold
+                      VecPulse is a one-touch arcade experience where you hold
                       to slow down and release to return to normal speed.
                       Avoid incoming shapes and survive as long as you can.
                     </p>

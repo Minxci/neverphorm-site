@@ -1,12 +1,12 @@
 export const updates = [
     {
-        title: "DDodge Game Card updated",
+        title: "VecPulse Game Card updated",
         date: "June 21, 2026",
         type: "Devlog",
         text: "Updated the games card to make it clickable and provided development and game information.",
     },
     {
-      title: "DDodge Update v0.1.9",
+      title: "VecPulse Update v0.1.9",
       date: "June 19, 2026",
       type: "Devlog",
       text: "Well apparently since I can't upload the gameplay of the game here I supposed I'll just mention which things I did and what is left to add. Did some major changes to this mobile game, it's been a fun small project. Only have maybe a couple or so more things to polish, add in the global leaderboard via Google Games Service and Apple Game Center, then will be ready to ship! Android build is ready for launch, then iOS, then soon after this it's back to the main game.",
