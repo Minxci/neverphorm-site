@@ -39,11 +39,10 @@ export default function Games() {
         <section className="px-6 pb-20 sm:px-10 lg:px-20">
           <div className="ml-0 mr-auto max-w-3xl">
             <div className="mb-10">
-              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-primary">
+              <p className="mb-4 text-medium font-semibold uppercase tracking-[0.25em] text-primary">
                 Games
               </p>
               <p className="max-w-2xl text-lg leading-relaxed text-neutral-600">
-                A focused look at what we're actively building.
               </p>
             </div>
 
