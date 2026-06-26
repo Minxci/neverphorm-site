@@ -35,10 +35,10 @@ export default function VecPulseOverview() {
       <main className="min-h-screen bg-white px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-5xl">
           <Link
-            to="/mobile"
+            to="/games"
             className="mb-8 inline-flex items-center gap-1 text-sm font-medium text-neutral-600 transition-colors hover:text-black"
           >
-            ← Back to Mobile
+            ← Back to Games
           </Link>
 
           <div className="overflow-hidden rounded-2xl border border-neutral-200">
