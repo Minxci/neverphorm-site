@@ -35,7 +35,7 @@ export default function Games() {
     <>
       <Header />
 
-      <main className="min-h-screen bg-white pt-15">
+      <main className="min-h-screen bg-white pt-18">
         <section className="px-6 pb-20 sm:px-10 lg:px-20">
           <div className="ml-0 mr-auto max-w-3xl">
             <div className="mb-10">
