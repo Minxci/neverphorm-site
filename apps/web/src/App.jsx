@@ -10,7 +10,6 @@ import TermsOfService from "./pages/TermsOfService";
 import Culture from "./pages/Culture.jsx";
 import Updates from "./pages/Updates.jsx";
 import Games from "./pages/Games.jsx";
-import Mobile from "./pages/Mobile.jsx";
 import VecPulse from "@/pages/Mobile/VecPulse.jsx";
 
 function App() {
@@ -26,7 +25,6 @@ function App() {
         <Route path="/culture" element={<Culture />} />
         <Route path="/games" element={<Games />} />
         <Route path="/updates" element={<Updates />} />
-        <Route path="/mobile" element={<Mobile />} />
 
         <Route path="/mobile/vecpulse" element={<VecPulse />} />
       </Routes>
