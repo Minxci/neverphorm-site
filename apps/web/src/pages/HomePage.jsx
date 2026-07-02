@@ -114,38 +114,17 @@ const HomePage = () => {
               </h2>
               <div className="space-y-6 text-base md:text-lg leading-relaxed text-muted-foreground">
                 <p>
-                  Project Neverphorm is an independent game development studio founded and operated by Cody McCullough and based in 
-                  the Greater Illinois/Iowa Quad Cities region.
-                </p>
-                
-                <p>
-                  For over 15 years, game development has been a personal goal and creative ambition. What began as a passion for 
-                  video games has evolved into a long-term commitment to building original interactive experiences, creating
-                  memorable worlds, and establishing a sustainable studio dedicated to creativity, craftsmanship, and continual 
-                  growth.
+                  Project Neverphorm is an independent game development studio founded and operated by solo developer, Cody McCullough. Based in 
+                  the Greater Illinois/Iowa Quad Cities area. After 15+ plus of all sorts of ideas and concepts, Cody decided to take the leap
+                  and start the journey back in early 2025. With the 15+ years of only conceptualizing all these ideas and even now, there are many games
+                  in the back catalog that are officially planned and now need to put into development. There is a refusal to stay stuck or algined with only
+                  one genre while all these projects vary drastically on their core vision and game/creative direction.
                 </p>
                 <p>
-                  The studio is currently developing its debut title, with a planned release window in late 2026. While development 
-                  timelines can change, as is often the case with independent projects, the primary focus remains on delivering a 
-                  polished and well-executed experience rather than rushing toward a release date. Every project is approached with 
-                  the belief that quality, learning, and long-term sustainability are more important than short-term results.
-                </p>
-                <p>
-                  Project Neverphorm is not being built around a single game release. The studio is founded on a long-term vision 
-                  that extends far beyond its first title. Multiple future projects are already in various stages of planning, with 
-                  a growing catalog of concepts, worlds, and experiences intended to shape the studio's future direction.
-                </p>
-                <p>
-                  Alongside game development, there is also a strong interest in building the tools, systems, and infrastructure 
-                  that support creative teams. This has led to the development of the Internal Ecosystem Tool (IET), an internal 
-                  platform designed to streamline workflows, organization, education, and collaboration. While currently being 
-                  developed for use within the studio, the long-term goal is to evolve IET into a software-as-a-service (SaaS) 
-                  platform that can help other small and mid-sized creative teams improve their own production pipelines and 
-                  operations.
-                </p>
-                <p>
-                  At its core, Project Neverphorm is focused on building meaningful games, practical tools, and a sustainable 
-                  creative future—one project at a time.
+                  Beyond the gaming side of the studio, there is an equal investment in building the infrastructure that supports the
+                  studio itself. Managing a growing catalog of projects across scattered tools and platforms became its own challenge,
+                  which led to the development of the Integration & Ecosystem Tool (IET); a centralized platform built in-house to bring planning,
+                  organization, and workflow together under one roof. It reflects a broader studio mindseet: if the right tool doesn't exist yet, build it.
                 </p>
 
               </div>
