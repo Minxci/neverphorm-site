@@ -115,7 +115,7 @@ const HomePage = () => {
               <div className="space-y-6 text-base md:text-lg leading-relaxed text-muted-foreground">
                 <p>
                   Project Neverphorm is an independent game development studio founded and operated by solo developer, Cody McCullough. Based in 
-                  the Greater Illinois/Iowa Quad Cities area. After 15+ plus of all sorts of ideas and concepts, Cody decided to take the leap
+                  the Greater Illinois/Iowa Quad Cities area. After 15+ of all sorts of ideas and concepts, Cody decided to take the leap
                   and start the journey back in early 2025. With the 15+ years of only conceptualizing all these ideas and even now, there are many games
                   in the back catalog that are officially planned and now need to be put into development. There is a refusal to stay stuck or aligned with only
                   one genre while all these projects vary drastically on their core vision and game/creative direction.
