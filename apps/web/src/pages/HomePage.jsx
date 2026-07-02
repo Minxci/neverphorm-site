@@ -125,6 +125,8 @@ const HomePage = () => {
                   studio itself. Managing a growing catalog of projects across scattered tools and platforms became its own challenge,
                   which led to the development of the Integration & Ecosystem Tool (IET); a centralized platform built in-house to bring planning,
                   organization, and workflow together under one roof. It reflects a broader studio mindseet: if the right tool doesn't exist yet, build it.
+                  Depending on how well this infrstructure turns out to become there may be an avenue to open it up for other creative studios and teams as a 
+                  SaaS pipeline down the road. A sign that Project Neverphorm's ambitions extend beyond just game development.
                 </p>
 
               </div>
