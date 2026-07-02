@@ -147,7 +147,9 @@ const HomePage = () => {
 
               <p className="text-neutral-600 mb-6">
                 Tools, software, and systems currently used across game development,
-                web development, planning, and studio workflow.
+                web development, planning, and studio workflow. The development stack depends and varies
+                on use of tool/software/engine. Why Unity and UE5? Because I'm not focused on only one of them,
+                both are choice of engine per game/project as the engines were established for, they're merely tools themself.
               </p>
 
               <div className="space-y-6">
