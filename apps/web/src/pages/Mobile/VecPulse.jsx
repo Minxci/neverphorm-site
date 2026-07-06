@@ -130,21 +130,13 @@ export default function VecPulseOverview() {
 
               <Section title="The Death Messages">
                 <p className="text-black">
-                  Even though these are just simple texts, adding in
-                  encouraging, funny, roast-worthy, jokingly death messages
-                  was fun and I plan on adding much more through updates to
-                  the game. The messages do range between common, uncommon,
-                  rare, legendary, and ultra-rare. With that said, there is
-                  only 1 ultra-rare death message and the thought process
-                  and innovative process behind this one is that it will
-                  contain a "Claim ID" number for the player to screenshot.
-                  The purpose to this ultra-rare death message means once it
-                  is found, the player sends the screenshot of the message
-                  to us via email. Once we see internally that the player
-                  did actually trigger this claim id code, you have the
-                  option to use an alias/username and your pick of username
-                  will forever be permanently inside future title projects
-                  credit screen.
+                Even though these are just simple lines of text, making them funny, 
+                encouraging, and sometimes roast-worthy was one of my favorite parts. 
+                They're ranked in rarity — Common, Uncommon, Rare, Legendary, and Ultra-Rare, 
+                with more added through future updates. There's only one Ultra-Rare message, 
+                and it contains a unique Claim ID. If you find it, screenshot it and email it to us. 
+                Once verified, you'll get to pick a username that's permanently credited in 
+                every future Neverphorm title.
                 </p>
               </Section>
             </div>
