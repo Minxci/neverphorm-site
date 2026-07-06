@@ -28,6 +28,11 @@ const vecpulsePatchNotes = [
   },
 ];
 
+// Fixed width reserved on the right for the pinned sidebar (Play Game +
+// Status/Screenshots + Patch Notes). Used both by the sidebar itself and
+// by the main content's right padding, so text never runs underneath it.
+const SIDEBAR_WIDTH = 320;
+
 export default function VecPulseOverview() {
   const [lightboxIndex, setLightboxIndex] = useState(null);
 
@@ -45,127 +50,137 @@ export default function VecPulseOverview() {
     <>
       <Header />
 
-      <main className="min-h-screen bg-white px-6 py-16 lg:px-10">
-        <Link
-          to="/games"
-          className="mb-8 inline-flex items-center gap-1 text-sm font-medium text-neutral-600 transition-colors hover:text-black"
-        >
-          ← Back to Games
-        </Link>
+      <main
+        className="min-h-screen bg-white px-6 py-16 lg:px-10"
+        style={{
+          // Reserve space on the right for the fixed sidebar, only on
+          // screens wide enough for it (matches the lg breakpoint below).
+        }}
+      >
+        <div className="lg:pr-[340px]">
+          <Link
+            to="/games"
+            className="mb-8 inline-flex items-center gap-1 text-sm font-medium text-neutral-600 transition-colors hover:text-black"
+          >
+            ← Back to Games
+          </Link>
 
-        {/*
-          Not centered, not full-bleed-stretched either — the text
-          column is capped at max-w-3xl so paragraphs stay readable,
-          and the Play Game + sidebar columns sit directly next to it
-          with a normal gap. Whatever screen space is left over on the
-          far right just stays empty (expected on wide monitors), which
-          is different from the page being centered.
-        */}
-        <div className="flex flex-col gap-10 lg:flex-row lg:items-start">
-          {/* LEFT COLUMN — capped width, not stretched full screen */}
-          <div className="lg:max-w-3xl lg:flex-1">
-            <div className="overflow-hidden rounded-2xl border border-neutral-200">
+          <div className="overflow-hidden rounded-2xl border border-neutral-200">
+            <img
+              src="/pictures/vecpulse-background.png"
+              alt="VecPulse banner"
+              className="h-[280px] w-full object-cover sm:h-[360px]"
+            />
+          </div>
+
+          <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+            <div className="flex items-center gap-4">
               <img
-                src="/pictures/vecpulse-background.png"
-                alt="VecPulse banner"
-                className="h-[280px] w-full object-cover sm:h-[360px]"
+                src="/pictures/vecpulse-logo.png"
+                alt="VecPulse logo"
+                className="h-14 w-14 object-contain"
               />
-            </div>
-
-            <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
-              <div className="flex items-center gap-4">
-                <img
-                  src="/pictures/vecpulse-logo.png"
-                  alt="VecPulse logo"
-                  className="h-14 w-14 object-contain"
-                />
-                <div>
-                  <h1 className="text-4xl font-bold tracking-tight">VecPulse</h1>
-                  <p className="mt-1 text-neutral-600">
-                    A fun mobile arcade game built around timing, reflexes, and survival.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-3">
-                <img
-                  src="/pictures/google-play-badge.png"
-                  alt="Get it on Google Play"
-                  className="h-10 w-auto opacity-50"
-                />
-                <img
-                  src="/pictures/app-store-badge.png"
-                  alt="Download on the App Store"
-                  className="h-10 w-auto opacity-50"
-                />
+              <div>
+                <h1 className="text-4xl font-bold tracking-tight">VecPulse</h1>
+                <p className="mt-1 text-neutral-600">
+                  A fun mobile arcade game built around timing, reflexes, and survival.
+                </p>
               </div>
             </div>
 
-            <div className="mt-12 space-y-12">
-              <Section title="Overview">
-                <p>
-                  VecPulse is a one-touch arcade experience where you hold to
-                  slow down and release to return to normal speed. Avoid
-                  incoming shapes and survive as long as you can.
-                </p>
-                <p>Simple to learn. Hard to master. Built for quick sessions and high-score chasing.</p>
-              </Section>
-
-              <Section title="Why It Was Made">
-                <p className="text-black">
-                  This was a break-from-main-game, experimental, "dip our
-                  toes into the water" type of project for the mobile
-                  experience. I (cody) have never been a real big fan of
-                  mobile game development but I caved in and wanted to
-                  experiment with it a little bit.
-                </p>
-              </Section>
-
-              <Section title="Development & Creative Direction">
-                <p className="text-black">
-                  The game and creative direction was pretty plain and
-                  simple; wanted to make a continuous gameplay loop,
-                  implementation of adding in a leaderboard would keep
-                  players coming back (the competitive players), something
-                  fun and simple to hop on as a time waster whether its
-                  maybe a few rounds before bed, while you wait on your oil
-                  change at the shop, waiting on the wife to get done
-                  shopping while the husband sits in the car because he
-                  refused to go into target, and many other time wasting
-                  scenarios. Another thing to add here is the reasoning why it's a
-                  paid game. I've played mobile games and almost every time there's ads.
-                  One-time payment, zero ads thrown in your face. Sounds better and 
-                  no ad annoyance. 
-                </p>
-              </Section>
-
-              <Section title="Behind the Scenes">
-                <p className="text-black">
-                  It was fun creating this game actually! I will admit, even
-                  though mobile gaming really is not something that I do or
-                  enjoy, I have come to find that developing one was
-                  actually pretty fun. The process of this weeks production
-                  definitely helped, especially the leaderboard, since there
-                  are future titles with global leaderboard planned.
-                </p>
-              </Section>
-
-              <Section title="The Death Messages">
-                <p className="text-black">
-                Even though these are just simple lines of text, making them funny, 
-                encouraging, and sometimes roast-worthy was one of my favorite parts. 
-                They're ranked in rarity; Common, Uncommon, Rare, Legendary, and Ultra-Rare, 
-                with more added through future updates. There's only one Ultra-Rare message, 
-                and it contains a unique Claim ID. If you find it, screenshot it and email it to us. 
-                Once verified, you'll get to pick a username that's permanently credited in 
-                every future Neverphorm title.
-                </p>
-              </Section>
+            <div className="flex gap-3">
+              <img
+                src="/pictures/google-play-badge.png"
+                alt="Get it on Google Play"
+                className="h-10 w-auto opacity-50"
+              />
+              <img
+                src="/pictures/app-store-badge.png"
+                alt="Download on the App Store"
+                className="h-10 w-auto opacity-50"
+              />
             </div>
           </div>
 
-          {/* MIDDLE COLUMN — Play Game, fixed width, sits right next to text */}
-          <div className="lg:sticky lg:top-24 lg:w-[280px] lg:shrink-0">
+          <div className="mt-12 space-y-12">
+            <Section title="Overview">
+              <p>
+                VecPulse is a one-touch arcade experience where you hold to
+                slow down and release to return to normal speed. Avoid
+                incoming shapes and survive as long as you can.
+              </p>
+              <p>Simple to learn. Hard to master. Built for quick sessions and high-score chasing.</p>
+            </Section>
+
+            <Section title="Why It Was Made">
+              <p className="text-black">
+                This was a break-from-main-game, experimental, "dip our
+                toes into the water" type of project for the mobile
+                experience. I (cody) have never been a real big fan of
+                mobile game development but I caved in and wanted to
+                experiment with it a little bit.
+              </p>
+            </Section>
+
+            <Section title="Development & Creative Direction">
+              <p className="text-black">
+                The game and creative direction was pretty plain and
+                simple; wanted to make a continuous gameplay loop,
+                implementation of adding in a leaderboard would keep
+                players coming back (the competitive players), something
+                fun and simple to hop on as a time waster whether its
+                maybe a few rounds before bed, while you wait on your oil
+                change at the shop, waiting on the wife to get done
+                shopping while the husband sits in the car because he
+                refused to go into target, and many other time wasting
+                scenarios. Another thing to add here is the reasoning why it's a
+                paid game. I've played mobile games and almost every time there's ads.
+                One-time payment, zero ads thrown in your face. Sounds better and 
+                no ad annoyance. 
+              </p>
+            </Section>
+
+            <Section title="Behind the Scenes">
+              <p className="text-black">
+                It was fun creating this game actually! I will admit, even
+                though mobile gaming really is not something that I do or
+                enjoy, I have come to find that developing one was
+                actually pretty fun. The process of this weeks production
+                definitely helped, especially the leaderboard, since there
+                are future titles with global leaderboard planned.
+              </p>
+            </Section>
+
+            <Section title="The Death Messages">
+              <p className="text-black">
+              Even though these are just simple lines of text, making them funny, 
+              encouraging, and sometimes roast-worthy was one of my favorite parts. 
+              They're ranked in rarity; Common, Uncommon, Rare, Legendary, and Ultra-Rare, 
+              with more added through future updates. There's only one Ultra-Rare message, 
+              and it contains a unique Claim ID. If you find it, screenshot it and email it to us. 
+              Once verified, you'll get to pick a username that's permanently credited in 
+              every future Neverphorm title.
+              </p>
+            </Section>
+          </div>
+        </div>
+      </main>
+
+      {/*
+        Pinned sidebar — truly fixed to the right edge of the viewport
+        (position: fixed), not just "last column in a flex/grid row."
+        Stays anchored to the right no matter how wide or narrow the
+        window is, across tablet, laptop, or desktop.
+
+        Only applies at lg and up — below that (tablet portrait, mobile),
+        it's hidden here and instead rendered inline below the main
+        content (see the second copy of this block further down),
+        because position: fixed sidebars don't make sense on narrow
+        screens.
+      */}
+      <aside className="hidden lg:block lg:fixed lg:right-6 lg:top-24 lg:w-[300px] lg:max-h-[calc(100vh-7rem)] lg:overflow-y-auto">
+        <div className="space-y-6">
+          <div>
             <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-black">
               <iframe
                 src="/webgl-builds/vecpulse/index.html"
@@ -181,48 +196,107 @@ export default function VecPulseOverview() {
             </p>
           </div>
 
-          {/* RIGHT COLUMN — Status/Screenshots stacked above Patch Notes */}
-          <div className="space-y-6 lg:sticky lg:top-24 lg:w-[280px] lg:shrink-0">
-            <div className="rounded-2xl border border-neutral-200 p-6">
-              <Info label="Status" value="Preparing for Release" />
-              <Info label="Project Type" value="Mobile Arcade" />
-              <Info label="Platform" value="Android, iOS (later release)" />
-              <Info label="Price" value="$0.99" />
-              <Info label="Engine" value="Unity" />
-            </div>
+          <div className="rounded-2xl border border-neutral-200 p-6">
+            <Info label="Status" value="Preparing for Release" />
+            <Info label="Project Type" value="Mobile Arcade" />
+            <Info label="Platform" value="Android, iOS (later release)" />
+            <Info label="Price" value="$0.99" />
+            <Info label="Engine" value="Unity" />
+          </div>
 
-            <div>
-              <p className="mb-3 text-sm font-semibold text-neutral-500">Screenshots</p>
-              <div className="grid grid-cols-3 gap-2">
-                {vecpulseScreenshots.map((src, i) => (
-                  <button
-                    key={src}
-                    onClick={() => setLightboxIndex(i)}
-                    className="group aspect-[9/16] overflow-hidden rounded-lg border border-neutral-200 transition-colors hover:border-neutral-400"
-                  >
-                    <img
-                      src={src}
-                      alt={`VecPulse gameplay screenshot ${i + 1}`}
-                      className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
-                    />
-                  </button>
-                ))}
-              </div>
+          <div>
+            <p className="mb-3 text-sm font-semibold text-neutral-500">Screenshots</p>
+            <div className="grid grid-cols-3 gap-2">
+              {vecpulseScreenshots.map((src, i) => (
+                <button
+                  key={src}
+                  onClick={() => setLightboxIndex(i)}
+                  className="group aspect-[9/16] overflow-hidden rounded-lg border border-neutral-200 transition-colors hover:border-neutral-400"
+                >
+                  <img
+                    src={src}
+                    alt={`VecPulse gameplay screenshot ${i + 1}`}
+                    className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
+                  />
+                </button>
+              ))}
             </div>
+          </div>
 
-            <div className="rounded-2xl border border-neutral-200 p-6">
-              <p className="mb-4 text-sm font-semibold text-neutral-500">
-                Patch Notes
-              </p>
-              <div className="space-y-5">
-                {vecpulsePatchNotes.map((entry) => (
-                  <PatchEntry key={entry.version} {...entry} />
-                ))}
-              </div>
+          <div className="rounded-2xl border border-neutral-200 p-6">
+            <p className="mb-4 text-sm font-semibold text-neutral-500">
+              Patch Notes
+            </p>
+            <div className="space-y-5">
+              {vecpulsePatchNotes.map((entry) => (
+                <PatchEntry key={entry.version} {...entry} />
+              ))}
             </div>
           </div>
         </div>
-      </main>
+      </aside>
+
+      {/*
+        Same content again, but only shown below lg (tablet/mobile),
+        rendered inline in normal document flow instead of fixed.
+      */}
+      <div className="px-6 pb-16 lg:hidden">
+        <div className="space-y-6">
+          <div>
+            <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-black">
+              <iframe
+                src="/webgl-builds/vecpulse/index.html"
+                title="Play VecPulse in your browser"
+                className="aspect-[9/16] w-full max-w-sm"
+                allow="fullscreen"
+              />
+            </div>
+            <p className="mt-3 text-xs text-neutral-500">
+              Tap/click and hold, or hold Space, to slow down. No
+              leaderboard here — grab the full version on mobile for that
+              plus a permanent install.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-neutral-200 p-6">
+            <Info label="Status" value="Preparing for Release" />
+            <Info label="Project Type" value="Mobile Arcade" />
+            <Info label="Platform" value="Android, iOS (later release)" />
+            <Info label="Price" value="$0.99" />
+            <Info label="Engine" value="Unity" />
+          </div>
+
+          <div>
+            <p className="mb-3 text-sm font-semibold text-neutral-500">Screenshots</p>
+            <div className="grid grid-cols-3 gap-2">
+              {vecpulseScreenshots.map((src, i) => (
+                <button
+                  key={src}
+                  onClick={() => setLightboxIndex(i)}
+                  className="group aspect-[9/16] overflow-hidden rounded-lg border border-neutral-200 transition-colors hover:border-neutral-400"
+                >
+                  <img
+                    src={src}
+                    alt={`VecPulse gameplay screenshot ${i + 1}`}
+                    className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
+                  />
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="rounded-2xl border border-neutral-200 p-6">
+            <p className="mb-4 text-sm font-semibold text-neutral-500">
+              Patch Notes
+            </p>
+            <div className="space-y-5">
+              {vecpulsePatchNotes.map((entry) => (
+                <PatchEntry key={entry.version} {...entry} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
 
       {lightboxIndex !== null && (
         <div
