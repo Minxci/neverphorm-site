@@ -7,6 +7,7 @@ export default function GameCard({
   image,
   status,
   title,
+  price,
   projectType,
   launchDate,
   description,
@@ -25,6 +26,11 @@ export default function GameCard({
             showLocked ? "scale-105 blur-md" : ""
           }`}
         />
+        {price && (
+          <div className="absolute top-4 right-4 sm:top-5 sm:right-5 bg-black/70 backdrop-blur-sm text-white text-sm font-bold px-3 py-1 rounded-full">
+            {price}
+          </div>
+        )}
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
