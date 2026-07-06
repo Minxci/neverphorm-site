@@ -27,7 +27,7 @@ export default function GameCard({
           }`}
         />
         {price && (
-          <div className="absolute top-4 right-4 sm:top-5 sm:right-5 bg-black/70 backdrop-blur-sm text-white text-sm font-bold px-3 py-1 rounded-full">
+          <div className="absolute top-4 right-4 sm:top-5 sm:right-5 bg-black/70 backdrop-blur-sm text-white text-base sm:text-lg font-bold px-4 py-1.5 sm:px-5 sm:py-2 rounded-full">
             {price}
           </div>
         )}
