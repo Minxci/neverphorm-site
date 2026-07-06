@@ -132,7 +132,7 @@ export default function VecPulseOverview() {
                 <p className="text-black">
                 Even though these are just simple lines of text, making them funny, 
                 encouraging, and sometimes roast-worthy was one of my favorite parts. 
-                They're ranked in rarity — Common, Uncommon, Rare, Legendary, and Ultra-Rare, 
+                They're ranked in rarity; Common, Uncommon, Rare, Legendary, and Ultra-Rare, 
                 with more added through future updates. There's only one Ultra-Rare message, 
                 and it contains a unique Claim ID. If you find it, screenshot it and email it to us. 
                 Once verified, you'll get to pick a username that's permanently credited in 
