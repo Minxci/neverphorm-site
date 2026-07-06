@@ -45,63 +45,67 @@ export default function VecPulseOverview() {
     <>
       <Header />
 
-      <main className="min-h-screen bg-white px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <Link
-            to="/games"
-            className="mb-8 inline-flex items-center gap-1 text-sm font-medium text-neutral-600 transition-colors hover:text-black"
-          >
-            ← Back to Games
-          </Link>
+      <main className="min-h-screen bg-white px-6 py-16 lg:px-10">
+        <Link
+          to="/games"
+          className="mb-8 inline-flex items-center gap-1 text-sm font-medium text-neutral-600 transition-colors hover:text-black"
+        >
+          ← Back to Games
+        </Link>
 
-          <div className="overflow-hidden rounded-2xl border border-neutral-200">
-            <img
-              src="/pictures/vecpulse-background.png"
-              alt="VecPulse banner"
-              className="h-[280px] w-full object-cover sm:h-[360px]"
-            />
-          </div>
+        {/*
+          Full-bleed 3-column layout, not centered:
+          - Left column: banner, title row, and the full wiki content
+            (flexes to take up remaining space).
+          - Middle column: sticky "Play Game" embed (fixed width).
+          - Right column: Status/Screenshots card on top, Patch Notes
+            below it, stacked in the same column (fixed width).
 
-          <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
-            <div className="flex items-center gap-4">
+          Below lg, everything stacks vertically in document order:
+          banner/title/wiki, then Play Game, then Status/Screenshots,
+          then Patch Notes.
+        */}
+        <div className="grid gap-10 lg:grid-cols-[1fr_280px_280px]">
+          {/* LEFT COLUMN */}
+          <div>
+            <div className="overflow-hidden rounded-2xl border border-neutral-200">
               <img
-                src="/pictures/vecpulse-logo.png"
-                alt="VecPulse logo"
-                className="h-14 w-14 object-contain"
+                src="/pictures/vecpulse-background.png"
+                alt="VecPulse banner"
+                className="h-[280px] w-full object-cover sm:h-[360px]"
               />
-              <div>
-                <h1 className="text-4xl font-bold tracking-tight">VecPulse</h1>
-                <p className="mt-1 text-neutral-600">
-                  A fun mobile arcade game built around timing, reflexes, and survival.
-                </p>
+            </div>
+
+            <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+              <div className="flex items-center gap-4">
+                <img
+                  src="/pictures/vecpulse-logo.png"
+                  alt="VecPulse logo"
+                  className="h-14 w-14 object-contain"
+                />
+                <div>
+                  <h1 className="text-4xl font-bold tracking-tight">VecPulse</h1>
+                  <p className="mt-1 text-neutral-600">
+                    A fun mobile arcade game built around timing, reflexes, and survival.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-3">
+                <img
+                  src="/pictures/google-play-badge.png"
+                  alt="Get it on Google Play"
+                  className="h-10 w-auto opacity-50"
+                />
+                <img
+                  src="/pictures/app-store-badge.png"
+                  alt="Download on the App Store"
+                  className="h-10 w-auto opacity-50"
+                />
               </div>
             </div>
 
-            <div className="flex gap-3">
-              <img
-                src="/pictures/google-play-badge.png"
-                alt="Get it on Google Play"
-                className="h-10 w-auto opacity-50"
-              />
-              <img
-                src="/pictures/app-store-badge.png"
-                alt="Download on the App Store"
-                className="h-10 w-auto opacity-50"
-              />
-            </div>
-          </div>
-
-          {/*
-            Layout behavior:
-            - Mobile/tablet (below lg): everything stacks in one column,
-              in document order — Overview content, then Status card,
-              then Play area, then Patch Notes.
-            - Desktop (lg and up): 4 columns — main content (flexible width),
-              Status/Screenshots sidebar (fixed 260px), Play area sidebar
-              (fixed 260px), Patch Notes sidebar (fixed 260px).
-          */}
-          <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_260px_260px_260px]">
-            <div className="space-y-12">
+            <div className="mt-12 space-y-12">
               <Section title="Overview">
                 <p>
                   VecPulse is a one-touch arcade experience where you hold to
@@ -162,64 +166,64 @@ export default function VecPulseOverview() {
                 </p>
               </Section>
             </div>
+          </div>
 
-            <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
-              <div className="rounded-2xl border border-neutral-200 p-6">
-                <Info label="Status" value="Preparing for Release" />
-                <Info label="Project Type" value="Mobile Arcade" />
-                <Info label="Platform" value="Android, iOS (later release)" />
-                <Info label="Price" value="$0.99" />
-                <Info label="Engine" value="Unity" />
-              </div>
+          {/* MIDDLE COLUMN — Play Game */}
+          <div className="lg:sticky lg:top-24 lg:self-start">
+            <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-black">
+              <iframe
+                src="/webgl-builds/vecpulse/index.html"
+                title="Play VecPulse in your browser"
+                className="aspect-[9/16] w-full"
+                allow="fullscreen"
+              />
+            </div>
+            <p className="mt-3 text-xs text-neutral-500">
+              Tap/click and hold, or hold Space, to slow down. No
+              leaderboard here — grab the full version on mobile for that
+              plus a permanent install.
+            </p>
+          </div>
 
-              <div>
-                <p className="mb-3 text-sm font-semibold text-neutral-500">Screenshots</p>
-                <div className="grid grid-cols-3 gap-2 md:grid-cols-2">
-                  {vecpulseScreenshots.map((src, i) => (
-                    <button
-                      key={src}
-                      onClick={() => setLightboxIndex(i)}
-                      className="group aspect-[9/16] overflow-hidden rounded-lg border border-neutral-200 transition-colors hover:border-neutral-400"
-                    >
-                      <img
-                        src={src}
-                        alt={`VecPulse gameplay screenshot ${i + 1}`}
-                        className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
-                      />
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </aside>
+          {/* RIGHT COLUMN — Status/Screenshots stacked above Patch Notes */}
+          <div className="space-y-6 lg:sticky lg:top-24 lg:self-start">
+            <div className="rounded-2xl border border-neutral-200 p-6">
+              <Info label="Status" value="Preparing for Release" />
+              <Info label="Project Type" value="Mobile Arcade" />
+              <Info label="Platform" value="Android, iOS (later release)" />
+              <Info label="Price" value="$0.99" />
+              <Info label="Engine" value="Unity" />
+            </div>
 
-            <aside className="space-y-3 lg:sticky lg:top-24 lg:self-start">
-              <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-black">
-                <iframe
-                  src="/webgl-builds/vecpulse/index.html"
-                  title="Play VecPulse in your browser"
-                  className="aspect-[9/16] w-full"
-                  allow="fullscreen"
-                />
+            <div>
+              <p className="mb-3 text-sm font-semibold text-neutral-500">Screenshots</p>
+              <div className="grid grid-cols-3 gap-2">
+                {vecpulseScreenshots.map((src, i) => (
+                  <button
+                    key={src}
+                    onClick={() => setLightboxIndex(i)}
+                    className="group aspect-[9/16] overflow-hidden rounded-lg border border-neutral-200 transition-colors hover:border-neutral-400"
+                  >
+                    <img
+                      src={src}
+                      alt={`VecPulse gameplay screenshot ${i + 1}`}
+                      className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
+                    />
+                  </button>
+                ))}
               </div>
-              <p className="text-xs text-neutral-500">
-                Tap/click and hold, or hold Space, to slow down. No
-                leaderboard here — grab the full version on mobile for that
-                plus a permanent install.
+            </div>
+
+            <div className="rounded-2xl border border-neutral-200 p-6">
+              <p className="mb-4 text-sm font-semibold text-neutral-500">
+                Patch Notes
               </p>
-            </aside>
-
-            <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
-              <div className="rounded-2xl border border-neutral-200 p-6">
-                <p className="mb-4 text-sm font-semibold text-neutral-500">
-                  Patch Notes
-                </p>
-                <div className="space-y-5">
-                  {vecpulsePatchNotes.map((entry) => (
-                    <PatchEntry key={entry.version} {...entry} />
-                  ))}
-                </div>
+              <div className="space-y-5">
+                {vecpulsePatchNotes.map((entry) => (
+                  <PatchEntry key={entry.version} {...entry} />
+                ))}
               </div>
-            </aside>
+            </div>
           </div>
         </div>
       </main>
