@@ -62,8 +62,7 @@ export default function VecPulseOverview() {
             />
           </div>
 
-
-          <div className="mt-10 flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+          <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
             <div className="flex items-center gap-4">
               <img
                 src="/pictures/vecpulse-logo.png"
@@ -96,12 +95,12 @@ export default function VecPulseOverview() {
             Layout behavior:
             - Mobile/tablet (below lg): everything stacks in one column,
               in document order — Overview content, then Status card,
-              then Patch Notes.
-            - Desktop (lg and up): 3 columns — main content (flexible width),
-              Status/Screenshots sidebar (fixed 260px), Patch Notes sidebar
-              (fixed 260px).
+              then Play area, then Patch Notes.
+            - Desktop (lg and up): 4 columns — main content (flexible width),
+              Status/Screenshots sidebar (fixed 260px), Play area sidebar
+              (fixed 260px), Patch Notes sidebar (fixed 260px).
           */}
-          <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_260px_260px]">
+          <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_260px_260px_260px]">
             <div className="space-y-12">
               <Section title="Overview">
                 <p>
@@ -191,6 +190,22 @@ export default function VecPulseOverview() {
                   ))}
                 </div>
               </div>
+            </aside>
+
+            <aside className="space-y-3 lg:sticky lg:top-24 lg:self-start">
+              <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-black">
+                <iframe
+                  src="/webgl-builds/vecpulse/index.html"
+                  title="Play VecPulse in your browser"
+                  className="aspect-[9/16] w-full"
+                  allow="fullscreen"
+                />
+              </div>
+              <p className="text-xs text-neutral-500">
+                Tap/click and hold, or hold Space, to slow down. No
+                leaderboard here — grab the full version on mobile for that
+                plus a permanent install.
+              </p>
             </aside>
 
             <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
