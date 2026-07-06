@@ -15,21 +15,16 @@ const vecpulseScreenshots = [
   "/pictures/vecpic8.jpeg",
 ];
 
-// Edit this array whenever you ship a new update.
 // Newest entry goes on top.
 const vecpulsePatchNotes = [
   {
-    version: "v1.1",
-    date: "July 2026",
-    notes: [
-      "Added new death messages",
-      "Web build: added spacebar + click support",
-    ],
-  },
-  {
     version: "v1.0",
     date: "Initial Release",
-    notes: ["Base game launch"],
+    notes: [
+      "Base game launch",
+      "Added new death messages",
+      "Web build: added spacebar support",
+    ],
   },
 ];
 
@@ -95,6 +90,20 @@ export default function VecPulseOverview() {
               />
             </div>
           </div>
+
+          <div className="mt-10 overflow-hidden rounded-2xl border border-neutral-200 bg-black">
+            <iframe
+              src="/webgl-builds/vecpulse/index.html"
+              title="Play VecPulse in your browser"
+              className="aspect-[9/16] w-full max-h-[720px] sm:aspect-video"
+              allow="fullscreen"
+            />
+          </div>
+          <p className="mt-3 text-sm text-neutral-500">
+            Playable browser build — tap/click and hold, or press and hold
+            Space, to slow down. No leaderboard here; grab the full version
+            on mobile for that plus a permanent install.
+          </p>
 
           {/*
             Layout behavior:
