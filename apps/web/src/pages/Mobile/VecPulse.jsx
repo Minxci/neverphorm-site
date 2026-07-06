@@ -54,20 +54,16 @@ export default function VecPulseOverview() {
         </Link>
 
         {/*
-          Full-bleed 3-column layout, not centered:
-          - Left column: banner, title row, and the full wiki content
-            (flexes to take up remaining space).
-          - Middle column: sticky "Play Game" embed (fixed width).
-          - Right column: Status/Screenshots card on top, Patch Notes
-            below it, stacked in the same column (fixed width).
-
-          Below lg, everything stacks vertically in document order:
-          banner/title/wiki, then Play Game, then Status/Screenshots,
-          then Patch Notes.
+          Not centered, not full-bleed-stretched either — the text
+          column is capped at max-w-3xl so paragraphs stay readable,
+          and the Play Game + sidebar columns sit directly next to it
+          with a normal gap. Whatever screen space is left over on the
+          far right just stays empty (expected on wide monitors), which
+          is different from the page being centered.
         */}
-        <div className="grid gap-10 lg:grid-cols-[1fr_280px_280px]">
-          {/* LEFT COLUMN */}
-          <div>
+        <div className="flex flex-col gap-10 lg:flex-row lg:items-start">
+          {/* LEFT COLUMN — capped width, not stretched full screen */}
+          <div className="lg:max-w-3xl lg:flex-1">
             <div className="overflow-hidden rounded-2xl border border-neutral-200">
               <img
                 src="/pictures/vecpulse-background.png"
@@ -168,8 +164,8 @@ export default function VecPulseOverview() {
             </div>
           </div>
 
-          {/* MIDDLE COLUMN — Play Game */}
-          <div className="lg:sticky lg:top-24 lg:self-start">
+          {/* MIDDLE COLUMN — Play Game, fixed width, sits right next to text */}
+          <div className="lg:sticky lg:top-24 lg:w-[280px] lg:shrink-0">
             <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-black">
               <iframe
                 src="/webgl-builds/vecpulse/index.html"
@@ -186,7 +182,7 @@ export default function VecPulseOverview() {
           </div>
 
           {/* RIGHT COLUMN — Status/Screenshots stacked above Patch Notes */}
-          <div className="space-y-6 lg:sticky lg:top-24 lg:self-start">
+          <div className="space-y-6 lg:sticky lg:top-24 lg:w-[280px] lg:shrink-0">
             <div className="rounded-2xl border border-neutral-200 p-6">
               <Info label="Status" value="Preparing for Release" />
               <Info label="Project Type" value="Mobile Arcade" />
