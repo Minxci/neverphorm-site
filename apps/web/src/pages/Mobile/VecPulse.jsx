@@ -62,21 +62,6 @@ export default function VecPulseOverview() {
             />
           </div>
 
-          <div className="mt-6 flex justify-center">
-            <div className="w-full max-w-[400px] overflow-hidden rounded-2xl border border-neutral-200 bg-black">
-              <iframe
-                src="/webgl-builds/vecpulse/index.html"
-                title="Play VecPulse in your browser"
-                className="aspect-[9/16] w-full"
-                allow="fullscreen"
-              />
-            </div>
-          </div>
-          <p className="mt-3 text-center text-sm text-neutral-500">
-            Playable browser build — tap/click and hold, or press and hold
-            Space, to slow down. No leaderboard here; grab the full version
-            on mobile for that plus a permanent install.
-          </p>
 
           <div className="mt-10 flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
             <div className="flex items-center gap-4">
