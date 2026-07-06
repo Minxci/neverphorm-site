@@ -7,6 +7,7 @@ const games = [
     image: "/pictures/vecpulse-background.png",
     status: "Preparing for Release",
     title: "VecPulse",
+    price: "$0.99",
     projectType: "Mobile Arcade",
     launchDate: "2026",
     description: {
