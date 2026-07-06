@@ -112,7 +112,8 @@ export default function VecPulseOverview() {
                   refused to go into target, and many other time wasting
                   scenarios. Another thing to add here is the reasoning why it's a
                   paid game. I've played mobile games and almost every time there's ads.
-                  One-time payment, zero ads thrown in your face. Sounds better.
+                  One-time payment, zero ads thrown in your face. Sounds better and 
+                  no ad annoyance. 
                 </p>
               </Section>
 
@@ -153,6 +154,7 @@ export default function VecPulseOverview() {
                 <Info label="Status" value="Preparing for Release" />
                 <Info label="Project Type" value="Mobile Arcade" />
                 <Info label="Platform" value="Android, iOS (later release)" />
+                <Info label="Price" value="$0.99" />
                 <Info label="Engine" value="Unity" />
               </div>
 
