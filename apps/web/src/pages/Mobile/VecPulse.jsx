@@ -15,6 +15,24 @@ const vecpulseScreenshots = [
   "/pictures/vecpic8.jpeg",
 ];
 
+// Edit this array whenever you ship a new update.
+// Newest entry goes on top.
+const vecpulsePatchNotes = [
+  {
+    version: "v1.1",
+    date: "July 2026",
+    notes: [
+      "Added new death messages",
+      "Web build: added spacebar + click support",
+    ],
+  },
+  {
+    version: "v1.0",
+    date: "Initial Release",
+    notes: ["Base game launch"],
+  },
+];
+
 export default function VecPulseOverview() {
   const [lightboxIndex, setLightboxIndex] = useState(null);
 
@@ -33,7 +51,7 @@ export default function VecPulseOverview() {
       <Header />
 
       <main className="min-h-screen bg-white px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-7xl">
           <Link
             to="/games"
             className="mb-8 inline-flex items-center gap-1 text-sm font-medium text-neutral-600 transition-colors hover:text-black"
@@ -78,7 +96,16 @@ export default function VecPulseOverview() {
             </div>
           </div>
 
-          <div className="mt-12 grid gap-10 md:grid-cols-[1fr_280px]">
+          {/*
+            Layout behavior:
+            - Mobile/tablet (below lg): everything stacks in one column,
+              in document order — Overview content, then Status card,
+              then Patch Notes.
+            - Desktop (lg and up): 3 columns — main content (flexible width),
+              Status/Screenshots sidebar (fixed 260px), Patch Notes sidebar
+              (fixed 260px).
+          */}
+          <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_260px_260px]">
             <div className="space-y-12">
               <Section title="Overview">
                 <p>
@@ -141,7 +168,7 @@ export default function VecPulseOverview() {
               </Section>
             </div>
 
-            <aside className="space-y-6 md:sticky md:top-24 md:self-start">
+            <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
               <div className="rounded-2xl border border-neutral-200 p-6">
                 <Info label="Status" value="Preparing for Release" />
                 <Info label="Project Type" value="Mobile Arcade" />
@@ -165,6 +192,19 @@ export default function VecPulseOverview() {
                         className="h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
                       />
                     </button>
+                  ))}
+                </div>
+              </div>
+            </aside>
+
+            <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
+              <div className="rounded-2xl border border-neutral-200 p-6">
+                <p className="mb-4 text-sm font-semibold text-neutral-500">
+                  Patch Notes
+                </p>
+                <div className="space-y-5">
+                  {vecpulsePatchNotes.map((entry) => (
+                    <PatchEntry key={entry.version} {...entry} />
                   ))}
                 </div>
               </div>
@@ -234,6 +274,23 @@ function Info({ label, value }) {
     <div className="border-b border-neutral-200 py-4 last:border-b-0">
       <p className="text-sm text-neutral-500">{label}</p>
       <p className="mt-1 font-bold">{value}</p>
+    </div>
+  );
+}
+
+function PatchEntry({ version, date, notes }) {
+  return (
+    <div className="border-b border-neutral-200 pb-5 last:border-b-0 last:pb-0">
+      <p className="text-sm font-bold text-black">
+        {version} <span className="font-normal text-neutral-500">— {date}</span>
+      </p>
+      <ul className="mt-2 space-y-1.5">
+        {notes.map((note, i) => (
+          <li key={i} className="text-sm leading-6 text-neutral-700">
+            • {note}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
