@@ -110,7 +110,9 @@ export default function VecPulseOverview() {
                   change at the shop, waiting on the wife to get done
                   shopping while the husband sits in the car because he
                   refused to go into target, and many other time wasting
-                  scenarios.
+                  scenarios. Another thing to add here is the reasoning why it's a
+                  paid game. I've played mobile games and almost every time there's ads.
+                  One-time payment, zero ads thrown in your face. Sounds better.
                 </p>
               </Section>
 
