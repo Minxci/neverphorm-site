@@ -53,18 +53,8 @@ const HomePage = () => {
 
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative h-[62vh] min-h-[520px] max-h-[720px] flex items-center justify-start overflow-hidden">
-          {/* Background Image with Overlay */}
-          <div className="absolute inset-0 z-0 overflow-hidden">
-            {/* <img src="" alt="dev workflow" className="w-full h-full object-cover object-center" style={{
-            filter: 'brightness(0.85) contrast(1.05)'
-          }} /> */}
-            {/* <div className="absolute inset-0 bg-white/15"></div>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/10 to-white/70"></div> */}
-          </div>
 
           {/* Content */}
-        </section>
 
 
         {/* News + Updates section */}
