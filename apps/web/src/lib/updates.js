@@ -18,13 +18,6 @@ export const updates = [
       text: "I updated the contact form... So that's working again.",
     },
     {
-      title: "Small break + dabbling with mobile gaming",
-      date: "June 11, 2026",
-      type: "Devlog",
-      video: "https://www.youtube.com/watch?v=eNomek-hIjI",
-      text: "Took a break today from the main project and decided to toy around, dabble with the thought of mobile gaming. The music tracks are coming from the game and played at random upon a new start (if gameobject hits player). I'm not a huge fan of mobile gaming but today something just spark the idea to see what that's about and mess around with it in Unity.",
-    },
-    {
       title: "Materials and Textures",
       date: "June 6, 2026",
       type: "Devlog",
