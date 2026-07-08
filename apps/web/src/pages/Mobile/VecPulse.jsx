@@ -151,6 +151,17 @@ export default function VecPulseOverview() {
                 every future Neverphorm title.
                 </p>
               </Section>
+
+              <Section title="Extra Notes">
+                <p className="text-black">
+                  Currently playable here on the site as you can see. Decided to make it a free 
+                  game on the site although thats the only way you can play it free or it will be purchasable on
+                  the Play Store and App Store here some time soon. Only thing I am currently waiting on
+                  is the D-U-N-S number, that's the only hold up right now and why it's not shipped yet. 
+                  Enjoy the game here though! Remember, look out for that ultra-rare death message and don't forget to
+                  send us the screenshot! 
+                </p>
+              </Section>
             </div>
 
             <aside className="space-y-6 md:sticky md:top-24 md:self-start">
