@@ -4,30 +4,6 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-function VecPulseEmbed() {
-  const [started, setStarted] = useState(false);
-
-  return (
-    <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-black w-full max-w-md mx-auto aspect-[9/16] relative">
-      {started ? (
-        <iframe
-          src="/webgl-builds/vecpulse/index.html"
-          title="Play VecPulse in your browser"
-          className="w-full h-full"
-          allow="fullscreen"
-        />
-      ) : (
-        <button
-          onClick={() => setStarted(true)}
-          className="w-full h-full flex items-center justify-center bg-black text-white text-xl font-bold hover:bg-neutral-900 transition-colors"
-        >
-          ▶ Play Game
-        </button>
-      )}
-    </div>
-  );
-}
-
 const vecpulseScreenshots = [
   "/pictures/vecpic1.jpeg",
   "/pictures/vecpic2.jpeg",
@@ -52,6 +28,7 @@ const vecpulsePatchNotes = [
 
 export default function VecPulseOverview() {
   const [lightboxIndex, setLightboxIndex] = useState(null);
+  const [gameOpen, setGameOpen] = useState(false);
 
   const closeLightbox = () => setLightboxIndex(null);
   const showPrev = () =>
@@ -188,21 +165,12 @@ export default function VecPulseOverview() {
             </div>
 
             <aside className="space-y-6 md:sticky md:top-24 md:self-start">
-              <div>
-                <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-black">
-                  <iframe
-                    src="/webgl-builds/vecpulse/index.html"
-                    title="Play VecPulse in your browser"
-                    className="aspect-[9/16] w-full"
-                    allow="fullscreen"
-                  />
-                </div>
-                <p className="mt-3 text-xs text-neutral-500">
-                  Tap/click and hold, or hold left mouse button to slow down. No leaderboard
-                  here — grab the full version on mobile for that plus a permanent
-                  install.
-                </p>
-              </div>
+              <button
+                onClick={() => setGameOpen(true)}
+                className="w-full rounded-2xl bg-green-500 py-4 text-lg font-bold text-white transition-colors hover:bg-green-600"
+              >
+                ▶ Play Game
+              </button>
 
               <div className="rounded-2xl border border-neutral-200 p-6">
                 <Info label="Status" value="Preparing for Release" />
@@ -245,6 +213,33 @@ export default function VecPulseOverview() {
           </div>
         </div>
       </main>
+
+      {gameOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 px-4"
+          onClick={() => setGameOpen(false)}
+        >
+          <button
+            onClick={() => setGameOpen(false)}
+            className="absolute right-6 top-6 text-white/70 transition-colors hover:text-white"
+            aria-label="Close"
+          >
+            <X className="h-8 w-8" />
+          </button>
+
+          <div
+            className="aspect-[9/16] w-full max-w-md overflow-hidden rounded-2xl bg-black"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <iframe
+              src="/webgl-builds/vecpulse/index.html"
+              title="Play VecPulse in your browser"
+              className="h-full w-full"
+              allow="fullscreen"
+            />
+          </div>
+        </div>
+      )}
 
       {lightboxIndex !== null && (
         <div
