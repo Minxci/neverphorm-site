@@ -154,6 +154,22 @@ export default function VecPulseOverview() {
             </div>
 
             <aside className="space-y-6 md:sticky md:top-24 md:self-start">
+              <div>
+                <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-black">
+                  <iframe
+                    src="/webgl-builds/vecpulse/index.html"
+                    title="Play VecPulse in your browser"
+                    className="aspect-[9/16] w-full"
+                    allow="fullscreen"
+                  />
+                </div>
+                <p className="mt-3 text-xs text-neutral-500">
+                  Tap/click and hold, or hold Space, to slow down. No leaderboard
+                  here — grab the full version on mobile for that plus a permanent
+                  install.
+                </p>
+              </div>
+
               <div className="rounded-2xl border border-neutral-200 p-6">
                 <Info label="Status" value="Preparing for Release" />
                 <Info label="Project Type" value="Mobile Arcade" />
