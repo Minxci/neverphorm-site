@@ -235,6 +235,7 @@ export default function VecPulseOverview() {
               src="/webgl-builds/vecpulse/index.html"
               title="Play VecPulse in your browser"
               className="h-full w-full"
+              allow="fullscreen 'none'"
             />
           </div>
         </div>
