@@ -57,37 +57,6 @@ const HomePage = () => {
           {/* Content */}
 
 
-        {/* News + Updates section */}
-        <section className="max-w-6xl mx-auto px-6 py-24">
-          <div className="flex items-end justify-between mb-10">
-            <div>
-              <p className="text-lg tracking-[0.25em] uppercase text-black mb-3">
-                Updates
-              </p>
-            </div>
-          </div>
-
-          <div className="space-y-6">
-            <Link
-              to="/updates"
-              className="block bg-white border border-neutral-200 rounded-3xl p-8 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-neutral-300"
-            >
-              <p className="text-sm text-neutral-500 mb-4">
-                {latestUpdate.date} · {latestUpdate.type}
-              </p>
-
-              <h3 className="text-3xl font-semibold text-black mb-4">
-                {latestUpdate.title}
-              </h3>
-
-              <p className="text-neutral-600 text-lg leading-8">
-                {latestUpdate.text}
-              </p>
-            </Link>
-          </div>
-        </section>
-
-
         {/* About Section */}
 
 
@@ -204,15 +173,44 @@ const HomePage = () => {
           </div>
         </section>*/}
 
+        {/* News + Updates section */}
+        <section className="max-w-6xl mx-auto px-6 py-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"> 
+          <div className="flex items-end justify-between mb-10">
+            <div>
+              <p className="text-lg tracking-[0.25em] uppercase text-black mb-3">
+                Devlog
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-6">
+            <Link
+              to="/updates"
+              className="block bg-white border border-neutral-200 rounded-3xl p-8 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-neutral-300"
+            >
+              <p className="text-sm text-neutral-500 mb-4">
+                {latestUpdate.date} · {latestUpdate.type}
+              </p>
+
+              <h3 className="text-3xl font-semibold text-black mb-4">
+                {latestUpdate.title}
+              </h3>
+
+              <p className="text-neutral-600 text-lg leading-8">
+                {latestUpdate.text}
+              </p>
+            </Link>
+          </div>
 
 
         {/* Contact Section */}
 
-
-
         <div id="contactus">
           <ContactSection />
         </div> 
+        </div>
+        </section>
       </main>
 
       <Footer />
