@@ -20,9 +20,8 @@ const vecpulsePatchNotes = [
     version: "v1.0",
     date: "Initial Release",
     notes: [
-      "Base game launch",
+      "Game launch - WebGL version",
       "Added new death messages",
-      "Web build: added spacebar support",
     ],
   },
 ];
@@ -175,7 +174,7 @@ export default function VecPulseOverview() {
                   />
                 </div>
                 <p className="mt-3 text-xs text-neutral-500">
-                  Tap/click and hold, or hold Space, to slow down. No leaderboard
+                  Tap/click and hold, or hold left mouse button to slow down. No leaderboard
                   here — grab the full version on mobile for that plus a permanent
                   install.
                 </p>
