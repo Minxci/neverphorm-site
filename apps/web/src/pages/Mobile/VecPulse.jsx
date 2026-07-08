@@ -166,6 +166,8 @@ export default function VecPulseOverview() {
               <Section title="Bugs or Issues right now">
                 <p className="text-black">
                   This web version is unplayable. I need to go back into Unity and fix the walls and the point circle. 
+                  Unless you want to basically just... Survive and not get hit and see how long you can last or 
+                  farm for that ultra-rare death message. That's up to you. 
                 </p>
               </Section>
             </div>
