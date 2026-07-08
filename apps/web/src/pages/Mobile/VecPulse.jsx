@@ -162,6 +162,12 @@ export default function VecPulseOverview() {
                   send us the screenshot! 
                 </p>
               </Section>
+
+              <Section title="Bugs or Issues right now">
+                <p className="text-black">
+                  This web version is unplayable. I need to go back into Unity and fix the walls and the point circle. 
+                </p>
+              </Section>
             </div>
 
             <aside className="space-y-6 md:sticky md:top-24 md:self-start">
