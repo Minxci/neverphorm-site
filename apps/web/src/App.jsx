@@ -11,6 +11,7 @@ import Culture from "./pages/Culture.jsx";
 import Updates from "./pages/Updates.jsx";
 import Games from "./pages/Games.jsx";
 import VecPulse from "@/pages/Mobile/VecPulse.jsx";
+import NotFound from "@/pages/NotFound";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/updates" element={<Updates />} />
 
         <Route path="/mobile/vecpulse" element={<VecPulse />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
