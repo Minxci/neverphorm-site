@@ -4,6 +4,30 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+function VecPulseEmbed() {
+  const [started, setStarted] = useState(false);
+
+  return (
+    <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-black w-full max-w-md mx-auto aspect-[9/16] relative">
+      {started ? (
+        <iframe
+          src="/webgl-builds/vecpulse/index.html"
+          title="Play VecPulse in your browser"
+          className="w-full h-full"
+          allow="fullscreen"
+        />
+      ) : (
+        <button
+          onClick={() => setStarted(true)}
+          className="w-full h-full flex items-center justify-center bg-black text-white text-xl font-bold hover:bg-neutral-900 transition-colors"
+        >
+          ▶ Play Game
+        </button>
+      )}
+    </div>
+  );
+}
+
 const vecpulseScreenshots = [
   "/pictures/vecpic1.jpeg",
   "/pictures/vecpic2.jpeg",
