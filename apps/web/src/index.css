@@ -6,43 +6,16 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 8%;
-  
-    --primary: 0 0% 8%;
-    --primary-foreground: 0 0% 100%;
-  
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 8%;
-  
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 40%;
-  
-    --accent: 0 0% 92%;
-    --accent-foreground: 0 0% 8%;
-  
-    --border: 0 0% 88%;
-    --input: 0 0% 88%;
-    --ring: 0 0% 8%;
-  
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 8%;
-  
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 8%;
-  
-    --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 0 0% 8%;
-    --sidebar-primary: 0 0% 8%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 96%;
-    --sidebar-accent-foreground: 0 0% 8%;
-    --sidebar-border: 0 0% 88%;
-    --sidebar-ring: 0 0% 8%;
+    --bg: #1a1310;
+    --bg-card: #241b16;
+    --text: #f2e9e0;
+    --text-muted: #a8988a;
+    --accent: #e8792a;
+    --border: #3a2c22;
   }
 
   * {
-    border-color: hsl(var(--border));
+    border-color: var(--border);
   }
 
   html {
@@ -51,8 +24,8 @@
 
   body {
     font-family: "DM Sans", sans-serif;
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
+    background-color: var(--bg);
+    color: var(--text);
     overflow-x: clip;
     font-feature-settings: "kern" 1, "liga" 1;
     -webkit-font-smoothing: antialiased;
@@ -72,24 +45,25 @@
   .transition-base {
     transition: all 0.3s ease;
   }
-  
+
   .team-card-hover {
-    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10 hover:border-primary/30;
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
   }
 
   .animated-gradient-text {
-  background: linear-gradient(
-    270deg,
-    #06b6d4,
-    #8b5cf6,
-    #ec4899,
-    #f97316,
-    #06b6d4
-  );
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientShift 10s ease infinite;
+    background: linear-gradient(
+      270deg,
+      #06b6d4,
+      #8b5cf6,
+      #ec4899,
+      #f97316,
+      #06b6d4
+    );
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 10s ease infinite;
+  }
 }
 
 @keyframes gradientShift {
@@ -102,7 +76,4 @@
   100% {
     background-position: 0% 50%;
   }
-}
-
-
 }
