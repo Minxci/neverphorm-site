@@ -174,8 +174,10 @@ const HomePage = () => {
         </section>*/}
 
         {/* News + Updates section */}
-        <section className="max-w-6xl mx-auto px-6 py-24">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"> 
+
+      <section className="max-w-6xl mx-auto px-6 py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"> 
+          <div>
           <div className="flex items-end justify-between mb-10">
             <div>
               <p className="text-lg tracking-[0.25em] uppercase text-black mb-3">
@@ -202,6 +204,7 @@ const HomePage = () => {
               </p>
             </Link>
           </div>
+        </div>
 
 
         {/* Contact Section */}
@@ -209,9 +212,9 @@ const HomePage = () => {
         <div id="contactus">
           <ContactSection />
         </div> 
-        </div>
-        </section>
-      </main>
+      </div>
+    </section>
+  </main>
 
       <Footer />
     </>;
