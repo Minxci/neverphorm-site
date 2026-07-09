@@ -173,12 +173,6 @@ export default function VecPulseOverview() {
             </div>
 
             <aside className="space-y-6 md:sticky md:top-24 md:self-start">
-              <button
-                onClick={() => setGameOpen(true)}
-                className="w-full rounded-2xl bg-green-500 py-4 text-lg font-bold text-white transition-colors hover:bg-green-600"
-              >
-                ▶ Play Game
-              </button>
 
               <div className="rounded-2xl border border-neutral-200 p-6">
                 <Info label="Status" value="Preparing for Release" />
