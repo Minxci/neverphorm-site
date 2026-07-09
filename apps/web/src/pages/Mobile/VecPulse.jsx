@@ -222,33 +222,6 @@ export default function VecPulseOverview() {
         </div>
       </main>
 
-      {gameOpen && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 px-4"
-          onClick={() => setGameOpen(false)}
-        >
-          <button
-            onClick={() => setGameOpen(false)}
-            className="absolute right-6 top-6 text-white/70 transition-colors hover:text-white"
-            aria-label="Close"
-          >
-            <X className="h-8 w-8" />
-          </button>
-
-          <div
-            className="aspect-[9/16] w-full max-w-md overflow-hidden rounded-2xl bg-black"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <iframe
-              src="/webgl-builds/vecpulse/index.html"
-              title="Play VecPulse in your browser"
-              className="h-full w-full"
-              allow="fullscreen 'none'"
-            />
-          </div>
-        </div>
-      )}
-
       {lightboxIndex !== null && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 px-4"
