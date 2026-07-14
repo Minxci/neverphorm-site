@@ -37,12 +37,6 @@ const HomePage = () => {
   //  role: "Business Operations Lead"
   //}];
 
-  const devStack = {
-    "Game Development": ["Unity", "Unreal Engine", "C++", "C#", "Maya", "Blender", "Autodesk Sketchbook", "Substance Painter", "Figma", "GitHub", "DaVinci"],
-    "Web & Systems": ["React", "React Native", "TailwindCSS", "Vercel", "Vite", "VIM", "Rebase", "JavaScript", "Expo", "Supabase", "Node.js", "GitHub"],
-    "Planning & Workflow": [ "IET", "Trello", "Notion", "Google Drive", "Discord", "DocuSign", "Microsoft 365"],
-  };
-
   return <>
       <Helmet>
         <title>Project Neverphorm</title>
@@ -59,14 +53,14 @@ const HomePage = () => {
 
         {/* About Section */}
 
-
         <section className="py-24 bg-muted/30">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <motion.div initial="initial" whileInView="animate" viewport={{
-            once: true,
-            margin: "-100px"
-          }} variants={fadeInUp}
-            className="text-center lg:text-left"
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={fadeInUp}
+              className="max-w-3xl mx-auto text-center lg:text-left"
             >
               <h2 className="text-3xl md:text-4xl font-semibold mb-8 leading-snug">
                 About the Studio
@@ -87,53 +81,8 @@ const HomePage = () => {
                   Depending on how well this infrastructure turns out, there may be an avenue to open it up for other creative studios and teams as a 
                   SaaS offering down the road. A sign that Project Neverphorm's ambitions extend beyond just game development.
                 </p>
-
               </div>
             </motion.div>
-
-
-            {/* Studio Ecosystem Section */}
-
-
-            <motion.aside
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true, margin: "-100px" }}
-              variants={fadeInUp}
-              className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm"
-            >
-              <h2 className="text-2xl md:text-3xl font-semibold mb-2">
-                Studio Infrastructure
-              </h2>
-
-              <p className="text-neutral-600 mb-6">
-                Tools, software, and systems currently used across game development,
-                web development, planning, and studio workflow. The development stack depends on the project. 
-                Unity and UE are both used, since the choice of engine comes down to what each game needs. They're both
-                tools, not a fixed pipeline.
-              </p>
-
-              <div className="space-y-6">
-                {Object.entries(devStack).map(([category, tools]) => (
-                  <div key={category}>
-                    <h3 className="text-black font-semibold mb-3">
-                      {category}
-                    </h3>
-
-                  <div className="flex flex-wrap gap-2">
-                    {tools.map((tool) => (
-                      <span
-                        key={tool}
-                        className="rounded-full border border-neutral-200 bg-neutral-100 px-3 py-1 text-sm text-neutral-700"
-                      >
-                          {tool}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </motion.aside>
           </div>
         </section>
 
