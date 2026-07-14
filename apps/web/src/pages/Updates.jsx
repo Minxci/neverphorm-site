@@ -23,7 +23,7 @@ export default function Updates() {
       <main className="bg-white text-neutral-950 px-6 py-24">
         <section className="max-w-7xl mx-auto">
           <p className="text-sm uppercase tracking-[0.25em] text-black mb-8">
-            Devlogs, News, Updates, and more
+            Updates
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_0.8fr] gap-10 items-start">
