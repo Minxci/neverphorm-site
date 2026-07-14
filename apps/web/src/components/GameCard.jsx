@@ -13,8 +13,17 @@ export default function GameCard({
   description,
   overviewPath,
   locked = false,
+  minimal = false,
 }) {
   const [showLocked, setShowLocked] = useState(false);
+
+  if (minimal) {
+    return (
+      <div className="flex min-h-[200px] w-full items-center justify-center rounded-2xl border border-neutral-200 bg-white sm:min-h-[260px] lg:min-h-[320px]">
+        <p className="text-lg font-semibold text-black">In development....</p>
+      </div>
+    );
+  }
 
   const cardContent = (
     <>

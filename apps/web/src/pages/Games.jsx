@@ -18,16 +18,7 @@ const games = [
     locked: false,
   },
   {
-    image: "/pictures/foreshadowingscreenshot.png",
-    status: "In Development",
-    title: "Foreshadowing",
-    projectType: "Atmospheric Exploration",
-    launchDate: "Q4 2026",
-    description: {
-      heading: "An atmospheric experience currently in development.",
-      body: "Foreshadowing is a smaller, focused project built around atmosphere, exploration, environmental storytelling, and a strong sense of place. More details will be shared as the project develops.",
-    },
-    locked: true,
+    minimal: true,
   },
 ];
 
