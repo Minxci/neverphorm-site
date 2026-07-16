@@ -82,11 +82,6 @@ export default function VecPulseOverview() {
                 alt="Get it on Google Play"
                 className="h-10 w-auto opacity-50"
               />
-              <img
-                src="/pictures/app-store-badge.png"
-                alt="Download on the App Store"
-                className="h-10 w-auto opacity-50"
-              />
             </div>
           </div>
 
