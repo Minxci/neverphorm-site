@@ -107,7 +107,7 @@ export default function VecPulseOverview() {
                   toes into the water" type of project for the mobile
                   experience. I (cody) have never been a real big fan of
                   mobile game development but I caved in and wanted to
-                  experiment with it a little bit.
+                  experiment with it a little bit. Also to prove that we can ship.
                 </p>
               </Section>
 
@@ -152,22 +152,11 @@ export default function VecPulseOverview() {
                 </p>
               </Section>
 
-              <Section title="Extra Notes">
+              <Section title="Extra Notes (updated 7/16/2026)">
                 <p className="text-black">
-                  Currently playable here on the site as you can see. Decided to make it a free 
-                  game on the site although thats the only way you can play it free or it will be purchasable on
-                  the Play Store and App Store here some time soon. Only thing I am currently waiting on
-                  is the D-U-N-S number, that's the only hold up right now and why it's not shipped yet. 
-                  Enjoy the game here though! Remember, look out for that ultra-rare death message and don't forget to
-                  send us the screenshot! 
-                </p>
-              </Section>
-
-              <Section title="Bugs or Issues right now">
-                <p className="text-black">
-                  This web version is unplayable. I need to go back into Unity and fix the walls and the point circle. 
-                  Unless you want to basically just... Survive and not get hit and see how long you can last or 
-                  farm for that ultra-rare death message. That's up to you. 
+                  Currently in review for release. May include leaderboard some time down the road, depends
+                  on player demand truthfully, or any other feature really. Since there is a main project we're 
+                  currently working on. 
                 </p>
               </Section>
             </div>
@@ -177,7 +166,7 @@ export default function VecPulseOverview() {
               <div className="rounded-2xl border border-neutral-200 p-6">
                 <Info label="Status" value="Preparing for Release" />
                 <Info label="Project Type" value="Mobile Arcade" />
-                <Info label="Platform" value="Android, iOS (later release)" />
+                <Info label="Platform" value="Android" />
                 <Info label="Price" value="$0.99" />
                 <Info label="Engine" value="Unity" />
               </div>
