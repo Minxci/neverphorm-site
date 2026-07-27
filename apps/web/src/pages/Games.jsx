@@ -5,7 +5,7 @@ import GameCard from "@/components/GameCard.jsx";
 const games = [
   {
     image: "/pictures/vecpulse-background.png",
-    status: "Preparing for Release",
+    status: "Released",
     title: "VecPulse",
     price: "$0.99",
     projectType: "Mobile Arcade",
