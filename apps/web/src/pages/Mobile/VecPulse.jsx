@@ -20,7 +20,7 @@ const vecpulsePatchNotes = [
     version: "v1.0",
     date: "Initial Release",
     notes: [
-      "Game launch - WebGL version",
+      "Game launch",
       "Added new death messages",
     ],
   },
