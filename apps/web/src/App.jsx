@@ -7,7 +7,6 @@ import HomePage from './pages/HomePage.jsx';
 import ContactUsPage from './pages/ContactUsPage.jsx';
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
-import Culture from "./pages/Culture.jsx";
 import Updates from "./pages/Updates.jsx";
 import Games from "./pages/Games.jsx";
 import VecPulse from "@/pages/Mobile/VecPulse.jsx";
@@ -23,7 +22,6 @@ function App() {
         <Route path="/contact" element={<ContactUsPage />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsOfService />} />
-        <Route path="/culture" element={<Culture />} />
         <Route path="/games" element={<Games />} />
         <Route path="/updates" element={<Updates />} />
 
