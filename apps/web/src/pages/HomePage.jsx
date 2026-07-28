@@ -8,6 +8,8 @@ import ContactSection from '@/components/ContactSection.jsx';
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card.jsx";
 import { Link } from "react-router-dom";
 import { getSortedUpdates } from "@/lib/updates.js";
+import GameCard from "@/components/GameCard.jsx";
+import { games } from "@/data/games.js";
 
 
 const HomePage = () => {
@@ -114,7 +116,7 @@ const HomePage = () => {
           </div>
         </section>*/}
 
-        {/* News + Updates section */}
+        {/* Games + Updates section */}
 
       <section className="max-w-6xl mx-auto px-6 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"> 
@@ -127,25 +129,23 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="space-y-6">
-            <Link
-              to="/updates"
-              className="block bg-white border border-neutral-200 rounded-3xl p-8 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-neutral-300"
-            >
-              <p className="text-sm text-neutral-500 mb-4">
-                {latestUpdate.date} · {latestUpdate.type}
-              </p>
+           {/* Games section */}
 
-              <h3 className="text-3xl font-semibold text-black mb-4">
-                {latestUpdate.title}
-              </h3>
-
-              <p className="text-neutral-600 text-lg leading-8">
-                {latestUpdate.text}
-              </p>
-            </Link>
-          </div>
-        </div>
+          <section className="px-6 pb-20 sm:px-10 lg:px-20">
+            <div className="ml-0 mr-auto max-w-3xl">
+              <div className="mb-10">
+                <p className="mb-4 text-medium font-semibold uppercase tracking-[0.25em] text-primary">
+                  Games
+                </p>
+              </div>
+              <div className="space-y-8">
+                {games.map((game) => (
+                  <GameCard key={game.title} {...game} />
+                ))}
+              </div>
+            </div>
+          </section>
+        </div> 
 
 
         {/* Contact Section */}
