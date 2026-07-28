@@ -19,15 +19,15 @@ export default function GameCard({
 
   if (minimal) {
     return (
-      <div className="flex min-h-[200px] w-full items-center justify-center rounded-2xl border border-neutral-200 bg-white sm:min-h-[260px] lg:min-h-[320px]">
-        <p className="text-lg font-semibold text-black">In development....</p>
+      <div className="flex min-h-[120px] w-full items-center justify-center rounded-2xl border border-neutral-200 bg-white sm:min-h-[140px]">
+        <p className="text-sm font-semibold text-black">In development....</p>
       </div>
     );
   }
 
   const cardContent = (
     <>
-      <div className="relative h-[200px] overflow-hidden sm:h-[260px] lg:h-[320px]">
+      <div className="relative h-[120px] overflow-hidden sm:h-[140px]">
         <img
           src={image}
           alt={`${title} preview`}
@@ -36,7 +36,7 @@ export default function GameCard({
           }`}
         />
         {price && (
-          <div className="absolute top-4 right-4 sm:top-5 sm:right-5 bg-black/70 backdrop-blur-sm text-white text-base sm:text-lg font-bold px-4 py-1.5 sm:px-5 sm:py-2 rounded-full">
+          <div className="absolute top-2 right-2 bg-black/70 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full">
             {price}
           </div>
         )}
@@ -44,14 +44,14 @@ export default function GameCard({
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
         <div
-          className={`absolute bottom-0 left-0 right-0 p-5 transition-opacity duration-300 sm:p-7 ${
+          className={`absolute bottom-0 left-0 right-0 p-3 transition-opacity duration-300 ${
             showLocked ? "opacity-0" : "opacity-100"
           }`}
         >
-          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-white/70">
+          <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-white/70">
             {status}
           </p>
-          <h2 className="text-2xl font-bold tracking-tight text-white drop-shadow-lg sm:text-3xl lg:text-4xl">
+          <h2 className="text-lg font-bold tracking-tight text-white drop-shadow-lg">
             {title}
           </h2>
         </div>
@@ -63,13 +63,13 @@ export default function GameCard({
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-black/40 px-6 text-center"
+              className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-black/40 px-4 text-center"
             >
-              <Lock className="h-6 w-6 text-white" />
-              <p className="text-base font-semibold text-white sm:text-lg">
+              <Lock className="h-5 w-5 text-white" />
+              <p className="text-sm font-semibold text-white">
                 Still in development...
               </p>
-              <p className="text-xs text-white/80 sm:text-sm">
+              <p className="text-xs text-white/80">
                 Overview is unavailable
               </p>
             </motion.div>
@@ -78,39 +78,16 @@ export default function GameCard({
       </div>
 
       <div
-        className={`p-5 transition-opacity duration-300 sm:p-6 lg:p-7 ${
+        className={`p-4 transition-opacity duration-300 ${
           showLocked ? "pointer-events-none opacity-40" : ""
         }`}
       >
-        <div className="grid gap-6 md:grid-cols-[1.4fr_220px]">
-          <div>
-            <h3 className="mb-3 text-lg font-bold text-black">
-              {description.heading}
-            </h3>
-            <p className="text-sm leading-6 text-neutral-600">
-              {description.body}
-            </p>
-          </div>
-
-          <div className="rounded-xl border border-neutral-200 bg-white p-4">
-            <div className="space-y-4">
-              <div>
-                <p className="mb-1 text-xs text-neutral-500">Status:</p>
-                <p className="text-sm font-bold text-black">{status}</p>
-              </div>
-              <div>
-                <p className="mb-1 text-xs text-neutral-500">Project Type:</p>
-                <p className="text-sm font-bold text-black">{projectType}</p>
-              </div>
-              <div>
-                <p className="mb-1 text-xs text-neutral-500">
-                  Anticipated Launch Date:
-                </p>
-                <p className="text-sm font-bold text-black">{launchDate}</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h3 className="mb-1 text-sm font-bold text-black line-clamp-2">
+          {description.heading}
+        </h3>
+        <p className="text-xs text-neutral-500">
+          {status} · {projectType}
+        </p>
       </div>
     </>
   );
