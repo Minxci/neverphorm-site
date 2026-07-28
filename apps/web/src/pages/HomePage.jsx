@@ -116,46 +116,25 @@ const HomePage = () => {
           </div>
         </section>*/}
 
-        {/* Games + Updates section */}
-
-      <section className="max-w-6xl mx-auto px-6 py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"> 
-          <div>
-          <div className="flex items-end justify-between mb-10">
-            <div>
-              <p className="text-lg tracking-[0.25em] uppercase text-black mb-3">
-                Devlog
+        {/* Games section */}
+          <section className="max-w-6xl mx-auto px-6 py-24">
+            <div className="mb-10">
+              <p className="text-lg font-semibold uppercase tracking-[0.25em] text-black mb-3">
+                Games
               </p>
             </div>
-          </div>
-
-           {/* Games section */}
-
-          <section className="px-6 pb-20 sm:px-10 lg:px-20">
-            <div className="ml-0 mr-auto max-w-3xl">
-              <div className="mb-10">
-                <p className="mb-4 text-medium font-semibold uppercase tracking-[0.25em] text-primary">
-                  Games
-                </p>
-              </div>
-              <div className="space-y-8">
-                {games.map((game) => (
-                  <GameCard key={game.title} {...game} />
-                ))}
-              </div>
+            <div className="space-y-8">
+              {games.map((game) => (
+                <GameCard key={game.title} {...game} />
+              ))}
             </div>
           </section>
-        </div> 
 
-
-        {/* Contact Section */}
-
-        <div id="contactus">
-          <ContactSection />
-        </div> 
-      </div>
-    </section>
-  </main>
+          {/* Contact Section */}
+          <section id="contactus" className="max-w-6xl mx-auto px-6 pb-24">
+            <ContactSection />
+          </section>
+            </main>
 
       <Footer />
     </>;
