@@ -181,7 +181,7 @@ export const ITSupportPage = () => {
               <h3>IT support</h3>
               <p>
                 Slow computers, setup, updates, printer trouble, malware cleanup, and the
-                day-to-day tech problems that pile up — especially for folks who'd rather
+                day-to-day tech problems that pile up, especially for folks who'd rather
                 not deal with them alone.
               </p>
               <span className="isp-mode">Remote or in-person</span>
@@ -190,9 +190,9 @@ export const ITSupportPage = () => {
               <div className="eyebrow">Wired &amp; wireless</div>
               <h3>Networking</h3>
               <p>
-                Home and small-business networking — routers, Wi-Fi dead zones, and getting
-                devices talking to each other properly. For panel work or new wiring, I work
-                alongside MerCo Electric here in Aledo.
+                Home and small-business networking; routers, Wi-Fi dead zones, and getting
+                devices talking to each other properly. For panel work or new wiring, I will point you to
+                MerCo Electric here in Aledo.
               </p>
               <span className="isp-mode">In-person</span>
             </div>
@@ -237,7 +237,7 @@ export const ITSupportPage = () => {
           <div className="isp-disclaimer">
             Some issues come down to your internet provider or building wiring rather than
             your equipment. If it's a provider issue I'll say so plainly, and if it needs an
-            electrician, I'll point you to MerCo Electric here in Aledo — no charge for a
+            electrician, I'll point you to MerCo Electric here in Aledo, no charge for a
             diagnosis that ends there.
           </div>
         </div>
@@ -250,7 +250,7 @@ export const ITSupportPage = () => {
             <h2>Request an appointment</h2>
             <p>
               Remote sessions are usually available same-day. On-site visits are scheduled
-              around Mercer County — just let me know where you're located.
+              around Mercer County, just let me know where you're located.
             </p>
           </div>
           <form className="isp-form" onSubmit={(e) => e.preventDefault()}>
