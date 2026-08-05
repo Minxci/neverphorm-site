@@ -25,6 +25,7 @@ const Header = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
+    { name: 'IT Support', path: '/itsupport' },
   ];
 
   const isActive = (path) => {
