@@ -8,7 +8,6 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import VecPulse from "@/pages/Mobile/VecPulse.jsx";
 import NotFound from "@/pages/NotFound";
-import ITSupport from "@/pages/ITSupport";
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsOfService />} />
-        <Route path="/itsupport" element={<ITSupport />} />
 
         <Route path="/mobile/vecpulse" element={<VecPulse />} />
         <Route path="*" element={<NotFound />} />
