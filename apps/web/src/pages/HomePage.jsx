@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { getSortedUpdates } from "@/lib/updates.js";
 import GameCard from "@/components/GameCard.jsx";
 import { games } from "@/data/games.js";
+import { fadeInUp } from '../lib/animations';
 
 
 const HomePage = () => {
