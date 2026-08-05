@@ -159,7 +159,7 @@ export default function VecPulseOverview() {
             <aside className="space-y-6 md:sticky md:top-24 md:self-start">
 
               <div className="rounded-2xl border border-neutral-200 p-6">
-                <Info label="Status" value="Preparing for Release" />
+                <Info label="Status" value="Released" />
                 <Info label="Project Type" value="Mobile Arcade" />
                 <Info label="Platform" value="Android" />
                 <Info label="Price" value="$0.99" />
