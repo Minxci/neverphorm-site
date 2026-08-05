@@ -1,6 +1,19 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { fadeInUp } from '../lib/animations'; // adjust path if your fadeInUp lives elsewhere
+
+const fadeInUp = {
+    initial: {
+      opacity: 0,
+      y: 20
+    },
+    animate: {
+      opacity: 1,
+      y: 0
+    },
+    transition: {
+      duration: 0.6
+    }
+  };
 
 const services = [
   {
