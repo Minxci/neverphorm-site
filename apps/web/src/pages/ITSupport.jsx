@@ -58,7 +58,7 @@ export const ITSupportPage = () => {
 
       {/* SUBNAV */}
       <nav className="sticky top-0 z-20 bg-[#161D26]/90 backdrop-blur-md border-b border-[#33404E]">
-        <div className="max-w-[1080px] mx-auto px-7 flex items-center justify-between py-4">
+        <div className="max-w-[1080px] mx-auto px-[1.75rem] flex items-center justify-between py-4">
           <div className="font-['Space_Grotesk'] font-bold text-base">
             Project <span className="text-[#E8A33D]">Neverphorm</span>
           </div>
@@ -77,12 +77,12 @@ export const ITSupportPage = () => {
       </nav>
 
       {/* HERO */}
-      <section className="py-22 pb-18 border-b border-[#33404E]">
-        <div className="max-w-[1080px] mx-auto px-7">
+      <section className="py-[5.5rem] pb-[4.5rem] border-b border-[#33404E]">
+        <div className="max-w-[1080px] mx-auto px-[1.75rem]">
           <div className="font-['JetBrains_Mono'] text-[0.72rem] tracking-[0.14em] uppercase text-[#8FA382]">
             IT Support · Networking · Web — Mercer County
           </div>
-          <h1 className="font-['Space_Grotesk'] font-semibold text-4xl md:text-[2.6rem] leading-tight max-w-2xl mt-4 mb-5">
+          <h1 className="font-['Space_Grotesk'] font-semibold text-4xl md:text-[2.6rem] leading-tight max-w-2xl mt-[1.125rem] mb-5">
             Computer trouble, without the drive to the Quad Cities.
           </h1>
           <p className="text-[#A9B4C0] max-w-lg text-base md:text-[1.05rem]">
@@ -90,14 +90,14 @@ export const ITSupportPage = () => {
             printers, Wi-Fi that won't behave, and everything in between. Plus networking and
             web development for local businesses.
           </p>
-          <div className="flex gap-2.5 mt-8 flex-wrap">
-            <div className="font-['JetBrains_Mono'] text-[0.72rem] border border-[#33404E] text-[#A9B4C0] px-3 py-1.5 rounded-sm">
+          <div className="flex gap-[0.625rem] mt-8 flex-wrap">
+            <div className="font-['JetBrains_Mono'] text-[0.72rem] border border-[#33404E] text-[#A9B4C0] px-3 py-[0.375rem] rounded-sm">
               Remote support <b className="text-[#8FA382] font-medium">available</b>
             </div>
-            <div className="font-['JetBrains_Mono'] text-[0.72rem] border border-[#33404E] text-[#A9B4C0] px-3 py-1.5 rounded-sm">
+            <div className="font-['JetBrains_Mono'] text-[0.72rem] border border-[#33404E] text-[#A9B4C0] px-3 py-[0.375rem] rounded-sm">
               On-site visits <b className="text-[#8FA382] font-medium">Mercer County</b>
             </div>
-            <div className="font-['JetBrains_Mono'] text-[0.72rem] border border-[#33404E] text-[#A9B4C0] px-3 py-1.5 rounded-sm">
+            <div className="font-['JetBrains_Mono'] text-[0.72rem] border border-[#33404E] text-[#A9B4C0] px-3 py-[0.375rem] rounded-sm">
               Simple fixes <b className="text-[#8FA382] font-medium">from $40</b>
             </div>
           </div>
@@ -105,8 +105,8 @@ export const ITSupportPage = () => {
       </section>
 
       {/* SERVICES */}
-      <section id="isp-services" className="py-18 border-b border-[#33404E]">
-        <div className="max-w-[1080px] mx-auto px-7">
+      <section id="isp-services" className="py-[4.5rem] border-b border-[#33404E]">
+        <div className="max-w-[1080px] mx-auto px-[1.75rem]">
           <h2 className="font-['Space_Grotesk'] font-semibold text-2xl md:text-[1.7rem] mb-2">
             What I help with
           </h2>
@@ -132,8 +132,8 @@ export const ITSupportPage = () => {
       </section>
 
       {/* PRICING */}
-      <section id="isp-pricing" className="py-18 border-b border-[#33404E]">
-        <div className="max-w-[1080px] mx-auto px-7">
+      <section id="isp-pricing" className="py-[4.5rem] border-b border-[#33404E]">
+        <div className="max-w-[1080px] mx-auto px-[1.75rem]">
           <h2 className="font-['Space_Grotesk'] font-semibold text-2xl md:text-[1.7rem] mb-2">
             Rough estimates
           </h2>
@@ -150,7 +150,7 @@ export const ITSupportPage = () => {
               </div>
             ))}
           </div>
-          <div className="mt-7 pl-4.5 pr-4.5 py-4 border-l-2 border-[#b98431] bg-[#1D2733] text-[#A9B4C0] text-[0.88rem] max-w-xl">
+          <div className="mt-7 pl-[1.125rem] pr-[1.125rem] py-4 border-l-2 border-[#b98431] bg-[#1D2733] text-[#A9B4C0] text-[0.88rem] max-w-xl">
             Some issues come down to your internet provider or building wiring rather than
             your equipment. If it's a provider issue I'll say so plainly, and if it needs an
             electrician, I'll point you to MerCo Electric here in Aledo — no charge for a
@@ -160,8 +160,8 @@ export const ITSupportPage = () => {
       </section>
 
       {/* BOOKING */}
-      <section id="isp-book" className="py-18">
-        <div className="max-w-[1080px] mx-auto px-7 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
+      <section id="isp-book" className="py-[4.5rem]">
+        <div className="max-w-[1080px] mx-auto px-[1.75rem] grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
           <div>
             <div className="font-['JetBrains_Mono'] text-[0.72rem] tracking-[0.14em] uppercase text-[#8FA382]">
               Get started
@@ -227,7 +227,7 @@ export const ITSupportPage = () => {
             </div>
             <button
               type="submit"
-              className="mt-1.5 bg-[#E8A33D] text-[#161D26] font-['Space_Grotesk'] font-semibold text-[0.9rem] px-4.5 py-3 rounded-sm"
+              className="mt-1.5 bg-[#E8A33D] text-[#161D26] font-['Space_Grotesk'] font-semibold text-[0.9rem] px-[1.125rem] py-3 rounded-sm"
             >
               Request appointment
             </button>
@@ -237,7 +237,7 @@ export const ITSupportPage = () => {
 
       {/* FOOTER */}
       <footer className="py-10 text-center">
-        <div className="max-w-[1080px] mx-auto px-7">
+        <div className="max-w-[1080px] mx-auto px-[1.75rem]">
           <p className="text-[#6B7684] text-[0.82rem] font-['JetBrains_Mono']">
             Project Neverphorm — game studio first, community tech support second. Proceeds fund studio development.
           </p>
