@@ -75,21 +75,6 @@ const HomePage = () => {
                 need to be put into development. There is a refusal to stay stuck or aligned with only one genre, as these projects vary drastically 
                 in their core vision and game/creative direction. 
                 </p>
-                <p>
-                  While the studio is focused mainly on video game development, the studio has opened up the doors to offer any IT support, networking
-                  (limited to software/admin side), web and database development if needed, here locally in Mercer County. We have noticed there's not much of a
-                  technology/software supported company here in town (or locally, without needing to have to travel to the local cities) and have decided to 
-                  offer our services to help the local community within all of Mercer County area with any hardware or software assistance. Click the button below here
-                  to explore the IT support for further information. 
-                </p>
-                <div className="mt-8">
-                  <Link
-                    to="/it-support"
-                    className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
-                  >
-                    Explore IT Support →
-                  </Link>
-                </div>
               </div>
             </motion.div>
           </div>
