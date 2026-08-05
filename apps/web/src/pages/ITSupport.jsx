@@ -4,19 +4,19 @@ const services = [
   {
     eyebrow: 'Hardware & software',
     title: 'IT support',
-    desc: "Slow computers, setup, updates, printer trouble, malware cleanup, and the day-to-day tech problems that pile up — especially for folks who'd rather not deal with them alone.",
+    desc: "Slow computers, setup, updates, printer trouble, malware cleanup, and the day-to-day tech problems that pile up, especially for folks who'd rather not deal with them alone.",
     mode: 'Remote or in-person',
   },
   {
     eyebrow: 'Wired & wireless',
     title: 'Networking',
-    desc: 'Home and small-business networking — routers, Wi-Fi dead zones, and getting devices talking to each other properly. For panel work or new wiring, I work alongside MerCo Electric here in Aledo.',
+    desc: 'Home and small-business networking; routers, Wi-Fi dead zones, and getting devices talking to each other properly. For panel work or new wiring, I will point you to MerCo Electric here in Aledo.',
     mode: 'In-person',
   },
   {
     eyebrow: 'Design, build & data',
     title: 'Web Development & Databases',
-    desc: 'New sites and redesigns for local businesses, built to actually be easy to navigate — plus database setup and backend work (Supabase and similar) for anything that needs to store or manage real data.',
+    desc: 'New sites and redesigns for local businesses, built to actually be easy to navigate, plus database setup and backend work (Supabase and similar) for anything that needs to store or manage real data.',
     mode: 'Remote, on-site kickoff optional',
   },
 ];
@@ -25,7 +25,7 @@ const pricing = [
   {
     title: 'IT support visit',
     amt: '$40–$75',
-    desc: 'Per visit, based on time and complexity. Simple stuff — a setup, a printer fix — lands on the low end.',
+    desc: 'Per visit, based on time and complexity. Simple stuff like a desk setup, or a printer fix, lands on the low end.',
   },
   {
     title: 'Networking setup',
@@ -80,13 +80,13 @@ export const ITSupportPage = () => {
       <section className="py-[5.5rem] pb-[4.5rem] border-b border-[#33404E]">
         <div className="max-w-[1080px] mx-auto px-[1.75rem]">
           <div className="font-['JetBrains_Mono'] text-[0.72rem] tracking-[0.14em] uppercase text-[#8FA382]">
-            IT Support · Networking · Web — Mercer County
+            IT Support · Networking · Web for Mercer County
           </div>
           <h1 className="font-['Space_Grotesk'] font-semibold text-4xl md:text-[2.6rem] leading-tight max-w-2xl mt-[1.125rem] mb-5">
             Computer trouble, without the drive to the Quad Cities.
           </h1>
           <p className="text-[#A9B4C0] max-w-lg text-base md:text-[1.05rem]">
-            Hardware and software help for anyone in Mercer County — slow computers, setup,
+            Hardware and software help for anyone in Mercer County: slow computers, setup,
             printers, Wi-Fi that won't behave, and everything in between. Plus networking and
             web development for local businesses.
           </p>
@@ -153,7 +153,7 @@ export const ITSupportPage = () => {
           <div className="mt-7 pl-[1.125rem] pr-[1.125rem] py-4 border-l-2 border-[#b98431] bg-[#1D2733] text-[#A9B4C0] text-[0.88rem] max-w-xl">
             Some issues come down to your internet provider or building wiring rather than
             your equipment. If it's a provider issue I'll say so plainly, and if it needs an
-            electrician, I'll point you to MerCo Electric here in Aledo — no charge for a
+            electrician, I'll point you to MerCo Electric here in Aledo, no charge for a
             diagnosis that ends there.
           </div>
         </div>
@@ -171,7 +171,7 @@ export const ITSupportPage = () => {
             </h2>
             <p className="text-[#A9B4C0] mt-3.5 text-[0.95rem] max-w-[400px]">
               Remote sessions are usually available same-day. On-site visits are scheduled
-              around Mercer County — just let me know where you're located.
+              around Mercer County, just let me know where you're located.
             </p>
           </div>
 
