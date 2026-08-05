@@ -6,39 +6,39 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 8%;
-  
-    --primary: 0 0% 8%;
-    --primary-foreground: 0 0% 100%;
-  
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 8%;
-  
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 40%;
-  
-    --accent: 0 0% 92%;
-    --accent-foreground: 0 0% 8%;
-  
-    --border: 0 0% 88%;
-    --input: 0 0% 88%;
-    --ring: 0 0% 8%;
-  
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 8%;
-  
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 8%;
-  
-    --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 0 0% 8%;
-    --sidebar-primary: 0 0% 8%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 96%;
-    --sidebar-accent-foreground: 0 0% 8%;
-    --sidebar-border: 0 0% 88%;
-    --sidebar-ring: 0 0% 8%;
+    --background: 214 27% 12%;        /* #161D26 */
+    --foreground: 45 32% 93%;         /* #F2EFE6 */
+
+    --primary: 36 79% 57%;            /* #E8A33D */
+    --primary-foreground: 214 27% 12%; /* #161D26 */
+
+    --secondary: 213 28% 16%;         /* #1D2733 */
+    --secondary-foreground: 45 32% 93%; /* #F2EFE6 */
+
+    --muted: 213 28% 16%;             /* #1D2733 */
+    --muted-foreground: 211 15% 71%;  /* #A9B4C0 */
+
+    --accent: 96 15% 57%;             /* #8FA382 (sage) */
+    --accent-foreground: 214 27% 12%; /* #161D26 */
+
+    --border: 211 21% 25%;            /* #33404E */
+    --input: 211 21% 25%;             /* #33404E */
+    --ring: 36 79% 57%;               /* #E8A33D */
+
+    --card: 213 27% 18%;              /* #212C39 */
+    --card-foreground: 45 32% 93%;    /* #F2EFE6 */
+
+    --popover: 213 27% 18%;           /* #212C39 */
+    --popover-foreground: 45 32% 93%; /* #F2EFE6 */
+
+    --sidebar-background: 214 27% 12%;
+    --sidebar-foreground: 45 32% 93%;
+    --sidebar-primary: 36 79% 57%;
+    --sidebar-primary-foreground: 214 27% 12%;
+    --sidebar-accent: 213 28% 16%;
+    --sidebar-accent-foreground: 45 32% 93%;
+    --sidebar-border: 211 21% 25%;
+    --sidebar-ring: 36 79% 57%;
   }
 
   * {
@@ -72,7 +72,7 @@
   .transition-base {
     transition: all 0.3s ease;
   }
-  
+
   .team-card-hover {
     @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10 hover:border-primary/30;
   }
