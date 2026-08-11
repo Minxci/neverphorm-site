@@ -1,106 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 8%;
-  
-    --primary: 0 0% 8%;
-    --primary-foreground: 0 0% 100%;
-  
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 8%;
-  
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 40%;
-  
-    --accent: 0 0% 92%;
-    --accent-foreground: 0 0% 8%;
-  
-    --border: 0 0% 88%;
-    --input: 0 0% 88%;
-    --ring: 0 0% 8%;
-  
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 8%;
-  
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 8%;
-  
-    --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 0 0% 8%;
-    --sidebar-primary: 0 0% 8%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 96%;
-    --sidebar-accent-foreground: 0 0% 8%;
-    --sidebar-border: 0 0% 88%;
-    --sidebar-ring: 0 0% 8%;
+:root {
+    /* ---- ink / paper / copper / circuit palette, mapped onto your
+       existing shadcn variable names so every component that already
+       reads --background, --primary, etc. updates automatically ---- */
+    --background: 86 14% 93%;          /* paper #EEF0EB */
+    --foreground: 214 24% 12%;         /* near-ink text #1A2027 */
+
+    --primary: 26 56% 51%;             /* copper #C97A3D — main accent/CTA */
+    --primary-foreground: 20 40% 6%;   /* near-black text on copper buttons */
+
+    --secondary: 82 10% 87%;           /* paper-dim #E2E5DC */
+    --secondary-foreground: 214 24% 12%;
+
+    --muted: 82 10% 87%;
+    --muted-foreground: 210 8% 40%;    /* #59636B */
+
+    --accent: 148 33% 37%;             /* circuit green #3F7D5C */
+    --accent-foreground: 86 14% 93%;
+
+    --border: 214 6% 85%;
+    --input: 214 6% 85%;
+    --ring: 26 56% 51%;                /* copper focus rings */
+
+    --card: 86 14% 93%;
+    --card-foreground: 214 24% 12%;
+    --popover: 86 14% 93%;
+    --popover-foreground: 214 24% 12%;
+
+    /* Dark "ink" sections (hero, footer, contact) — use these directly
+       via bg-[hsl(var(--ink))] where you want the dark band look from
+       the IT support page, rather than overriding --background globally
+       (which would make the WHOLE site dark). */
+    --ink: 214 28% 10%;                /* #121820 */
+    --ink-soft: 214 24% 16%;           /* #1B2430 */
+    --ink-foreground: 86 10% 93%;      /* #EDEFEA */
+
+    --sidebar-background: 86 14% 93%;
+    --sidebar-foreground: 214 24% 12%;
+    --sidebar-primary: 26 56% 51%;
+    --sidebar-primary-foreground: 20 40% 6%;
+    --sidebar-accent: 82 10% 87%;
+    --sidebar-accent-foreground: 214 24% 12%;
+    --sidebar-border: 214 6% 85%;
+    --sidebar-ring: 26 56% 51%;
   }
 
-  * {
-    border-color: hsl(var(--border));
+* {
+border-color: hsl(var(--border));
   }
 
-  html {
-    scroll-behavior: smooth;
+html {
+scroll-behavior: smooth;
   }
 
-  body {
-    font-family: "DM Sans", sans-serif;
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
-    overflow-x: clip;
-    font-feature-settings: "kern" 1, "liga" 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+body {
+font-family: "Source Serif 4", Georgia, serif;
+background-color: hsl(var(--background));
+color: hsl(var(--foreground));
+overflow-x: clip;
+font-feature-settings: "kern" 1, "liga" 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
+h1, h2, h3, h4, h5, h6 {
+font-family: "Space Grotesk", sans-serif;
+text-wrap: balance;
   }
 
-  p {
-    text-wrap: pretty;
+p {
+text-wrap: pretty;
   }
 }
 
 @layer utilities {
-  .transition-base {
-    transition: all 0.3s ease;
+.font-mono-label {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.transition-base {
+transition: all 0.3s ease;
   }
-  
-  .team-card-hover {
-    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10 hover:border-primary/30;
+.team-card-hover {
+@apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10 hover:border-primary/30;
   }
 
-  .animated-gradient-text {
-  background: linear-gradient(
-    270deg,
-    #06b6d4,
-    #8b5cf6,
-    #ec4899,
-    #f97316,
-    #06b6d4
+.animated-gradient-text {
+background: linear-gradient(
+270deg,
+#3F7D5C,
+#C97A3D,
+#4F9970,
+#DE9152,
+#3F7D5C
   );
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientShift 10s ease infinite;
+background-size: 400% 400%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: gradientShift 10s ease infinite;
 }
 
 @keyframes gradientShift {
   0% {
-    background-position: 0% 50%;
+background-position: 0% 50%;
   }
   50% {
-    background-position: 100% 50%;
+background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%;
+background-position: 0% 50%;
   }
 }
 
